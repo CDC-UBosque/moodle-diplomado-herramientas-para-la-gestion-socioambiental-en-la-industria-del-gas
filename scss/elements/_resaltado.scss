@@ -1,0 +1,49 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc{
+		
+		.resaltado-txt{
+		    float: none;
+		    background: $color_light_background;
+		    box-sizing: border-box;
+		    padding: 2rem;
+		    @include max-width;
+			margin: 2rem auto 4rem;
+		    
+		    p{
+			    @include font_universal (
+					$font_family_line_height: 34px,
+					$font_family_weight: 100,
+					$font_family_size: 25px,
+					$font_family_color: $color_text,
+					$font_family_group: $font_myr_light
+				);
+				
+				&:last-child{
+					padding: 0;
+				}
+				
+		    }
+		    
+		}
+		
+		.accordion-inner{
+			.resaltado-txt{
+				max-width: 710px;
+			    margin: auto;
+			    float: none;
+			    background: $color_white;
+			    box-sizing: border-box;
+			    padding: 2rem;
+			    
+			}
+		}
+		
+	}
+	
+}

@@ -1,0 +1,105 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc::-webkit-scrollbar {
+    width:0!important;
+}
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	overflow-y: visible;
+	
+	.content-cc{
+		padding: 2rem 2rem 0;
+		box-sizing: border-box;
+		grid-gap: 2rem;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 4fr);
+		@include grid-parent-2-rows (auto, 1fr);
+		
+		@media (max-width: $tablet){
+			grid-gap: 1rem;
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.container-txt{
+			@include grid-child-column (2, 3);
+			@include grid-child-row (2, 3);
+			
+			@media (max-width: $tablet){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (3, 4);
+			}
+			
+			.titulos_modulo{
+				text-align: center;
+			}
+			
+			p{
+				@include max-width;
+				@include font_universal (
+					$font_family_line_height: 28px,
+					$font_family_weight: 300,
+					$font_family_size: 16px,
+					$font_family_color: $color_text,
+					$font_family_group: $font_arial
+				);
+			}
+			
+			.row-fluid{
+				margin-top: 2rem;
+				
+				div[ class*="span12"]{
+					margin-left: 0;
+				}
+				
+			}
+			
+			iframe#resourceobject{
+				width:100% !important;
+			}
+			
+			ul, ol{
+				@include max-width;
+				margin: 0 auto 1rem;
+			    padding-left: 5rem;
+				
+				li{
+					margin-bottom: 1rem;
+					font-family: $font_hel_light;
+					font-size: $font_txt;
+					line-height: 27px;
+				}
+				
+			}
+			
+			a{
+				color: $color_brand_blue;
+				transition: all .2s ease-in-out;
+			}
+			
+			.footnotes{
+				
+				margin: 2rem auto 4rem;
+				border-top: 1px solid #0063C3;
+				padding-top: 2rem;
+				
+				p{
+					@include font_universal (
+						$font_family_line_height: 16px,
+						$font_family_weight: 300,
+						$font_family_size: 12px,
+						$font_family_color: $color_text,
+						$font_family_group: $font_arial
+					);
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

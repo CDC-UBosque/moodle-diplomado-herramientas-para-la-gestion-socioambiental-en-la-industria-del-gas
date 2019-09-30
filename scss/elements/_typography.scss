@@ -1,0 +1,99 @@
+// -----------------------
+// typography
+// -----------------------
+
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc{
+	
+	font-family: $font_hel_light;
+	font-size: $font_txt;
+	color: $color_text;
+	
+	
+	h1{
+		word-break: break-word;
+		display: block;
+		@include max-width;
+		margin: 2rem auto 1rem;
+		@include font_universal (
+			$font_family_line_height: 47px,
+			$font_family_weight: 200,
+			$font_family_size: 45px,
+			$font_family_color: $color_black,
+			$font_family_group: $font_myr_light
+		);
+		
+	}
+	
+	h2{
+		word-break: break-word;
+		display: block;
+		@include max-width;
+		margin: 2rem auto 1rem;
+		@include font_universal (
+			$font_family_line_height: 40px,
+			$font_family_weight: 200,
+			$font_family_size: 38px !important,
+			$font_family_color: $color_black !important,
+			$font_family_group: $font_myr_light
+		);
+		
+	}
+	
+	h3{
+		word-break: break-word;
+		display: block;
+		@include max-width;
+		margin: 2rem auto 1rem;
+		@include font_universal (
+			$font_family_line_height: 35px,
+			$font_family_weight: 200,
+			$font_family_size: 32px,
+			$font_family_color: $color_black,
+			$font_family_group: $font_myr_light
+		);
+	}
+	
+	h4{
+		word-break: break-word;
+		display: block;
+		@include max-width;
+		margin: 2rem auto 1rem;
+		@include font_universal (
+			$font_family_line_height: 27px,
+			$font_family_weight: 200,
+			$font_family_size: 25px,
+			$font_family_color: $color_dark_blue,
+			$font_family_group: $font_arial_bold
+		);
+	}
+	
+	h5{
+		word-break: break-word;
+		display: block;
+		@include max-width;
+		margin: 2rem auto 1rem;
+		@include font_universal (
+			$font_family_line_height: 18px,
+			$font_family_weight: 200,
+			$font_family_size: 18px,
+			$font_family_color: $color_dark_blue,
+			$font_family_group: $font_arial_bold
+		);
+	}
+	
+	h6{
+		word-break: break-word;
+		display: block;
+		@include max-width;
+		margin: 2rem auto 1rem;
+		@include font_universal (
+			$font_family_line_height: 18px,
+			$font_family_weight: 200,
+			$font_family_size: 18px,
+			$font_family_color: $color_dark_blue,
+			$font_family_group: $font_arial_bold
+		);
+	}
+	
+}

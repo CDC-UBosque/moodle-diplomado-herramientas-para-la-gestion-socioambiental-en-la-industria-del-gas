@@ -1,0 +1,117 @@
+// -----------------------
+// tables
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.table{
+		
+		border-top: 1px solid $color_brand_grey;
+		border-bottom: 1px solid $color_brand_grey;
+		padding: 1rem 0;
+		box-sizing: border-box;
+		display: table;
+		@include max-width;
+		margin: 2rem auto 4rem;
+		
+		caption{
+			text-align: left;
+			margin-bottom: 1rem;
+			@include font_universal (
+				$font_family_line_height: 40px,
+				$font_family_weight: 200,
+				$font_family_size: 38px,
+				$font_family_color: $color_black,
+				$font_family_group: $font_myr_light
+			);
+		}
+		
+		thead{
+			th{
+				background: $color_brand_blue;
+				border-left: 1px solid $color_white;
+				border-right: 1px solid $color_white;
+				vertical-align: middle;
+				text-align: center;
+				@include font_universal (
+					$font_family_line_height: 19px,
+					$font_family_weight: 200,
+					$font_family_size: 16px,
+					$font_family_color: $color_white,
+					$font_family_group: $font_myr_semibold
+				);
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+		}
+		
+		tr{
+			
+			td{
+				border-top: 1px solid $color_brand_blue;
+				border-bottom: 1px solid $color_brand_blue;
+				border-left: 1px solid $color_brand_blue;
+				border-right: 1px solid $color_brand_blue;
+				line-height: initial;
+				text-align: center;
+				padding: 0.5rem 0.4rem;
+				background: $color_white;
+				@include font_universal (
+					$font_family_line_height: 28px,
+					$font_family_weight: 300,
+					$font_family_size: 16px,
+					$font_family_color: $color_text,
+					$font_family_group: $font_arial
+				);
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+			
+			&:nth-child(even){
+				
+				td{
+					background: $color_light_background;
+				}
+				
+			}
+			
+			&:last-child{
+				
+				td{
+					border-bottom: 0px;
+				}
+				
+			}
+			
+			.small{
+				font-style: italic;
+				@include font_universal (
+					$font_family_line_height: 15px,
+					$font_family_weight: 300,
+					$font_family_size: 12px,
+					$font_family_color: $color_text,
+					$font_family_group: $font_arial
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+}

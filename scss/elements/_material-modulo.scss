@@ -1,0 +1,124 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.material-modulo{
+		padding: 2rem 0 1rem;
+		box-sizing: border-box;
+		@include max-width;
+		margin: 2rem auto 4rem;
+		border-top: 1px solid $color_brand_blue;
+		grid-gap: 1rem;
+		
+		
+		.title{
+			
+			h2{
+				max-width: initial;
+			}
+			
+		}
+		
+		.thumbnails{
+			
+			margin: 0;
+			padding: 0;
+			grid-gap: 1rem;
+			@include display-grid;
+			@include grid-parent-3-columns (1fr, 1fr, 1fr);
+			
+			@media (max-width: $tablet){
+				grid-gap: 1rem;
+				@include grid-parent-2-columns (1fr, 1fr);
+			}
+			
+			@media (max-width: $tablet-3){
+				grid-gap: 1rem;
+				@include grid-parent-1-columns (1fr);
+			}
+			
+			&:before,
+			&:after{
+				display: none;
+			}
+			
+			.thumbnail{
+				background: $color_white;
+			    border: 0;
+			    border-radius: 0;
+			    box-shadow: none;
+			    padding: 0;
+			    
+			    img{
+				    width: 100%;
+			    }
+			    
+			    .caption{
+				    color: $color_text;
+				    padding: 1rem 2rem;
+				    
+				    h3{
+					    display: block;
+					    @include font_universal (
+							$font_family_line_height: 18px,
+							$font_family_weight: 200,
+							$font_family_size: 18px,
+							$font_family_color: $color_dark_blue,
+							$font_family_group: $font_arial_bold
+						);
+				    }
+				    
+				    p{
+					    font-style: italic;
+					    @include font_universal (
+							$font_family_line_height: 18px,
+							$font_family_weight: 300,
+							$font_family_size: 14px,
+							$font_family_color: $color_text,
+							$font_family_group: $font_arial
+						);
+					    
+					    a{
+						    font-style: initial;
+						    background: $color_brand_blue;
+						    color: $color_white;
+						    @include font_universal (
+								$font_family_line_height: 18px,
+								$font_family_weight: 300,
+								$font_family_size: 14px,
+								$font_family_color: $color_white,
+								$font_family_group: $font_arial
+							);
+						    
+						    &:hover{
+							    background: $color_brand_grey;
+							    color: $color_brand_blue;
+						    }
+						    
+					    }
+					    
+				    }
+				    
+			    }
+			    
+			}
+			
+		}
+		
+		.disclaimers{
+			text-align: center;
+			@include font_universal (
+				$font_family_line_height: 16px,
+				$font_family_weight: 300,
+				$font_family_size: 12px,
+				$font_family_color: $color_text,
+				$font_family_group: $font_arial
+			);
+		}
+		
+	}
+	
+}

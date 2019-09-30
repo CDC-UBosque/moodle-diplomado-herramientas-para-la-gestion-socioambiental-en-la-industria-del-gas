@@ -1,0 +1,74 @@
+//- ---------------------------- menu ------------------------------- //
+mixin menu
+	div#menu
+
+//- ---------------------------- footer ------------------------------- //
+mixin footer
+	div#footer
+			
+//- ---------------------------- banner ------------------------------- //
+mixin banner(mod)
+	div.banner
+		div(id=mod)
+
+//- ---------------------------- paginador ------------------------------- //
+mixin link(href, name)
+	//- attributes == {class: "btn"}
+	a(href=href)= name
+	
+	//- +link('/foo', 'foo')(class="btn")
+
+
+
+mixin paginador(linkatras, class1, linkadelante, class2)
+	div.progress-fullbar
+		div.pager
+			div.paginas
+				ul
+					li.previous
+						a(href=linkatras class=class1)
+							img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/moodle-diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/arrow-left.svg')
+					li.next
+						a(href=linkadelante class=class2)
+							img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/moodle-diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/arrow-right.svg')
+			div.counter
+				<p><span class="eta"></span> (<!--<span class="words"></span>--> &cong; Tiempo de lectura )</p>
+			div.menuanchorbot
+				a.btn-primary(href="#menuanchor-top") Menú
+		div.progressContainer
+			div#progress.progress
+			
+mixin menu-simple
+	div.progress-fullbar.simple
+		div.pager
+			div.menuanchorbot
+				a.btn-primary(href="#menuanchor-top") Menú
+					
+//- ---------------------------- progreso modulo ------------------------------- //
+mixin progreso-modulo(numero)
+	div.progreso
+		h2 Progreso módulo
+		div(id=numero)
+
+//- ---------------------------- material modulo ------------------------------- //
+mixin material-modulo(id)
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.material-modulo
+			div(id=id)
+			
+//- ---------------------------- Codigos modulos ------------------------------- //
+mixin titulos-modulo(title)
+	h2= title 
+				
+//- ---------------------------- icons ------------------------------- //
+mixin icon_danger
+	div
+		img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/moodle-diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/danger.svg' alt='danger')
+	
+mixin icon_book_more_info(link)
+	div.flaticon
+		img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/moodle-diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/book.svg' alt='libro')
+		a(href=link target='_blank') Lectura recomendada
+				
+				
+				

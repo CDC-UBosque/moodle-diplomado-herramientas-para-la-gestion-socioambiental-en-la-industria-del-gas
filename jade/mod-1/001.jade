@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+				
+				//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p En el siguiente enlace puede ingresar a realizar un pretest (no calificable)
+						a(href="#" target="_blank" class="forward") Comenzar pretest
+				
+				p Autores:
+				
+				ul
+					li Dra. Andrea Rincón Garzón.
+					li Dra. Andrea Bermúdez.
+					li Dra. Patricia Villamil.
+				
+				p Objetivo General:  
+				
+				ul
+					li Actualizar los conocimientos relacionados con la prevención primaria en la atención del paciente con Enfermedad Pulmonar Obstructiva Crónica (EPOC).
+					
+				h3 Definición
+				
+				p La Enfermedad Pulmonar Obstructiva Crónica (EPOC), es una enfermedad común prevenible y tratable, que se caracteriza por una limitación persistente del flujo de aire, generalmente progresiva y asociada a una respuesta inflamatoria crónica en las vías respiratorias y en los pulmones generada por partículas nocivas o gases (1).
+
+				p La inhalación de aire contaminado con partículas nocivas como los productos de la combustión, el humo del cigarrillo y sus derivados, causan inflamación aguda de la vía aérea en toda su extensión, con el desarrollo posterior de la EPOC, esta respuesta es modificada y aumentada en relación al tiempo de exposición y las particularidades del individuo. La limitación crónica del flujo aéreo característica de la EPOC se debe a una mezcla de enfermedad de pequeñas vías aéreas y a la destrucción del parénquima; estos cambios no siempre ocurren juntos generalmente evolucionan en diferentes períodos de tiempo (1).
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso10
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9017', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

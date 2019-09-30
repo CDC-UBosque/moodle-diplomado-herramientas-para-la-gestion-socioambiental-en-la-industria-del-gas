@@ -1,0 +1,386 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Horizon Type
+ * License URL: https://www.fontspring.com/licenses/horizon-type/webfont
+ *
+ *
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext");
+@font-face {
+  font-family: 'acherus_grotesqueblack';
+  src: url("../fonts/acherus_grotesque_-_black-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_black-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_black-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_black-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_black-webfont.svg#acherus_grotesqueblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueblack_italic';
+  src: url("../fonts/acherus_grotesque_-_black_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_black_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_black_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_black_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_black_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_black_italic-webfont.svg#acherus_grotesqueblack_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquebold';
+  src: url("../fonts/acherus_grotesque_-_bold-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_bold-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_bold-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_bold-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_bold-webfont.svg#acherus_grotesquebold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquebold_italic';
+  src: url("../fonts/acherus_grotesque_-_bold_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_bold_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_bold_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_bold_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_bold_italic-webfont.svg#acherus_grotesquebold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueextrabold';
+  src: url("../fonts/acherus_grotesque_-_extrabold-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_extrabold-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_extrabold-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_extrabold-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_extrabold-webfont.svg#acherus_grotesqueextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueblack';
+  src: url("../fonts/acherus_grotesque_-_bold-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_bold-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_bold-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_bold-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_bold-webfont.svg#acherus_grotesqueblack") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueXBdIt';
+  src: url("../fonts/acherus_grotesque_-_extrabold_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_extrabold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_extrabold_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_extrabold_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_extrabold_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_extrabold_italic-webfont.svg#acherus_grotesqueXBdIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueRgIt';
+  src: url("../fonts/acherus_grotesque_-_regular_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_regular_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_regular_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_regular_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_regular_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_regular_italic-webfont.svg#acherus_grotesqueRgIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquelight';
+  src: url("../fonts/acherus_grotesque_-_light-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_light-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_light-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_light-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_light-webfont.svg#acherus_grotesquelight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquelight_italic';
+  src: url("../fonts/acherus_grotesque_-_light_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_light_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_light_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_light_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_light_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_light_italic-webfont.svg#acherus_grotesquelight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquemedium';
+  src: url("../fonts/acherus_grotesque_-_medium-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_medium-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_medium-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_medium-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_medium-webfont.svg#acherus_grotesquemedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueMdIt';
+  src: url("../fonts/acherus_grotesque_-_medium_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_medium_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_medium_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_medium_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_medium_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_medium_italic-webfont.svg#acherus_grotesqueMdIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueregular';
+  src: url("../fonts/acherus_grotesque_-_regular-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_regular-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_regular-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_regular-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_regular-webfont.svg#acherus_grotesqueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquethin';
+  src: url("../fonts/acherus_grotesque_-_thin-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_thin-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_thin-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_thin-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_thin-webfont.svg#acherus_grotesquethin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesquethin_italic';
+  src: url("../fonts/acherus_grotesque_-_thin_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_thin_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_thin_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_thin_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_thin_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_thin_italic-webfont.svg#acherus_grotesquethin_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueultralight';
+  src: url("../fonts/acherus_grotesque_-_ultralight-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_ultralight-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_ultralight-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_ultralight-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_ultralight-webfont.svg#acherus_grotesqueultralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'acherus_grotesqueultraLtIt';
+  src: url("../fonts/acherus_grotesque_-_ultralight_italic-webfont.eot");
+  src: url("../fonts/acherus_grotesque_-_ultralight_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/acherus_grotesque_-_ultralight_italic-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_ultralight_italic-webfont.woff") format("woff"), url("../fonts/acherus_grotesque_-_ultralight_italic-webfont.ttf") format("truetype"), url("../fonts/acherus_grotesque_-_ultralight_italic-webfont.svg#acherus_grotesqueultraLtIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2"), url("../fonts/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack_italic';
+  src: url("../fonts/lato-blackitalic-webfont.woff2") format("woff2"), url("../fonts/lato-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobold_italic';
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2"), url("../fonts/lato-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latohairline';
+  src: url("../fonts/lato-hairline-webfont.woff2") format("woff2"), url("../fonts/lato-hairline-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latohairline_italic';
+  src: url("../fonts/lato-hairlineitalic-webfont.woff2") format("woff2"), url("../fonts/lato-hairlineitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoitalic';
+  src: url("../fonts/lato-italic-webfont.woff2") format("woff2"), url("../fonts/lato-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight_italic';
+  src: url("../fonts/lato-lightitalic-webfont.woff2") format("woff2"), url("../fonts/lato-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serifbold';
+  src: url("../fonts/ptserif700-webfont.woff2") format("woff2"), url("../fonts/ptserif700-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serifbold_italic';
+  src: url("../fonts/ptserif700italic-webfont.woff2") format("woff2"), url("../fonts/ptserif700italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serifitalic';
+  src: url("../fonts/ptserifitalic-webfont.woff2") format("woff2"), url("../fonts/ptserifitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serifregular';
+  src: url("../fonts/ptserifregular-webfont.woff2") format("woff2"), url("../fonts/ptserifregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* title program-card font style */
+/* ==========================================
+	ELEMENTOS DE MOODLE PARA ESCONDER
+========================================== */
+#region-main div h2 {
+  display: none; }
+
+.box.generalbox.book_content h3, .box.generalbox.book_content h4, #region-main div h3, pageintro {
+  display: none; }
+
+#region-main div .modified {
+  display: none; }
+
+.navtop {
+  display: none; }
+
+.navbottom {
+  display: none; }
+
+#region-main .completionprogress {
+  float: none; }
+
+.course-content ul li.section.main {
+  margin-top: 0;
+  border-bottom: 0; }
+
+#course-block-layout aside > .block, #admin-block-layout aside > .block.estiloscompensar {
+  display: none; }
+
+.course-content .content {
+  margin: 0; }
+  .course-content .content .summary .no-overflow {
+    overflow: visible; }
+
+#page-mod-page-view #region-main,
+#page-course-view-topics #region-main,
+#page-mod-book-view #region-main {
+  width: 100%; }
+
+#page-mod-page-view #admin-block-layout,
+#page-mod-page-view #course-block-layout,
+#page-course-view-topics #admin-block-layout,
+#page-course-view-topics #course-block-layout,
+#page-mod-book-view #admin-block-layout,
+#page-mod-book-view #course-block-layout {
+  display: none; }
+
+#page-mod-page-view.userswitchedrole #region-main,
+#page-course-view-topics.userswitchedrole #region-main,
+#page-mod-book-view.userswitchedrole #region-main {
+  width: 82.97872340425532%; }
+  @media (min-width: 1350px) {
+    #page-mod-page-view.userswitchedrole #region-main,
+    #page-course-view-topics.userswitchedrole #region-main,
+    #page-mod-book-view.userswitchedrole #region-main {
+      width: 82.90598290598291%; } }
+  @media (max-width: 979px) and (min-width: 768px) {
+    #page-mod-page-view.userswitchedrole #region-main,
+    #page-course-view-topics.userswitchedrole #region-main,
+    #page-mod-book-view.userswitchedrole #region-main {
+      width: 82.87292817679558%; } }
+  @media (max-width: 767px) {
+    #page-mod-page-view.userswitchedrole #region-main,
+    #page-course-view-topics.userswitchedrole #region-main,
+    #page-mod-book-view.userswitchedrole #region-main {
+      width: 100%; } }
+
+#page-mod-page-view.userswitchedrole #admin-block-layout,
+#page-mod-page-view.userswitchedrole #course-block-layout,
+#page-course-view-topics.userswitchedrole #admin-block-layout,
+#page-course-view-topics.userswitchedrole #course-block-layout,
+#page-mod-book-view.userswitchedrole #admin-block-layout,
+#page-mod-book-view.userswitchedrole #course-block-layout {
+  display: block; }
+
+.box.generalbox.book_content .no-overflow {
+  overflow: initial; }
+
+body {
+  overflow-x: hidden; }
+
+.curso-cc .banner-home,
+#region-main .curso-cc .banner-home {
+  grid-column: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-row: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  @supports (display: grid) {
+    .curso-cc .banner-home,
+    #region-main .curso-cc .banner-home {
+      display: grid; } }
+  @supports (-ms-ime-align: auto) {
+    .curso-cc .banner-home,
+    #region-main .curso-cc .banner-home {
+      display: grid; } }
+  @supports not (display: grid) {
+    .curso-cc .banner-home,
+    #region-main .curso-cc .banner-home {
+      display: inline-block; } }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .curso-cc .banner-home,
+    #region-main .curso-cc .banner-home {
+      display: -ms-grid; } }
+  @media (max-width: 788px) {
+    .curso-cc .banner-home,
+    #region-main .curso-cc .banner-home {
+      grid-column: 1/2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-row: 1/2;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1; } }
+  .curso-cc .banner-home .texto,
+  #region-main .curso-cc .banner-home .texto {
+    margin: 2rem;
+    position: relative;
+    z-index: 10;
+    grid-column: 2/7;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-row: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1; }
+    .curso-cc .banner-home .texto div:first-child,
+    #region-main .curso-cc .banner-home .texto div:first-child {
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      background: #69C194;
+      font-size: 20px;
+      line-height: 17px;
+      font-weight: 300;
+      font-family: "acherus_grotesquelight";
+      color: #1A1B6C;
+      letter-spacing: 5; }
+    .curso-cc .banner-home .texto div:last-child,
+    #region-main .curso-cc .banner-home .texto div:last-child {
+      padding: 1rem;
+      background: rgba(26, 27, 108, 0.85);
+      font-size: 37px;
+      line-height: 32px;
+      font-weight: 300;
+      font-family: "acherus_grotesqueblack";
+      color: #ffffff;
+      letter-spacing: -1; }
+  .curso-cc .banner-home .imagen,
+  #region-main .curso-cc .banner-home .imagen {
+    background: url("../images/banner/banner-principal.jpg");
+    grid-column: 1/13;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-row: 1/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3; }
+
+/*# sourceMappingURL=../css/styles.map */

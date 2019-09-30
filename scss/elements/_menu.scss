@@ -1,0 +1,152 @@
+// -----------------------
+// menu
+// -----------------------
+
+
+.curso-cc .content-cc,
+#region-main .curso-cc .content-cc{
+	
+	.menu-side{
+		//position: sticky;
+		//top: 0;
+		@include grid-child-column (1, 2);
+		@include grid-child-row (1, 3);
+		
+		@media (max-width: $tablet){
+			@include grid-child-column (1, 2);
+			@include grid-child-row (2, 3);
+		}
+		
+		#side-navbar {
+			position: sticky;
+			top: 0;
+		}
+		
+		.side-navbar-a, .drop-button {
+			display: block;
+			padding: 10px 8px;
+			border: none;
+			color: white;
+			background: $color_brand_grey;
+			border: 1px solid $color_white;
+			font-size: 20px;
+			width: 100%;
+			text-align: left;
+			text-decoration: none;
+			cursor: pointer;
+			margin: .2rem 0;
+			box-sizing: border-box;
+			position: relative;
+			text-shadow: none;
+			@include font_universal (
+				$font_family_line_height: 18px,
+				$font_family_weight: 300,
+				$font_family_size: 16px,
+				$font_family_color: $color_brand_blue,
+				$font_family_group: $font_arial
+			);
+			
+			&:hover{
+				border: 1px solid $color_brand_grey;
+				background: $color_white;
+			}
+			
+			&:focus{
+				outline: none;
+			}
+			
+		}
+		
+		.drop-button{
+			
+			&:after{
+				position: absolute;
+				content: "";
+				background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/svg/arrow-down-blue.svg');
+				width: 12px;
+				height: 21px;
+				background-repeat: no-repeat;
+				right: 10px;
+			}
+			
+		}
+		
+		.drop-button.active{
+			border: 1px solid $color_brand_grey;
+			background: $color_white;
+			
+			&:after{
+				position: absolute;
+				content: "";
+				background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/svg/arrow-up-blue.svg');
+				width: 12px;
+				height: 21px;
+				background-repeat: no-repeat;
+				right: 10px;
+			}
+			
+		}
+		
+		.drop-button.eva{
+			background: $color_brand_blue;
+			color: $color_white;
+			
+			&:after{
+				position: absolute;
+				content: "";
+				background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/svg/arrow-down-white.svg');
+				width: 12px;
+				height: 21px;
+				background-repeat: no-repeat;
+				right: 10px;
+			}
+			
+		}
+		
+		.drop-button.eva.active{
+			
+			&:after{
+				position: absolute;
+				content: "";
+				background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/svg/arrow-up-white.svg');
+				width: 12px;
+				height: 21px;
+				background-repeat: no-repeat;
+				right: 10px;
+			}
+			
+		}
+		
+		#dropdown-container {
+			display: none;
+			background: $color_white;
+			padding-left: 1.5rem;
+		}
+		
+		#dropdown-container a{
+			display: block;
+			padding: 10px 12px;
+			text-decoration: none;
+			border: 1px solid $color_brand_grey;
+			color: $color_brand_blue;
+			margin: .2rem 0;
+			
+			&:hover{
+				background: $color_brand_grey;
+			}
+			
+		}
+		
+		i {
+			float: right;
+			margin-right: 8px;
+		}
+		
+		.main {
+			margin-left: 250px;
+			float: left;
+		}
+		
+	}
+	
+}
