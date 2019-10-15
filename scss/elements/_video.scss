@@ -4,8 +4,9 @@
 .curso-cc,
 #region-main .curso-cc{
 	
-	.banner-videos{
+	.banner-video{
 		margin: 2.5rem 0;
+		@include display-grid;
 	}
 	
 	#video .embed-container {

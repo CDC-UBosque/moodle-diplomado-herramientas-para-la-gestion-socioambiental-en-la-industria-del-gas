@@ -2,18 +2,16 @@
 // tabs
 // -----------------------
 
-.curso-cc .content-cc .container-txt,
-#region-main .curso-cc .content-cc .container-txt{
+.curso-cc,
+#region-main .curso-cc{
 	
 	.bs-docs{
 		float: none;
-		@include max-width;
 		margin: 2rem auto 4rem;
 		
 		.nav-tabs{
 			margin-bottom: 0;
 			padding: 0;
-			@include max-width;
 			border-bottom: 1px solid $color_brand_blue;
 			
 			> li{
@@ -23,21 +21,22 @@
 				> a{
 					border: 1px solid $color_white;
 					border-radius: 0;
-					@include font_universal (
-						$font_family_line_height: 19px,
-						$font_family_weight: 200,
-						$font_family_size: 16px,
-						$font_family_color: $color_white,
-						$font_family_group: $font_myr_semibold
-					);
 					margin: 0;
 					background: $color_brand_blue;
+					@include font_universal (
+						$font_family_line_height: 20px,
+						$font_family_weight: 300,
+						$font_family_size: 15px,
+						$font_family_color: $color_white,
+						$font_family_letter_spacing: 0,
+						$font_family_group: $font_lato_italic
+					);
 					
 					&:hover{
 						border-radius: 0;
-						border: 1px solid $color_brand_grey;
+						border: 1px solid $color_brand_green;
 						color: $color_brand_blue;
-						background: $color_brand_grey;
+						background: $color_light_green;
 					}
 				}
 				
@@ -47,9 +46,9 @@
 				
 				> a{
 					border-radius: 0;
-					border: 1px solid $color_brand_grey;
+					border: 1px solid $color_brand_green;
 					color: $color_brand_blue;
-					background: $color_brand_grey;
+					background: $color_light_green;
 				}
 				
 			}
@@ -58,9 +57,9 @@
 		
 		.tab-content{
 			
-			background: $color_light_background;
+			background: $color_light_green;
 			box-sizing: border-box;
-			padding: 1.5rem;
+			padding: 0.5rem 2rem 0rem;
 			
 			> .tab-pane{
 				//display: block;

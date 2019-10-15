@@ -8,115 +8,58 @@
 	.material-modulo{
 		padding: 2rem 0 1rem;
 		box-sizing: border-box;
-		@include max-width;
-		margin: 2rem auto 4rem;
-		border-top: 1px solid $color_brand_blue;
-		grid-gap: 1rem;
+		margin: 0 auto 4rem;
 		
-		
-		.title{
-			
-			h2{
-				max-width: initial;
-			}
-			
-		}
-		
-		.thumbnails{
-			
-			margin: 0;
-			padding: 0;
-			grid-gap: 1rem;
+		.materiales{
+			grid-column-gap: 1rem;
+			grid-row-gap: 2rem;
 			@include display-grid;
-			@include grid-parent-3-columns (1fr, 1fr, 1fr);
+			@include grid-parent-2-columns (1fr, 1fr);
 			
-			@media (max-width: $tablet){
-				grid-gap: 1rem;
-				@include grid-parent-2-columns (1fr, 1fr);
-			}
-			
-			@media (max-width: $tablet-3){
-				grid-gap: 1rem;
+			@media (max-width: $breakpoint_2){
 				@include grid-parent-1-columns (1fr);
 			}
 			
-			&:before,
-			&:after{
-				display: none;
+			.elementos{
+				grid-gap: 1rem;
+				padding-right: 2rem;
+				border-right: 2px solid $color_brand_green;
+				@include display-grid;
+				@include grid-parent-2-columns (40%, 1fr);
+				
+				@media (max-width: $breakpoint_2){
+					margin-right: 2rem;
+					padding-right: 0rem;
+					@include grid-parent-2-columns (1fr, 2fr);
+				}
+				
+				img{
+					place-self: center;
+					min-height: 200px;
+					width: auto;
+					border: 8px solid $color_brand_green;
+					@include grid-child-column (1, 2);
+					@include grid-child-row (1, 2);
+					
+					@media (max-width: $breakpoint_2){
+						min-height: initial;
+					}
+					
+				}
+				
+				p{
+					@include grid-child-column (2, 3);
+					@include grid-child-row (1, 2);
+				}
+				
+				a{
+					place-self: center;
+					@include grid-child-column (1, 2);
+					@include grid-child-row (2, 3);
+				}
+				
 			}
 			
-			.thumbnail{
-				background: $color_white;
-			    border: 0;
-			    border-radius: 0;
-			    box-shadow: none;
-			    padding: 0;
-			    
-			    img{
-				    width: 100%;
-			    }
-			    
-			    .caption{
-				    color: $color_text;
-				    padding: 1rem 2rem;
-				    
-				    h3{
-					    display: block;
-					    @include font_universal (
-							$font_family_line_height: 18px,
-							$font_family_weight: 200,
-							$font_family_size: 18px,
-							$font_family_color: $color_dark_blue,
-							$font_family_group: $font_arial_bold
-						);
-				    }
-				    
-				    p{
-					    font-style: italic;
-					    @include font_universal (
-							$font_family_line_height: 18px,
-							$font_family_weight: 300,
-							$font_family_size: 14px,
-							$font_family_color: $color_text,
-							$font_family_group: $font_arial
-						);
-					    
-					    a{
-						    font-style: initial;
-						    background: $color_brand_blue;
-						    color: $color_white;
-						    @include font_universal (
-								$font_family_line_height: 18px,
-								$font_family_weight: 300,
-								$font_family_size: 14px,
-								$font_family_color: $color_white,
-								$font_family_group: $font_arial
-							);
-						    
-						    &:hover{
-							    background: $color_brand_grey;
-							    color: $color_brand_blue;
-						    }
-						    
-					    }
-					    
-				    }
-				    
-			    }
-			    
-			}
-			
-		}
-		
-		.disclaimers{
-			text-align: center;
-			@include font_universal (
-				$font_family_line_height: 16px,
-				$font_family_weight: 300,
-				$font_family_size: 12px,
-				$font_family_color: $color_text,
-				$font_family_group: $font_arial
-			);
 		}
 		
 	}

@@ -1,0 +1,57 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('#', 'disabled', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					
+					//- +modulo-video('video-mod-1')
+					
+					h1 Presentación PPT Módulo 2 Estudios ambientales: tipos, elaboración, y control de calidad
+					
+					+video('https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-2/Modulo-2-Estudios-ambientales-Tipos-elaboracion-y-control-de-calidad-1.ppt')
+					
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

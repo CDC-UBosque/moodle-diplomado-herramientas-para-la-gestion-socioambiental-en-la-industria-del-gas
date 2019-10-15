@@ -1,0 +1,107 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9366', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9368', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-2')
+					
+					h1 Restricciones ambientales y de infraestructura
+				
+					p Las restricciones ambientales y de infraestructura integran los aspectos ambientales relevantes para el desarrollo obras y/o actividades de los proyectos, para lo cual el proceso de licenciamiento ambiental establece dos instancias en las cuales se debe realizar un análisis de zonificación, denominadas zonificación ambiental y zonificación de manejo ambiental del proyecto.
+					
+					
+					
+					//- ---------------- 
+					//- ---------------- Accordion
+					//- ---------------- 
+					+accordion('accordion1')
+						+accordion-item('#accordion1', '#box1', 'box1', '6.1. Zonificación ambiental')
+							p La zonificación ambiental es el proceso de sectorización de un área compleja como lo es el área de influencia, en áreas relativamente homogéneas de acuerdo a las características y a la sensibilidad ambiental de los componentes de los medios abiótico, biótico y socioeconómico. Por lo tanto, es un proceso que integra la información de la caracterización ambiental de línea base y establece, de acuerdo a la normativa ambiental vigente y a las propiedades de los atributos de los componentes ambientales, su susceptibilidad ante fenómenos naturales y antrópicos, a fin de identificar zonas del área de influencia con diferentes grados de sensibilidad ambiental.
+
+							p La sensibilidad del área de influencia debe ser el resultado de la agregación de la sensibilidad ambiental de los factores que constituyen los componentes ambientales de los medios abiótico, biótico y socioeconómico. Se debe plantear un método para establecer la sensibilidad ambiental, el cual debe ser descrito; asimismo, es necesario describir y justificar el método utilizado para agregar o superponer espacialmente la susceptibilidad de los factores del ambiente.
+
+							p Las siguientes son áreas cuyas características las hacen sensibles a fenómenos naturales y antrópicos, que conviene delimitar y analizar, para establecer la zonificación ambiental:
+
+							ul
+								li Áreas de Especial Interés Ambiental (AEIA), tales como áreas protegidas públicas o privadas, áreas con estrategias complementarias para la conservación de la biodiversidad y ecosistemas estratégicos (identificadas en el numeral 4.2.3 de las especificaciones técnicas para la elaboración del EIA); rondas hidrográficas, corredores biológicos y zonas con presencia de especies endémicas y/o amenazadas (en peligro, en peligro crítico y vulnerables); áreas de importancia para cría, reproducción, alimentación y anidación de fauna y; zonas de paso de especies migratorias.
+
+								li Áreas con reglamentación especial definida en los instrumentos de ordenamiento y planificación del territorio (p. e. POT, EOT, PBOT, POMCAS, PORH, POMIUAC).
+								li Áreas degradadas (p. e. por erosión, salinización o contaminación del suelo) en recuperación ambiental o en las que se prevé adelantar acciones de recuperación ambiental y, áreas con conflicto por uso del suelo.
+								li Áreas susceptibles a eventos amenazantes de origen hidrometeorológico y geológico, como inundaciones, movimientos en masa, avenidas torrenciales, sismos, erupciones volcánicas, tsunamis, entre otros, en los ámbitos nacional, regional y local.
+								li Áreas destinadas a la producción económica agropecuaria, forestal, pesquera, acuícola, minera, entre otras.
+								li Áreas de importancia social tales como asentamientos humanos y, áreas con infraestructura física y social y de importancia histórica y cultural.
+								
+							p Tanto la zonificación ambiental de cada medio (mapas intermedios), como la zonificación ambiental final, deben cartografiarse a la escala que establezcan los respectivos términos de referencia genéricos, o a una más detallada de acuerdo con la sensibilidad ambiental de la temática tratada.
+
+							p La zonificación ambiental final es el insumo básico para formular la zonificación de manejo del proyecto, instrumento de planificación que permite que tanto su diseño, como sus subsecuentes fases de desarrollo (construcción, montaje, operación, mantenimiento, desmantelamiento, restauración final, abandono y/o terminación), contemplen y sean coherentes con la sensibilidad ambiental del entorno en el que se prevé su ejecución.
+
+
+							
+						+accordion-item('#accordion1', '#box2', 'box2', '6.2. Zonificación de manejo ambiental del proyecto')
+							p La zonificación de manejo tiene como propósito establecer, para el área de influencia, zonas homogéneas de acuerdo al grado con el cual pueden ser intervenidas por el proyecto y se obtiene, a partir de la integración de la información proveniente de la zonificación ambiental, de las características del proyecto, del uso y aprovechamiento de recursos y de la evaluación ambiental.
+
+							p El análisis de cada una de las unidades de manejo debe realizarse de manera cualitativa y cuantitativa, utilizando software de procesamiento geoespacial. La evaluación debe definir las restricciones de tipo abiótico, biótico y socioeconómico.
+
+							p Se deben agrupar estas unidades en las siguientes áreas de manejo, indicando la superficie de cada unidad, su porcentaje de participación con respecto al área total del proyecto y las actividades a desarrollar, de acuerdo a las restricciones de cada una de ellas:
+							
+							ul
+								li Áreas de intervención: corresponde a áreas donde se puede desarrollar el proyecto, con un manejo ambiental acorde a las actividades y fases del mismo.
+								li Áreas de intervención con restricciones: corresponde a áreas en las que se debe efectuar un manejo especial, así como tener en cuenta las estricciones que resultan de las características de las actividades y fases del proyecto y de la vulnerabilidad ambiental de la zona. Se deben establecer grados de restricción y condiciones para la ejecución de las obras y actividades. Se deben definir áreas de intervención con restricción alta, media y baja.
+								li Áreas de exclusión: corresponde a áreas que no pueden ser intervenidas por las actividades del proyecto. Se deben considerar como criterios de exclusión, la vulnerabilidad y funcionalidad ambiental de la zona, así como las áreas con restricciones legales y/o con régimen especial.
+								
+							p Tanto la zonificación de manejo ambiental de cada medio (mapas intermedios), como la zonificación de manejo ambiental final (la agregación de los mapas de cada medio), deben cartografiarse a la escala que establezcan los respectivos términos de referencia genéricos, o a una más detallada de acuerdo con la vulnerabilidad ambiental de la temática tratada. 
+
+							p Se debe describir el modelo de procesamiento de información geográfica utilizado para establecer la zonificación de manejo ambiental, señalando los cálculos, funciones, métodos, ponderaciones y demás procedimientos ejecutados.
+							
+						
+					
+					
+					
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

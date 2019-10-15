@@ -1,0 +1,161 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9363', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-2')
+				
+					h1 Introducción
+									
+					p Estado tiene como deber planificar el manejo y aprovechamiento de los recursos naturales, con el fin de hacer uso de los mismos de forma sostenible, garantizando la conservación, restauración o sustitución, para ello deberá prevenir y controlar los aspectos que generan deterioro ambiental, así como de imponer sanciones legales y exigir la reparación de los daños causados (MADS, 2018). 
+
+					p La constitución política colombiana establece responsabilidades, entre varias se encuentra la de proteger los recursos culturales y naturales del país, así como de velar por la conservación de un ambiente sano, siendo este un derecho de todas las personas. De esta manera existe un compromiso de quienes adelantan proyectos, obras o actividades que puedan producir deterioro grave a los recursos naturales renovables o al medio ambiente, o que puedan introducir modificaciones considerables o notorias al paisaje (MADS, 2018), así como lo determina el artículo 28 en el decreto 2811 del 18 de diciembre de 1974, por el cual se  dicta el Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente (Decreto 2811, 1974, art. 28):
+
+					p “Para la ejecución de obras, el establecimiento de industrias o el desarrollo de cualquiera otra actividad que, por sus características, pueda producir deterioro grave a los recursos naturales renovables o al ambiente o introducir modificaciones considerables o notorias al paisaje, será necesario el estudio ecológico y ambiental previo y, además, obtener licencia.”
+
+					p El estado colombiano  dirige el crecimiento económico y social con base a los  principios del desarrollo sostenible establecidos en la Declaración de Río de Janeiro sobre Medio Ambiente y Desarrollo realizada en 1992, donde la normativa ambiental colombiana tiene los siguientes principios de especial relevancia para el marco del licenciamiento ambiental (MADS, 2018):
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p La biodiversidad, por ser patrimonio nacional y de interés de la humanidad, debe ser protegida prioritariamente y aprovechada en forma sostenible.
+							div.tab-pane.fade#2
+								p Cuando exista peligro de daño grave e irreversible, la falta de certeza científica absoluta no deberá utilizarse como razón para postergar la adopción de medidas eficaces para impedir la degradación del medio ambiente (principio de precaución).
+							div.tab-pane.fade#3
+								p Con el propósito de prevenir, corregir y restaurar el deterioro ambiental, y conservar los recursos naturales renovables, se debe fomentar la incorporación de los costos ambientales y el uso de instrumentos económicos.
+							div.tab-pane.fade#4
+								p El paisaje por ser patrimonio común deberá ser protegido.
+							div.tab-pane.fade#5
+								p Como instrumento básico para la toma de decisiones respecto a la construcción de obras y actividades que afecten significativamente el medio ambiente natural o artificial, se emplearán los estudios de impacto ambiental.
+								
+								
+					p La licencia ambiental en el artículo 50 del decreto 2041 de 2014 “Se entiende por Licencia Ambiental la autorización que otorga la autoridad ambiental competente para la ejecución de una obra o actividad, sujeta al cumplimiento por el beneficiario de la licencia de los requisitos que la misma establezca en relación con la prevención, mitigación, corrección, compensación y manejo de los efectos ambientales de la obra o actividad autorizada” (Ley 99 de 1993, art. 50), asimismo, el decreto 2041 de 2014 en artículo 3 la define como “La licencia ambiental es la autorización que otorga la autoridad ambiental competente para la ejecución de un proyecto, obra o actividad, que de acuerdo con la ley y los reglamentos, pueda producir deterioro grave a los recursos naturales renovables, o al medio ambiente, o introducir modificaciones considerables o notorias al paisaje; la cual sujeta al beneficiario de esta, al cumplimiento de los requisitos, términos, condiciones y obligaciones que la misma establezca en relación con la prevención, mitigación, corrección, compensación y manejo de los efectos ambientales del proyecto, obra o actividad autorizada.” (Decreto 2041, 2014, art. 3)
+
+					p El decreto 2041 de 2014 en artículo 3, también establece que “La licencia ambiental llevará implícitos todos los permisos, autorizaciones y/o concesiones para el uso, aprovechamiento y/o afectación delos recursos naturales renovables que sean necesarios por el tiempo de vida útil del proyecto, obra o actividad. El uso, aprovechamiento y/o afectación de los recursos naturales renovables deberán ser claramente identificados en el respectivo estudio de impacto ambiental. La licencia ambiental deberá obtenerse previamente a la iniciación del proyecto, obra o actividad. Ningún proyecto, obra o actividad requerirá más de una licencia ambiental. Parágrafo. Las Corporaciones Autónomas Regionales y demás autoridades ambientales no podrán otorgar permisos, concesiones o autorizaciones ambientales cuando estos formen parte de un proyecto cuya licencia ambiental sea de competencia privativa de la Autoridad Nacional de Licencias Ambientales (ANLA).” (Decreto 2041, 2014, art. 3)
+
+					p La licencia ambiental se debe considerar como un instrumento de planificación, el cual contempla criterios ambientales que se encuentran inmersos en los procesos de formulación y desarrollo de un proyecto, obra o actividad, asimismo, busca la ejecución que la ejecución de estos se realice de forma racional, impidiendo la explotación y deterioro del ambiente (Contraloría, 2017).
+
+					p La licencia ambiental para ser otorgada requiere de la evaluación y posterior aprobación de Estudios de Impacto Ambiental (EIA)  que lleva implícito un Plan de Manejo Ambiental (PMA) y en algunos casos, de la elaboración del Diagnóstico Ambiental de Alternativas (DAA), los cuales permiten a la autoridad competente la toma de decisiones  en relación a la viabilidad ambiental de los proyectos, obras o actividades, con base en los principios de prevención, precaución e internalización de los costos ambiéntales, así como en la minimización del riesgo de causar daño (Contraloría, 2017).
+
+					p El proceso de licenciamiento ambiental y desarrollo de los instrumentos para  obtenerla inicia en la Ley 99 del 22 de diciembre de 1993 Por la cual se crea el Ministerio del Medio Ambiente, se reordena el Sector Público encargado de la gestión y conservación del medio ambiente y los recursos naturales renovables, se organiza el Sistema Nacional Ambiental, SINA y se dictan otras disposiciones. Así mismo el Decreto Ley 2811 del 18 de diciembre de 1974 donde se establece el Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente, determinando los lineamentos generales del licenciamiento ambiental. 
+
+					p A continuación se presenta el marco normativo relacionado al licenciamiento ambiental en Colombia:
+					
+					
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('Tabla 1. Marco normativo general de licenciamiento ambiental en Colombia')
+						+set('thead')
+							tr
+								th Nº
+								th Tipo jurídico
+								th Fecha de expedición
+								th Titular
+						+set('tr')
+							tr
+								td 1
+								td Ley 99
+								td 22 de diciembre de 1993
+								td Por la cual se crea el Ministerio del Medio Ambiente, se reordena el Sector Público encargado de la gestión y conservación del medio ambiente y los recursos naturales renovables, se organiza el Sistema Nacional Ambiental, SINA y se dictan otras disposiciones.
+							tr
+								td 2
+								td Ley 685
+								td 15 de agosto de 2001
+								td Por la cual se expide el Código de Minas y se dictan otras disposiciones.
+							tr
+								td 3
+								td Decreto Ley 2811
+								td 18 de diciembre de 1974
+								td Por el cual se dicta el Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente.
+							tr
+								td 4
+								td Decreto Ley 2150
+								td 5 de diciembre de 1995
+								td Por el cual se suprimen y reforman regulaciones, procedimientos o trámites innecesarios existentes en la Administración Pública.
+							tr
+								td 5
+								td Decreto 1768
+								td 3 de agosto de 1994
+								td Por el cual se desarrolla parcialmente el literal h) del Artículo 116 en lo relacionado con el establecimiento, organización o reforma de las corporaciones autónomas regionales y de las corporaciones de régimen especial, creadas o transformadas por la Ley 99 de 1993.
+							tr
+								td 6
+								td Decreto 1180
+								td 10 de mayo de 2003
+								td Por el cual se reglamenta el Título VIII de la Ley 99 de 1993 sobre Licencias Ambientales.
+							tr
+								td 7
+								td Decreto 3573
+								td 27 de septiembre de 2011
+								td Por el cual se crea la Autoridad Nacional de Licencias Ambientales –ANLA– y se dictan otras disposiciones.
+							tr
+								td 8
+								td Decreto 2041
+								td 15 de octubre de 2014
+								td Por el cual se reglamenta el Título VIII de la Ley 99 de 1993 sobre licencias ambientales.
+							tr
+								td 9
+								td Resolución 655
+								td 21 de junio de 1996
+								td Por la cual se establecen los requisitos y condiciones para la solicitud y obtención de la Licencia Ambiental establecida por el artículo 132 del Decreto Ley 2150 de 1995.
+
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

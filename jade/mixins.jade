@@ -10,6 +10,12 @@ mixin footer
 mixin banner(mod)
 	div.banner
 		div(id=mod)
+		
+//- ---------------------------- videos por modulo ------------------------------- //
+mixin modulo-video(mod)
+	div.banner-videos.wow.fadeInUp
+		div#video
+			div.embed-container(id=mod)
 
 //- ---------------------------- paginador ------------------------------- //
 mixin link(href, name)
@@ -17,8 +23,8 @@ mixin link(href, name)
 	a(href=href)= name
 	
 	//- +link('/foo', 'foo')(class="btn")
-
-
+	
+	
 
 mixin paginador(linkatras, class1, linkadelante, class2)
 	div.progress-fullbar
@@ -37,6 +43,46 @@ mixin paginador(linkatras, class1, linkadelante, class2)
 				a.btn-primary(href="#menuanchor-top") Menú
 		div.progressContainer
 			div#progress.progress
+
+
+//- ---------------------------- navegacion ------------------------------- //
+			
+mixin navegacion(linkatras, class1, linkadelante, class2)
+	div.bottom-block
+		div.title 
+			h1 Navegación 
+		div.content 
+			a.white-btn(href=linkatras class=class1) &lsaquo; Anterior
+			a.white-btn(href=linkadelante class=class2) Siguiente &rsaquo;
+			a.blue-btn(href="#menuanchor-top") Menú
+		div.progressContainer
+			div#progress.progress
+
+
+//- ---------------------------- menu ------------------------------- //
+
+mixin modulo(modulo, titulomodulo, testmodulo)
+	div.top-block
+		div.title
+			h1= modulo
+		div.content
+			h2= titulomodulo
+			hr
+			div.counter
+				<p class="italic"><span class="eta"></span> (<!--<span class="words"></span>--> &cong; Tiempo de lectura )</p>
+			hr
+			div(id=testmodulo)
+			
+mixin modulo-simple(modulo, titulomodulo, testmodulo)
+	div.top-block
+		div.title
+			h1= modulo
+		div.content
+			h2= titulomodulo
+			hr
+			div(id=testmodulo)
+
+//- ---------------------------- menu simple ------------------------------- //
 			
 mixin menu-simple
 	div.progress-fullbar.simple
@@ -59,16 +105,108 @@ mixin material-modulo(id)
 //- ---------------------------- Codigos modulos ------------------------------- //
 mixin titulos-modulo(title)
 	h2= title 
+
+//- ---------------------------- Accordion mixin ------------------------------- //
+//- mixin container
+mixin accordion(numberid)
+	div.accordion(id= numberid)
+		block
+
+//- mixin accordion item		
+mixin accordion-item(dataparent, href, target, title)
+	div.accordion-group.wow.fadeInUp
+		div.accordion-heading
+			a.accordion-toggle(data-toggle='collapse' data-parent=dataparent href=href)
+				span= title
+		div.accordion-body.collapse(id= target)
+			div.accordion-inner
+				block
 				
-//- ---------------------------- icons ------------------------------- //
-mixin icon_danger
-	div
-		img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/moodle-diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/danger.svg' alt='danger')
-	
-mixin icon_book_more_info(link)
-	div.flaticon
-		img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/moodle-diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/book.svg' alt='libro')
-		a(href=link target='_blank') Lectura recomendada
+//- +accordion('numberid')
+
+//- +accordion-item('#dataparent', '#href', 'target', 'title')
+//- 	block title
+//-			title Logotipo Universidad El Bosque
+
+
+
+
+//- ---------------------------- Video mixin ------------------------------- //
+mixin video(url)
+	div.banner-videos.wow.fadeInUp
+		div#video
+			div.embed-container
+				iframe(src=url) 
+					
+					
+
+
+//- ---------------------------- image / video + caption mixin ------------------------------- //	
+mixin image-caption(alink, datalightbox, imagelink, imagealt)
+	div.banner-video.wow.fadeInUp
+		div.imagen
+			div#video
+				figure.galeria
+					a.example-image-link(href=alink data-lightbox=datalightbox)
+						img.example-image(src=imagelink alt=imagealt)
+		div.texto_imagen
+			div.img-footer
+				block
 				
 				
+//- ---------------------------- Tabs ------------------------------- //
+mixin tabs-container
+	div.bs-docs
+		ul#myTab.nav.nav-tabs
+			block titles
+		div#myTabContent.tab-content
+			block content
 				
+mixin tabs-buttons(state, href, numero)
+	block
+	li(class=state)
+		a(href=href data-toggle='tab')= numero
+		
+mixin tabs-content-tab(state, in, numero)
+	block
+	div.tab-pane.fade(class=state in id=numero)
+		
+
+// initialization
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+// mixin definition
+mixin tabs-containers
+	div.bs-docs
+		block
+		ul#myTab.nav.nav-tabs
+			- blocks.titles()
+		div#myTabContent.tab-content
+			- blocks.content()
+
+
+
+//- ---------------------------- Tables ------------------------------- //
+
+// initialization
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+// mixin definition
+mixin tables-containers(caption)
+	table.table.table-striped
+		caption= caption
+			block
+			thead
+				- blocks.thead()
+			tbody
+				- blocks.tr()
+
+//- ---------------------------- footnotes ------------------------------- //
+mixin footnotes(footnotemodule)
+	div.foot-notes(id=footnotemodule)

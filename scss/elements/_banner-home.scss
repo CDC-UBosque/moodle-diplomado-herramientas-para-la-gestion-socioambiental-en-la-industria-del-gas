@@ -11,17 +11,20 @@
 		@include display-grid;
 		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
 		
-		@media (max-width: $tablet){
-			@include grid-child-column (1, 2);
-			@include grid-child-row (1, 2);
-		}
-		
 		.texto{
-			margin: 2rem;
+			margin: 2rem 0;
 			position: relative;
 			z-index: 10;
 			@include grid-child-column (2, 7);
 			@include grid-child-row (2, 3);
+			
+			@media (max-width: $breakpoint_2){
+				@include grid-child-column (2, 10);
+			}
+			
+			@media (max-width: $breakpoint_4){
+				@include grid-child-column (2, 12);
+			}
 			
 			div{
 				
@@ -37,6 +40,7 @@
 						$font_family_letter_spacing: 5,
 						$font_family_group: $font_acherus_light
 					);
+					
 				}
 				
 				&:last-child{
@@ -50,6 +54,16 @@
 						$font_family_letter_spacing: -1,
 						$font_family_group: $font_acherus_black
 					);
+					
+					@media (max-width: $breakpoint_2){
+						font-size: 30px;
+					}
+					
+					@media (max-width: $breakpoint_3){
+						font-size: 25px;
+						line-height: 28px;
+					}
+					
 				}
 				
 			}
@@ -57,8 +71,8 @@
 		}
 		
 		.imagen{
-			//background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/banner/banner-principal.jpg');
-			background: url('../images/banner/banner-principal.jpg');
+			background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/banner/banner-principal.jpg');
+			//background: url('../images/banner/banner-principal.jpg');
 			@include grid-child-column (1, 13);
 			@include grid-child-row (1, 4);
 		}

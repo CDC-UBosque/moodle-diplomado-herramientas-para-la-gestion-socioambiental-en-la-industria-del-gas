@@ -1,0 +1,120 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9367', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9369', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-2')
+					
+					h1 Información temática - Tremarctos
+				
+					p La mayor amenaza para la biodiversidad es la pérdida de hábitats generada por acciones antrópicas como la agricultura, la ganadería, la minería y el desarrollo de infraestructura. La construcción de infraestructura y minería amenaza la biodiversidad por: pérdida y fragmentación de ecosistemas naturales; alta mortalidad de fauna nativa por atropellamiento; y la ruptura de los flujos ecológicos naturales asociados, entre otros. Estos factores ponen en peligro la conservación de los recursos naturales, los cuales nos proveen beneficios económicos, sociales y culturales.
+
+					p En ese sentido, Conservación Internacional - Colombia con el apoyo del Ministerio del Medio Ambiente y Desarrollo Sostenible, la Embajada del Reino de los Países Bajos, la Corporación Autonoma Regional de Cundinamarca - CAR, la Unidad de Planeación Minero Energética - UPME y el Ministerio de Minas, gracias a la vinculación de información generada por todas las organizaciones aliadas, se ha desarrollado y actualizado un sistema de alertas tempranas denominado TREMARCTOS-COLOMBIA. 
+
+					p TREMARCTOS-COLOMBIA es un sistema que evalúa preliminarmente los impactos sobre la biodiversidad que producen las obras de infraestructura y mineria "screening" y provee recomendaciones sobre las eventuales compensaciones que un determinado proyecto deberá asumir. 
+
+					p Los promotores y administradores encargados del diseño y planificación de infraestructura y proyectos de minería, contarán con la información disponible sobre la distribución de especies y ecosistemas sensibles, áreas naturales protegidas y zonas de importancia socio-cultural. Además de eso se podrá realizar análisis de Riesgo y Análisis de afectación a los recursos marinos. Con ello se pretende incorporar los criterios ambientales en los planes de desarrollo de infraestructura, y se podrán reducir los impactos desde la fase preliminar y durante el desarrollo del proyecto; el reporte que genera Tremarctos Colombia no sustituye de ninguna forma el Estudio Ambiental.
+
+					p Tremarctos caracteriza el conjunto de áreas sensibles ambiental, social y culturalmente, que se podrían afectar por la construcción y/o explotación de un área, ya sea producto de obras de infraestructura (líneas de transmisión eléctrica, proyectos viales, hidroeléctricas, aeropuertos, puertos, redes de telecomunicación, etc.,) minería e hidrocarburos (pozos, campos de exploración, minas, etc.,) y hace una primera aproximación a la medición de ese impacto mediante un cálculo sencillo que utiliza el método de superposición ponderada, para finalmente establecer teniendo en cuenta parámetros establecidos por el Ministerio de Medio Ambiente y Desarrollo Sostenible) las compensaciones que mitigarían este impacto (teniendo en cuenta el modelo espacial correspondiente a los factores de compensación por pérdida de biodiversidad. Estos factores son definidos en el Listado Nacional de Factores de Compensación para Ecosistemas Naturales Terrestres del MANUAL PARA LA ASIGNACIÓN DE COMPENSACIONES POR PÉRDIDA DE BIODIVERSIDAD (MADS /TNC con apoyo de WWF y CI).
+					
+					
+					h3 Variables del análisis:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							li: a(href='#7' data-toggle='tab') 7
+							li: a(href='#8' data-toggle='tab') 8
+							li: a(href='#9' data-toggle='tab') 9
+							li: a(href='#10' data-toggle='tab') 10
+							li: a(href='#11' data-toggle='tab') 11
+							li: a(href='#12' data-toggle='tab') 12
+							li: a(href='#13' data-toggle='tab') 13
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Reservas Forestales de Ley 2da
+							div.tab-pane.fade#2
+								p Límite Parques Nacionales Naturales
+							div.tab-pane.fade#3
+								p Límite Otras Áreas Sistema RUNAP
+							div.tab-pane.fade#4
+								p Límite Reservas Naturales de la Sociedad Civil 	
+							div.tab-pane.fade#5
+								p Complejos de Páramo	
+							div.tab-pane.fade#6
+								p Áreas de Distribución de Especies Sensibles 	
+							div.tab-pane.fade#7
+								p Grado de Amenaza
+							div.tab-pane.fade#8
+								p Rango SP
+							div.tab-pane.fade#9
+								p Parque Arqueológico 
+							div.tab-pane.fade#10
+								p Resguardos Indígenas
+							div.tab-pane.fade#11
+								p Tierras Comunidades Negras
+							div.tab-pane.fade#12
+								p Hallazgos Arqueológicos por Municipio 
+							div.tab-pane.fade#13
+								p Factor de Compensación 					
+						
+					
+					p Además de evaluar y generar una medición aproximada de la afectación generada sobre el territorio, se orienta al usuario sobre la(s) compensación(es) que deberá efectuar por pérdida de biodiversidad. Para generar esta orientación se realiza una intersección espacial entre el área de análisis y la capa geográfica correspondiente al Factor de Compensación. 
+					
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

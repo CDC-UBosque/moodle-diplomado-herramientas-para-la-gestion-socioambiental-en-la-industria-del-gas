@@ -1,0 +1,205 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9363', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9365', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-2')
+					
+					h1 Estudios de impacto ambiental (EIA)
+				
+					p El Estudio de Impacto Ambiental (EIA) es el instrumento básico, que mediante un conjunto de información, les permite a las autoridades ambientales tomar decisiones sobre la viabilidad ambiental de los proyectos, obras o actividades que requieren licencia ambiental para su desarrollo. Este conjunto de información debe ser la necesaria y suficiente para describir el proyecto y caracterizar el área que podría sufrir deterioro con su ejecución, así como para identificar, calificar y evaluar sus impactos, señalar cuáles no podrían ser evitados o mitigados y para establecer las medidas de manejo ambiental correspondientes y demás planes requeridos por la ley y los reglamentos (MADS, 2018).
+
+					p Para alcanzar estos propósitos, el Estudio de Impacto Ambiental (EIA) y el Plan de Manejo Ambiental (PMA) deben contener los lineamientos, requerimientos y elementos metodológicos generales que se establecen en  la Metodología general para la elaboración y presentación de estudios ambientales (2018), así como las especificaciones técnicas que se indiquen en los respectivos términos de referencia genéricos. De forma general a continuación se presenta el contenido de que deben tener los Estudio de Impacto Ambiental (EIA) (MADS, 2018):
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('Tabla 4.')
+						+set('thead')
+							tr
+								th Contenido de los Estudios de Impacto Ambiental (EIA)
+						+set('tr')
+							tr
+								td DESCRIPCIÓN DEL PROYECTO
+							tr
+								td ÁREA DE INFLUENCIA
+							tr
+								td Lineamientos para identificar y delimitar el área de influencia
+							tr
+								td Fase previa
+							tr
+								td Fase de análisis
+							tr
+								td PARTICIPACIÓN Y SOCIALIZACIÓN CON LAS COMUNIDADES
+							tr
+								td CARACTERIZACIÓN DEL ÁREA DE INFLUENCIA
+							tr
+								td MEDIO ABIÓTICO
+							tr
+								td Geológico
+							tr
+								td Paisaje
+							tr
+								td Suelos y usos de la tierra
+							tr
+								td Hidrológico
+							tr
+								td Hidrogeológico
+							tr
+								td Oceanográfico
+							tr
+								td Atmosférico
+							tr
+								td MEDIO BIÓTICO
+							tr
+								td Ecosistemas terrestres
+							tr
+								td Ecosistemas acuáticos continentales y marino-costeros
+							tr
+								td Áreas de especial interés ambiental (aeia)
+							tr
+								td MEDIO SOCIOECONÓMICO
+							tr
+								td Espacial 
+							tr
+								td Económico
+							tr
+								td Cultural
+							tr
+								td Arqueológico
+							tr
+								td Político-organizativo
+							tr
+								td Tendencias del desarrollo
+							tr
+								td Información sobre población a reasentar
+							tr
+								td SERVICIOS ECOSISTÉMICOS
+							tr
+								td Definición de la unidad de análisis
+							tr
+								td Identificación y descripción general de los servicios
+							tr
+								td Ecosistémicos
+							tr
+								td Análisis de los servicios ecosistémicos
+							tr
+								td ZONIFICACIÓN AMBIENTAL
+							tr
+								td DEMANDA, USO, APROVECHAMIENTO Y/O AFECTACIÓN DE RECURSOS NATURALES
+							tr
+								td Concesión de agua superficial
+							tr
+								td Concesión de agua subterránea
+							tr
+								td Permiso de vertimiento
+							tr
+								td Ocupación de cauces
+							tr
+								td Aprovechamiento forestal
+							tr
+								td Permiso de recolección de especímenes de especies
+							tr
+								td Silvestres de la biodiversidad
+							tr
+								td Permiso de emisión atmosférica (aire y ruido)
+							tr
+								td Emisión de contaminantes del aire - fuentes de emisión
+							tr
+								td Modelo de dispersión
+							tr
+								td Fuentes de generación de ruido 
+							tr
+								td Aprovechamiento de materiales de construcción
+							tr
+								td EVALUACIÓN AMBIENTAL 
+							tr
+								td Identificación y valoración de impactos para el escenario
+							tr
+								td Sin proyecto 
+							tr
+								td Identificación y valoración de impactos para el escenario
+							tr
+								td Con proyecto
+							tr
+								td Evaluación económica en el proceso de licenciamiento
+							tr
+								td Ambiental
+							tr
+								td Etapas para el análisis económico en la evaluación
+							tr
+								td Económica ambiental
+							tr
+								td Etapas para el análisis económico en la modificación de licencia ambiental
+							tr
+								td ZONIFICACIÓN DE MANEJO AMBIENTAL DEL PROYECTO 
+							tr
+								td PLANES Y PROGRAMAS
+							tr
+								td Plan de manejo ambiental
+							tr
+								td Programas de manejo ambiental 
+							tr
+								td Plan de seguimiento y monitoreo
+							tr
+								td Plan de gestión del riesgo
+							tr
+								td Plan de desmantelamiento y abandono
+							tr
+								td Otros planes y programas
+							tr
+								td Plan de inversión de no menos del 1%
+							tr
+								td Plan de compensaciones del medio biótico en el marco del proceso de licenciamiento ambiental
+								
+								
+								
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

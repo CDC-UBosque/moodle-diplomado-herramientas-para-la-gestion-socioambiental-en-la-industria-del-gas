@@ -1,0 +1,75 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9368', 'back', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-2')
+					
+					h1 Referencias bibliográficas
+				
+					ol
+						li Congreso de Colombia. (18 de diciembre de 1974). Artículo 28 (Título VI). Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente. Recuperado de:    
+							a(href='http://www.minambiente.gov.co/images/GestionIntegraldelRecursoHidrico/pdf/normativa/Decreto_2811_de_1974.pdf' target='_blank')    www.minambiente.gov.co/images/GestionIntegraldelRecursoHidrico/pdf/normativa/Decreto_2811_de_1974.pdf.
+
+						li Congreso de Colombia. (22 de diciembre de 1993). Artículo 50 (título VIII). Ley 99 de 1993. Recuperado de:    
+							a(href='https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=297' target='_blank')     www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=297.
+
+						li Congreso de Colombia. (15 de octubre de 2014). Decreto 2041 de 2014. Recuperado de:    
+							a(href='https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=59782' target='_blank')    https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=59782.
+
+						li Contraloría. (2017). El proceso administrativo de licenciamiento ambiental en Colombia. Recuperado de: www.contraloria.gov.co/documents/20181/465175/El+proceso+administrativo+de+licenciamiento+ambiental+en+Colombia+2017.pdf/43338651-d296-459e-89e7-717bee8d4eea?version=1.0
+
+						li Ministerio de Ambiente y Desarrollo Sostenible (MADS). (2018). Metodología general para la elaboración y presentación de estudios ambientales. Recuperado de:     
+							a(href='http://www.anla.gov.co/Noticias-ANLA/actualizada-metodologia-elaboracion-estudios-ambientales' target='_blank')     www.anla.gov.co/Noticias-ANLA/actualizada-metodologia-elaboracion-estudios-ambientales.
+
+						li Ministerio de Ambiente y Desarrollo Sostenible (MADS). (2018). Recuperado de:     
+							a(href='http://www.minambiente.gov.co/index.php/noticias/2067' target='_blank')     http://www.minambiente.gov.co/index.php/noticias/2067
+					
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

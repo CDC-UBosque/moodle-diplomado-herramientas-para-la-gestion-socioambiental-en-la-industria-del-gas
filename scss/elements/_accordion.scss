@@ -8,8 +8,6 @@
 	.content-cc{
 		
 		.accordion{
-			
-			@include max-width;
 			margin: 2rem auto 4rem;
 			
 			.accordion-group{
@@ -24,14 +22,15 @@
 					.accordion-toggle[aria-expanded="true"],
 					.accordion-toggle.collapsed[aria-expanded="true"]{
 						padding-right: 7rem;
-						background: $color_brand_blue;
+						background: $color_brand_green;
 						border: 1px solid $color_white;
 						@include font_universal (
-							$font_family_line_height: 19px,
-							$font_family_weight: 200,
-							$font_family_size: 16px,
+							$font_family_line_height: 24px,
+							$font_family_weight: 300,
+							$font_family_size: 18px,
 							$font_family_color: $color_white,
-							$font_family_group: $font_myr_semibold
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_acherus_extrabold
 						);
 						
 						&:before{
@@ -40,7 +39,7 @@
 						
 						&:after{
 							content: "";
-							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/svg/arrow-up-white.svg');
+							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/up.svg');
 							background-repeat: no-repeat;
 							background-position: center;
 							background-size: 11px;
@@ -68,14 +67,15 @@
 					.accordion-toggle[aria-expanded="false"],
 					.accordion-toggle.collapsed[aria-expanded="false"]{
 						padding-right: 7rem;
-						background: $color_brand_blue;
+						background: $color_brand_green;
 						border: 1px solid $color_white;
 						@include font_universal (
-							$font_family_line_height: 19px,
-							$font_family_weight: 200,
-							$font_family_size: 16px,
+							$font_family_line_height: 24px,
+							$font_family_weight: 300,
+							$font_family_size: 18px,
 							$font_family_color: $color_white,
-							$font_family_group: $font_myr_semibold
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_acherus_extrabold
 						);
 						
 						&:before{
@@ -84,7 +84,7 @@
 						
 						&:after{
 							content: "";
-							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/svg/arrow-down-white.svg');
+							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/down.svg');
 							background-repeat: no-repeat;
 							background-position: center;
 							background-size: 11px;
@@ -110,11 +110,11 @@
 				
 				.accordion-body{
 					width: 95%;
-					background: $color_light_background;
+					background: $color_light_green;
 					
 					.accordion-inner{
 						display: inline-block;
-						padding: 2rem;
+						padding: 0.5rem 2rem 0rem;
 					}
 					
 				}

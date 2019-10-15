@@ -1,0 +1,118 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 2', 'Estudios ambientales: tipos, elaboración, y control de calidad', 'test-mod-2')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9364', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9366', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-2')
+					
+					h1 Planes de manejo ambiental
+				
+					p Los programas de manejo ambiental constituyen una descripción detallada del conjunto de acciones, medidas y actividades que, producto de la evaluación ambiental, están orientadas a prevenir, mitigar, corregir y compensar los impactos ambientales identificados, que se causen por el desarrollo de un proyecto, obra o actividad. Éste es uno de los numerales más importantes del EIA, pues de su correcta formulación, depende en gran medida el éxito ambiental del proyecto (en caso de que se le otorgue licencia), por lo que debe elaborarse de la forma más minuciosa posible y siempre atendiendo a la responsabilidad constitucional de velar por un ambiente sano.
+
+					p Una buena identificación y valoración de impactos es fundamental para formular las medidas de manejo ambiental. A medida que se identifica y valora de forma más rigurosa el impacto, en esa misma medida es posible controlarlo, pues se conoce con mayor precisión en qué consiste y dónde y cuándo se manifiesta. Por ejemplo, no basta con establecer que el proyecto va a generar contaminación atmosférica, para formular medidas de manejo realmente efectivas, es necesario saber exactamente qué parámetro ambiental se impacta, en qué medida se modifica, en qué fase del proyecto ocurre, dónde se expresa y qué actividades o qué impactos lo generan.
+
+					p Los programas y sus subprogramas (cuando éstos se requieran) deben responder a la Jerarquía de las medidas de manejo, incorporando medidas de manejo ambiental que busquen en primera instancia, desarrollar acciones para prevenir y evitar la ocurrencia de los impactos; que como segunda opción, se encaminen a mitigarlos y minimizarlos; que en tercer lugar, se dirijan a corregir o restaurar las condiciones del ambiente que sean impactadas por el proyecto y; por último, que se enfoquen en compensar o resarcir los impactos provocados.
+
+					p En este sentido y tomando como insumo las relaciones causales actividades-impactos e impactos-impactos (p. e. las relaciones de causa efecto entre impactos directos e indirectos, o entre varios impactos que producen un impacto sinérgico), que se identificaron y describieron en la evaluación ambiental, se debe procurar que las medidas de manejo formuladas se dirijan al control de las causas, a fin de focalizar los esfuerzos y hacer más efectiva la implementación de las medidas y el control de los impactos.
+
+					p Para la formulación de los programas de manejo ambiental, se debe tener en cuenta que una misma medida puede controlar diferentes impactos y, que un impacto puede ser manejado mediante diferentes medidas. Adicionalmente, hay que considerar que las medidas de manejo no sólo se deben dirigir al lugar en el que se manifiestan los impactos, también deben enfocarse al lugar o proceso en el que se originan. Dichas medidas de manejo deben considerar que la duración del impacto no necesariamente coincide con la duración del proyecto, obra o actividad.
+
+					p El planteamiento de los programas, debe enfocarse al control integral de los impactos ambientales. Ya que puede haber impactos que se manifiestan en diferentes medios (por ejemplo, la contaminación del recurso hídrico superficial puede afectar elementos de los medios abiótico, biótico y socioeconómico) y/o componentes (por ejemplo, la alteración de las actividades económicas tradicionales de la población puede afectar los componentes económico, demográfico, cultural, entre otros), es necesario que las medidas propendan por eliminar sus causas o en su defecto, que se orienten a manejar todos los lugares del área de influencia en los que se presentan dichos impactos.
+
+					p Se deben incorporar en el programa de manejo ambiental, las medidas de manejo que se hayan acordado en el proceso de consulta previa con las comunidades étnicas presentes en el área de influencia del proyecto. Si bien las acciones y medidas establecidas en el programa de manejo ambiental se formulan con el propósito de evitar, mitigar, corregir y compensar los impactos que origina el proyecto, en ocasiones la implementación de dichas medidas produce impactos ambientales negativos; por lo tanto, durante el diseño del proyecto y la formulación de sus medidas de manejo ambiental, se deben seleccionar aquellas acciones y medidas que originen los impactos ambientales menos nocivos. En muchos casos es posible valerse de herramientas como el Análisis de Ciclo de Vida para evaluar y seleccionar, entre un grupo de posibles opciones, el mejor conjunto de medidas de manejo.
+					
+					
+					h3 Considerando lo anterior, los programas de manejo ambiental deben especificar lo siguiente:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							li: a(href='#7' data-toggle='tab') 7
+							li: a(href='#8' data-toggle='tab') 8
+							li: a(href='#9' data-toggle='tab') 9
+							li: a(href='#10' data-toggle='tab') 10
+							li: a(href='#11' data-toggle='tab') 11
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Objetivos de cada programa y subprograma.
+							div.tab-pane.fade#2
+								p Metas relacionadas con los objetivos identificados.
+							div.tab-pane.fade#3
+								p Impactos a manejar por cada programa (con base en la evaluación de impactos).
+							div.tab-pane.fade#4
+								p Tipo de medida (prevención, mitigación, corrección o compensación).
+							div.tab-pane.fade#5
+								p Fases del proyecto en las que se implementaría cada programa y subprograma.
+							div.tab-pane.fade#6
+								p Lugares de aplicación (ubicación cartográfica, siempre que sea posible).
+							div.tab-pane.fade#7
+								p Descripción de acciones específicas a desarrollar dentro de cada programa y subprograma.
+							div.tab-pane.fade#8
+								p Relación de las obras propuestas a implementar. Los diseños deben presentarse como documentos anexos al estudio.
+							div.tab-pane.fade#9
+								p Cronograma estimado de implementación de los programas.
+							div.tab-pane.fade#10
+								p Costos estimados de implementación de cada medida de manejo.
+							div.tab-pane.fade#11
+								p Indicadores que permitan hacer seguimiento al cumplimiento de las metas propuestas para cada objetivo y determinar la eficacia y efectividad de cada programa y subprograma. Además del nombre de cada indicador, se debe señalar su unidad de medida, frecuencia de cálculo, definición, pertinencia, fórmula y metodología de cálculo, forma de interpretación de sus resultados, fuentes de información de las variables que requiere y responsable de su cálculo (sección, dependencia o persona).
+								
+								
+					p La elaboración de los programas de manejo ambiental debe asegurar que sus objetivos y metas se orienten al manejo efectivo de todos los impactos identificados y, que durante su formulación, se tengan en cuenta en caso de que existan, los planes de desarrollo regional y local, así como los del ordenamiento ambiental territorial, a fin de asegurar su coherencia con los mismos. Finalmente, se debe presentar una tabla en la que se indiquen qué medidas de manejo ambiental corresponden a qué impactos identificados.			
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

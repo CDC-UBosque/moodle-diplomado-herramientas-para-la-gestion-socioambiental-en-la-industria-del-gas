@@ -5,12 +5,8 @@
 .curso-cc,
 #region-main .curso-cc{
 	
-	.banner-video{
-		display: flex;
-		align-items: flex-end;
-		//@include max-width;
+	.banner-video{	
 		margin: 2rem auto 4rem;
-		grid-gap: 1rem;
 		@include display-grid;
 		@include grid-parent-2-columns (3fr, 1fr);
 		
@@ -24,6 +20,7 @@
 		}
 		
 		.texto_imagen{
+			place-self: end;
 			@include grid-child-column (2, 3);
 			@include grid-child-row (1, 2);
 			
@@ -33,12 +30,15 @@
 			}
 			
 			.img-footer{
+				padding: 1rem;
+				border: 2px solid $color_brand_green;
 				@include font_universal (
-					$font_family_line_height: 17px,
+					$font_family_line_height: 20px,
 					$font_family_weight: 300,
-					$font_family_size: 14px,
+					$font_family_size: 15px,
 					$font_family_color: $color_brand_blue,
-					$font_family_group: $font_arial
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_lato_italic
 				);
 				
 				span{
@@ -65,10 +65,9 @@
 				display: inline-block;
 				position: relative;
 				transition: all .2s ease-in-out;
-				border: 1px solid rgba(0, 103, 198, 0.2);
 				
 				&:hover{
-					box-shadow: 0px 0px 20px rgba(0, 103, 198, 0.4);
+					opacity: .5
 				}
 				
 				&:before{

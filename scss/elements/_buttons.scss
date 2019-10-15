@@ -5,18 +5,24 @@
 .curso-cc,
 #region-main .curso-cc{
 	
-	.btn-primary{
-		background: $color_brand_grey;
-		border: 1px solid $color_brand_grey;
-		color: $color_white;
+	.blue-btn{
+		background: $color_brand_blue;
+		border: 1px solid $color_brand_blue;
 	    border-radius: 0;
-	    padding: 0.6rem 1rem 0.3rem;
+	    padding: 0.6rem 1rem 0.6rem;
 	    text-shadow: none;
-	    font-family: $font_hel_medium;
-	    font-size: 16px;
-	    line-height: initial;
 	    transition: all ease-in-out .2s;
 	    text-decoration: none;
+	    display: inline-block;
+	    margin: .3rem .5rem .3rem 0;
+	    @include font_universal (
+			$font_family_line_height: 26px,
+			$font_family_weight: 300,
+			$font_family_size: 18px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_bold
+		);
 	    
 	    .fa{
 		    width: initial;
@@ -24,12 +30,56 @@
 	    
 	    &:hover{
 		    background: $color_white;
-			border: 1px solid $color_brand_grey;
-			color: $color_brand_grey;
+			border: 1px solid $color_brand_blue;
+			color: $color_brand_blue;
 	    }
+	    
+	    &:last-child{
+		    margin-right: 0;
+	    }
+	    
 	}
 	
-	.pager{
+	.white-btn{
+		background: none;
+		border: 1px solid $color_brand_blue;
+	    border-radius: 0;
+	    padding: 0.6rem 1rem 0.6rem;
+	    text-shadow: none;
+	    transition: all ease-in-out .2s;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: .3rem .5rem .3rem 0;
+	    @include font_universal (
+			$font_family_line_height: 26px,
+			$font_family_weight: 300,
+			$font_family_size: 18px,
+			$font_family_color: $color_brand_blue,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_bold
+		);
+	    
+	    .fa{
+		    width: initial;
+		}
+	    
+	    &:hover{
+		    background: $color_brand_blue;
+			border: 1px solid $color_brand_blue;
+			color: $color_white;
+	    }
+	    
+	    &:last-child{
+		    margin-right: 0;
+	    }
+	    
+	}
+	
+	a.disabled{
+		display: none !important;
+	}
+	
+	/*.pager{
 		
 		li{
 			
@@ -40,13 +90,6 @@
 			    padding: 0.5rem 1rem;
 			    text-decoration: none;
 			    margin-right: 1rem;
-			    @include font_universal (
-					$font_family_line_height: 20px,
-					$font_family_weight: 300,
-					$font_family_size: 16px,
-					$font_family_color: $color_brand_blue,
-					$font_family_group: $font_arial
-				);
 			    
 			    .fa{
 				    width: initial;
@@ -73,14 +116,7 @@
 		    padding: 0.5rem 1rem;
 		    text-decoration: none;
 		    margin-right: 0rem;
-		        display: block;
-		    @include font_universal (
-				$font_family_line_height: 20px,
-				$font_family_weight: 300,
-				$font_family_size: 16px,
-				$font_family_color: $color_brand_blue,
-				$font_family_group: $font_arial
-			);
+		    display: block;
 		    
 		    .fa{
 			    width: initial;
@@ -105,6 +141,6 @@
 			}
 		}
 		
-	}
+	}*/
 	
 }
