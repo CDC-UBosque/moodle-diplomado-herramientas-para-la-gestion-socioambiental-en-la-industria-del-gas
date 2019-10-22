@@ -1,0 +1,85 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Áreas especiales de manejo y sustracción de áreas', 'test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9439', 'back', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-3')
+				
+					h1 Bibliografía
+									
+					ol
+						li Ministerio de Ambiente y Desarrollo Sostenible. (s.f.). Evaluación de Viabilidad de sustracción en áreas de reserva forestal de orden nacional . Obtenido de     
+							a(href='http://www.minambiente.gov.co/index.php/tramites-minambiente/evaluacion-de-sustraccion-en-areas-de-reserva-forestal' target='_blank')    http://www.minambiente.gov.co/index.php/tramites-minambiente/evaluacion-de-sustraccion-en-areas-de-reserva-forestal
+						li Ocampo, D. (s.f.). Cartilla de areas protegidas. Putumayo.
+						li Parques Nacionales Naturales de Colombia . (2005). Gestión Descentralizada de Áreas Protegidas en Colombia. 
+						li Parques Nacionales Naturales de Colombia . (2009). Guía para la elaboración de planes de manejo de Reservas Naturales de la Sociedad Civil. Colombia .
+						li Parques Nacionales Naturales de Colombia . (2015). Areas protegidas: territorios para la vida y la paz. Bogotá.
+						li Parques Nacionales Naturales de Colombia . (s.f.). Categoria de áreas protegidas . Obtenido de     
+							a(href='http://www.parquesnacionales.gov.co/portal/es/sistema-de-parques-nacionales-naturales/categorias-de-areas-protegidas/' target='_blank')    http://www.parquesnacionales.gov.co/portal/es/sistema-de-parques-nacionales-naturales/categorias-de-areas-protegidas/
+						li Parques Nacionales Naturales de Colombia. (s.f.). Registro Único Nacional de Áreas Protegias – RUNAP. Obtenido de     
+							a(href='http://www.parquesnacionales.gov.co/portal/es/sistema-nacional-de-areas-protegidas-sinap/registro-unico-nacional-de-areas-protegias/' target='_blank')    http://www.parquesnacionales.gov.co/portal/es/sistema-nacional-de-areas-protegidas-sinap/registro-unico-nacional-de-areas-protegias/
+							
+					h1 Lecturas sugeridas
+					
+					p Reservas Forestales Protectoras se podrá llevar acabo la sustracción de área para actividades de utilidad pública o interés general
+					
+					p Caso de estudios: 
+					
+					ol
+						li: a(href='http://www.parquesnacionales.gov.co/portal/wp-content/uploads/2013/12/RESERVAS-FORESTALES-PROTECTORAS.pdf')    http://www.parquesnacionales.gov.co/portal/wp-content/uploads/2013/12/RESERVAS-FORESTALES-PROTECTORAS.pdf
+					
+						li: a(href='http://www.minambiente.gov.co/images/normativa/app/autos/57-AUTO%20230.pdf')    http://www.minambiente.gov.co/images/normativa/app/autos/57-AUTO%20230.pdf
+					
+						li: a(href='http://www.minambiente.gov.co/index.php/bosques-biodiversidad-y-servicios-ecosistematicos/reservas-forestales')    http://www.minambiente.gov.co/index.php/bosques-biodiversidad-y-servicios-ecosistematicos/reservas-forestales
+
+
+
+
+					
+					//- Foot notes
+					//- +footnotes('footnotes-mod-3')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-3')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

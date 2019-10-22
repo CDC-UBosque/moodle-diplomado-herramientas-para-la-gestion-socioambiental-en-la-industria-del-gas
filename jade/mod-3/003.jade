@@ -1,0 +1,111 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Áreas especiales de manejo y sustracción de áreas', 'test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9432', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9434', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-3')
+				
+					h1 Categorías de manejo que la conforma
+									
+					p Las categorías de manejo son aquellas denominaciones que se les da a las áreas protegidas con base en las características propias de cada una. Esto con la finalidad de lograr los objetivos de conservación bajo directrices de manejo, restricciones y usos permitidos. 
+
+					p Según el Decreto 2811 de 1974 Artículo 308 y el Decreto 2372 de 2010 Artículo 10, se encuentran las siguientes categorías de áreas protegidas y sus definiciones, las cuales son delimitadas para administración, manejo y protección del ambiente y recursos naturales renovables. 
+					
+					h3 Áreas protegidas públicas
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Las del Sistema de Parques Nacionales Naturales: Se integra por Parques Nacionales, Reserva Natural, Área Natural Única; Santuario de Flora; Santuario de Fauna; Vía Parque y su reserva, delimitación, alinderación y declaración es coordinada por el Ministerio de Ambiente y Desarrollo Sostenible Vivienda y Desarrollo Sostenible (MADS).
+							div.tab-pane.fade#2
+								p Las Reservas Forestales Protectoras: Espacio geográfico donde se mantiene la función de los ecosistemas de bosque, estos son destinados a la preservación, uso sostenible, restauración y conocimiento. 
+							div.tab-pane.fade#3
+								p Los Parques Naturales Regionales: Espacio geográfico en el que se mantienen la estructura, composición y función paisajes y ecosistemas estratégicos. La reserva, delimitación, alinderación, declaración y administración de estos es coordinada por las Corporaciones Autónomas Regionales (CAR).
+							div.tab-pane.fade#4
+								p Los Distritos de Manejo Integrado: Espacio geográfico que alberga paisajes y ecosistemas estratégicos. A nivel regional son coordinados por las Corporaciones Autónomas Regionales (CAR) y a nivel nacional el Ministerio de Ambiente y Desarrollo Sostenible Vivienda y Desarrollo Sostenible (MADS).
+							div.tab-pane.fade#5
+								p Los Distritos de Conservación de Suelos: Espacio geográfico que mantiene estructura y composición de ecosistemas estratégicos. La reserva, delimitación, alinderación, declaración, administración y sustracción de estos corresponde a las Corporaciones Autónomas Regionales (CAR).
+							div.tab-pane.fade#6
+								p Las Áreas de Recreación: Espacio geográfico en los que los paisajes y ecosistemas estratégicos en la escala regional, se encuentran al alcance de la población humana para destinarlos a su restauración, uso sostenible, conocimiento y disfrute. 
+					
+					
+					
+					h3 Áreas protegidas privadas
+					
+					p Las reservas naturales de la sociedad civil: Área de un inmueble que por voluntad del propietario destine la zona a uso sostenible, preservación o restauración con vocación de largo plazo.
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-3/001.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-3/001.jpg', 'Figura 1')
+						span Figura 1 Áreas protegidas en Colombia. Fuente: Registro Único Nacional de Áreas Protegidas – RUNAP – Subdirección de Gestión y Manejo de Áreas Protegidas (Parques Nacionales Naturales de Colombia, s.f.).
+						
+					p La disposición de las categorías de manejo se puede ver en la Ilustración 1.
+					
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-3/002.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-3/002.jpg', 'Figura 2')
+						span Ilustración 1 Mapa SINAP. Fuente: (Parques Nacionales Naturales de Colombia, s.f.).
+
+
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-3')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-3')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

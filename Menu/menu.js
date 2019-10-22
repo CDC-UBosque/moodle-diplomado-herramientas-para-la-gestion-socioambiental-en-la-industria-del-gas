@@ -9,6 +9,10 @@ $('#banner').html('<div class="banner-home"><div class="texto"><div>DIPLOMADO</d
 $('#footnotes-mod-1').html('<ol><li>Decreto N° 2278. Presidencia de la República. Por el cual se dictan medidas sobre cuestiones forestales. Colombia. 1 de septiembre de 1953. </li><li>Ley N°2. Congreso de Colombia. Por el cual se dictan normas sobre economía forestal de la Nación y conservación de recursos naturales renovables. 16 de diciembre de 1959.</li><li>Amaya Navas. La Constitución Ecológica de Colombia. 2ª ed. Bogotá: Universidad Externado de Colombia; 2010.</li><li>Sentencia T-806-14</li><li>Uribe Botero E. The evolution of colombian environmental institutions: 1971-2004. Documento CEDE. Bogotá: Universidad de Los Andes; 2005</li><li>Sentencia T-462A-14</li><li>Decreto 2041. Presidencia de la República. Por el cual se reglamenta el Título VIII de la Ley 99 de 1993 sobre licencias ambientales. 15 de octubre de 2014.</li><li>Sentencia C-328/95</li><li>Sentencia C-035/16</li><li>Sentencia C-894-03</li><li>Ibídem</li><li>Sentencia T-652-13</li><li>Sentencia C-894-03</li></ol>');
 
 
+// Mod 3
+$('#footnotes-mod-3').html('<ol><li>La viabilidad de la sustracción sobre las áreas protegidas, será diferente de acuerdo con el tipo de intervención proyectada en la zonificación al interior de las áreas, es decir, para proyectos de interés nacional es más deseable evitar las zonas de preservación y de restauración.</li></ol>');
+
+
 
 
 
@@ -53,3 +57,19 @@ $('#progreso100').html('<div class="progress progress-striped active"><div class
 $('#material-mod-1').html('<div class="wow fadeInUp material-modulo"> <h1>Material</h2> <div class="materiales"> <div class="elementos"><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-1/pdf01.jpg"> <p class="italic">Lectura 1 Informe sobre el Estado de los Recursos Naturales y del Ambiente 2018</p><a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9357" class="blue-btn">Ver más &rsaquo; </a></div><div class="elementos"><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-1/pdf02.jpg"> <p class="italic">Lectura 2 C-746/12</p><a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9358" class="blue-btn">Ver más &rsaquo; </a></div><div class="elementos"><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-1/pdf03.jpg"> <p class="italic">Lectura 3 C-894/03</p><a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9359" class="blue-btn">Ver más &rsaquo; </a></div><div class="elementos"><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-1/pdf04.jpg"> <p class="italic">Presentación PPT Módulo 1 Ámbito jurídico</p><a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9360" class="blue-btn">Ver más &rsaquo; </a></div></div></div>');
 
 $('#material-mod-2').html('<div class="wow fadeInUp material-modulo"> <h1>Material</h2> <div class="materiales"> <div class="elementos"><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-2/pdf01.jpg"> <p class="italic">Presentación PPT Módulo 2 Estudios ambientales: tipos, elaboración, y control de calidad</p><a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323912&chapterid=9370" class="blue-btn">Ver más &rsaquo; </a></div></div></div>');
+
+$('#material-mod-3').html('<div class="wow fadeInUp material-modulo"> <h1>Material</h2> <div class="materiales"> <div class="elementos"><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-3/pdf01.jpg"> <p class="italic">Presentación PPT Módulo 3 Áreas especiales de manejo y sustracción de áreas</p><a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9441" class="blue-btn">Ver más &rsaquo; </a></div></div></div>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+

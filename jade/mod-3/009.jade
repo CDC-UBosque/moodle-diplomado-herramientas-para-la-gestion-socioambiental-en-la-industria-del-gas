@@ -1,0 +1,97 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Áreas especiales de manejo y sustracción de áreas', 'test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9438', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9440', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-3')
+				
+					h1 Medidas de compensación, restauración y recuperación
+									
+					p La compensación, restauración y recuperación son aquellas medidas que deben implementadas por parte de las obras, actividades o proyectos que realicen la sustracción temporal o definitiva de un área de protección, con el fin de mitigar los impactos negativos que conlleva el desarrollo de estos. 
+					
+					h3 Medidas de compensación:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p En sustracciones temporales: las acciones encaminadas a la recuperación del área sustraída temporalmente
+							div.tab-pane.fade#2
+								p En sustracciones definitivas: adquisición de un área equivalente en extensión al área sustraída, en la cual se deberá desarrollar un plan de restauración debidamente aprobado por la autoridad ambiental competente.
+								
+								
+								
+								
+								
+								
+								
+								
+					
+
+					h3 Medidas de restauración:
+					
+					p Implementación de procesos que contribuyan al restablecimiento de un ecosistema que se ha degradado, dañado o destruido con base en un sistema de referencia. Mediante una actividad deliberada que inicia o acelera la recuperación de un ecosistema con respecto a su salud, integridad y sostenibilidad y busca iniciar o facilitar la reanudación de estos procesos, los cuales retornarán el ecosistema a la trayectoria deseada
+					
+					h3 Medidas de recuperación:
+					
+					p Implementar acciones dirigidas a retornar la utilidad de un ecosistema sin tener como referencia un estado pre disturbio. En esta, se reemplaza un ecosistema degradado, pero estas acciones no llevan al ecosistema original.
+
+					p Las medidas de compensación, restauración y recuperación de áreas protegidas son ajenas a las medidas de prevención, mitigación, corrección, compensación y manejo de impactos que se puedan ocasionar durante la ejecución del proyecto objeto de licenciamiento ambiental o del instrumento administrativo respectivo.
+
+
+
+					
+					//- Foot notes
+					//- +footnotes('footnotes-mod-3')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-3')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

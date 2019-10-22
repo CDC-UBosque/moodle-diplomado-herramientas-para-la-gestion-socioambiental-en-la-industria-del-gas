@@ -1,0 +1,103 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Áreas especiales de manejo y sustracción de áreas', 'test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9437', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9439', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-3')
+				
+					h1 Procedimiento para sustracción de áreas
+									
+					p Con base en el Artículo 9 de la Resolución 1526 de 2012, el procedimiento a llevar a cabo para evaluar solicitudes de sustracción de áreas en las reservas forestales será:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Verificado el cumplimiento de los requisitos de que trata el Artículo 6° de la resolución, la autoridad ambiental competente procederá dentro de los cinco (5) días hábiles siguientes a expedir un auto de inicio de trámite en los términos del Artículo 70 de la Ley 99 de 1993. 
+							div.tab-pane.fade#2
+								p Ejecutoriado el auto de inicio de trámite, dentro de los veinte (20) días hábiles siguientes, la autoridad ambiental podrá solicitar al interesado la información adicional que se considere pertinente, mediante acto administrativo motivado. La solicitud de información adicional suspenderá los términos que tiene la autoridad ambiental competente para decidir.
+							div.tab-pane.fade#3
+								p Vencido el término establecido en el numeral anterior, dentro de los quince (15) días hábiles siguientes, la autoridad ambiental procederá a solicitar a otras autoridades o entidades los estudios que se requieran por ley, conceptos técnicos o informaciones pertinentes, que deben ser remitidos en un plazo no superior a veinte (20) días hábiles, contados desde la fecha de radicación de la comunicación correspondiente.
+							div.tab-pane.fade#4
+								p Allegada la información adicional, o vencido el término previsto en el numeral 3 del presente artículo, la autoridad ambiental competente contará hasta con sesenta (60) días hábiles para expedir el acto administrativo motivado, mediante el cual se pronuncia sobre la viabilidad de la sustracción de la reserva forestal, el cual será publicado en el Diario Oficial.
+								
+								
+								
+								
+								
+								
+								
+								
+					
+
+					h3 En las categorías de áreas protegidas la sustracción se contempla de la siguiente manera:
+
+					
+					
+					ul
+						li Áreas del Sistema Nacional de Parques: Sustracción prohibida.
+						li Parques Naturales Regionales: Sustracción prohibida.
+						li Reservas Forestales Protectoras: No habrá sustracción por actividad minera, pero si para actividades de utilidad pública o interés general donde se realice remoción de bosques o cambio de uso de suelo.
+						li Distritos de Manejo Integrados: Se puede realizar sustracción de áreas por razones de utilidad pública o interés social para la ejecución de obras, actividades o proyectos, sin embargo, esta debe estar reglamentada.
+						li Áreas de Recreación: Se puede realizar sustracción en cuanto este reglamentada por la corporación autónoma competente.
+						li Distritos de Conservación de Suelos: Se puede realizar sustracción en cuanto este reglamentada por la corporación autónoma competente.
+
+
+
+					
+					//- Foot notes
+					//- +footnotes('footnotes-mod-3')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-3')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

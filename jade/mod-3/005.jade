@@ -1,0 +1,88 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Áreas especiales de manejo y sustracción de áreas', 'test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9434', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9436', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-3')
+				
+					h1 Planes de manejo de las áreas protegidas
+									
+					p Los planes de manejo de áreas protegidas son una herramienta de planificación que establece las acciones a llevar a cabo para el cumplimiento de los objetivos de conservación, mediante la evaluación interna y externa de los factores de un área determinada. (Parques Nacionales Naturales de Colombia, 2005).
+
+					p Con base en el Artículo 47 del Decreto 2372 de 2010, las áreas protegidas del SINAP deberán contar con un plan de manejo por el cual se llevará a cabo la planificación de la gestión enfocada a la conservación de estas. 
+
+					p Dichos planes deben abarcar un periodo de 5 años con el fin de presentar resultados de los objetivos de conservación y contribuir al desarrollo del SINAP. Así mismo, estos deberán ser presentados dentro del año siguiente al registro del área.
+
+					h3 La estructura de los planes de manejo, deben contener lo siguiente: 
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Componente diagnóstico: En este se incluye la información relacionada al estado del área, por ejemplo, ecosistemas, especies, agua, suelos, presiones y amenazas tanto naturales como producidas por el hombre que afectan o pueden afectar a futuro el área protegida. Este componente debe resaltar la importancia del área en materia de aspectos biológicos, físicos y culturales y los servicios ambientales brindados por esta, como: protección del agua, recreación y educación ambiental, protección del suelo, regulación del clima, entre otros. De la misma manera, debe comprender el diagnóstico social mencionando los actores involucrados como: comunidades locales, entidades territoriales, instituciones y demás organizaciones relacionadas. 
+							div.tab-pane.fade#2
+								p Componente de ordenamiento: Incluye la información referente al manejo del área, zonificación de manejo y la reglamentación de uso de los recursos naturales dentro del área. Con base en el Decreto 622 de 1977 la zonificación del área se subdivide de la siguiente manera: Primitiva, Intangible, Recuperación Natural, Recreación General Exterior, Alta Densidad de Uso, e Histórico Cultural.
+								
+								
+					p La articulación de la zonificación y el diagnóstico es la base que dirige las intervenciones sobre el área, con el fin de dar cumplimiento a los objetivos de conservación.
+
+					p Además del Plan de manejo, cada área protegida debe contar con un Plan Estratégico el cual formula las estrategias, los procedimientos y las acciones que busca dar cumplimiento de los objetivos de conservación específicos para cada área y a establecer las metas puntuales de acuerdo con la zonificación del área y, los usos restringidos y permitidos.
+					
+					
+
+
+					
+					//- Foot notes
+					//- +footnotes('footnotes-mod-3')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-3')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

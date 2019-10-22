@@ -1,0 +1,160 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 3', 'Áreas especiales de manejo y sustracción de áreas', 'test-mod-3')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9436', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=325082&chapterid=9438', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-3')
+				
+					h1 Requisitos de la solicitud
+									
+					p La Resolución 1526 de 2012, Artículo 6, establece los requisitos para la solicitud de sustracción temporal y definitiva de áreas de reserva forestal. Las actividades o proyectos interesados en realizar la sustracción ya sea temporal o definitiva, deberán radicar la siguiente información ante la autoridad ambiental competente:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Certificado de existencia y representación legal para el caso de persona jurídica o copia del documento de identificación, si se trata de persona natural. 
+							div.tab-pane.fade#2
+								p Poder otorgado en debida forma, cuando se actúe mediante apoderado. 
+							div.tab-pane.fade#3
+								p Certificación(es) expedida(s) por el Ministerio del Interior y de Justicia o de la entidad que haga sus veces sobre la presencia o no de comunidades negras y/o indígenas. 
+							div.tab-pane.fade#4
+								p Certificación(es) expedida(s) por el INCODER o de la entidad que haga sus veces, sobre la existencia de territorios indígenas o tierras de las comunidades negras legalmente constituidos.
+							div.tab-pane.fade#5
+								p Información que sustente la solicitud de sustracción para realizar actividades de utilidad pública o interés social, de acuerdo con lo establecido en los Artículos 7 y 8 de la Resolución 1526 de 2012. 
+					
+
+					p Adicionalmente, para actividades mineras y petroleras, con los requisitos anteriores, se debe adjuntar copia del contrato o título minero inscrito en el registro minero nacional. 
+
+					p Por otra parte, cuando se trata de actividades que requieran licencia, anticipadamente se solicitará la sustracción del área forestal con sus debidos tramites, sin embargo, este trámite puede realizarse paralelamente a la solicitud de licencia ambiental, no obstante, la licencia ambiental no podrá ser otorgada sin haberse efectuado previamente la sustracción del área de reserva forestal. 
+
+					p En caso de que la licencia ambiental no sea otorgada al proyecto o actividad solicitante, el área sustraída deberá recobrar su condición de reserva forestal, y las actividades o proyectos que estén bajo la competencia de las corporaciones autónomas regionales, estas entidades serán las encargadas de informar al Ministerio de Ambiente, Vivienda y Desarrollo Territorial (hoy MADS) sobre la decisión adoptada
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('Tabla 2 Actividades que necesitan trámite de sustracción.')
+						+set('thead')
+							tr
+								th Actividades que necesitan trámite 
+								th Actividades que no necesitan trámite 
+						+set('tr')
+							tr
+								td Actividades de exploración sísmica que requiera o no requiera la construcción de accesos o infraestructura asociada.
+								td Las necesarias para adelantar la administración, por parte de la autoridad ambiental competente.
+							tr
+								td Proyectos de perforación exploratoria de hidrocarburos.
+								td Establecimiento de unidades temporales e itinerantes, actividades de campaña militar para garantizar seguridad nacional, que no sean superiores a una (1) hectárea y no sea infraestructura permanente.
+							tr
+								td Estudios, trabajos y obras de exploración minera necesarios para establecer y determinara la geometría.
+								td Montaje de infraestructura temporal para actividades de campo que sean parte de proyectos de investigación científica en diversidad biológica, debidamente autorizados.
+							tr
+								td Accesos y bocas de túneles o galerías de exploración para proyectos hidroeléctricos y su infraestructura asociada.
+								td Programas o proyectos de restauración ecológica, recuperación o rehabilitación de ecosistemas, en cumplimiento de deber legal emanado de un permiso, concesión, autorización o licencia ambiental y otro instrumento administrativo de control ambiental.
+							tr
+								td Explotación de material de construcción, amparada en autorizaciones temporales otorgadas por la autoridad minera.
+								td La construcción de instalaciones públicas rurales destinadas a brindar servicios de educación básica y puestos de salud a los pobladores rurales.
+							tr
+								td Trabajos y obras de evaluación para determinar el potencial geotérmico, realizado mediante sondeos con taladro.
+								td La construcción de infraestructura para acueductos junto con las obras de captación, tratamiento y almacenamiento no superen una superficie de una (1) hectárea. El trazado de la infraestructura de conducción no podrá tener un ancho superior a dos (2) metros.
+							tr
+								td Trabajos y obras de exploración minera, tempranas o iniciales que se realicen por métodos de subsuelo necesarias para establecer y determinar la existencia y ubicación del mineral o minerales contratados.
+								td 
+							tr
+								td.small(colspan='2') Fuente: Evaluación de Viabilidad de Sustracción en Áreas de Reserva Forestal de Orden Nacional. Ministerio de Ambiente 
+								
+								
+					p La información técnica que debe ser suministrada por parte proyecto o actividad que realice la sustracción de forma definitiva o temporal será:
+					
+					h3 Términos de referencia
+					
+					ul
+						li Importancia de la actividad considerada de utilidad pública e interés social.
+						li Aspectos técnicos de la actividad.
+						li Área solicitada a sustraer (ASS).
+						li Área de influencia (AI).
+						li Línea base.
+						li Análisis ambiental.
+						li Propuesta de zonificación ambiental 
+						li Restauración ecológica por sustracción.
+						li Definiciones.
+						li Anexos.
+						
+					h3 Base cartográfica
+					
+					ul
+						li Localización general de la actividad considerada de utilidad pública e interés social.
+						li Área solicitada a sustraer.
+						li Área de influencia.
+						li Geología.
+						li Hidrogeología.
+						li Hidrología.
+						li Suelos.
+						li Clima.
+						li Biodiversidad.
+						li Socioeconómico.
+						li Amenazas y susceptibilidad ambiental.
+						
+						
+					p La sustracción definitiva deberá incluir en su base cartográfica las zonas de conectividad ecológica con el fin de identificar la distribución cualitativa de las especies de fauna vs las coberturas presentes.
+
+
+					
+					//- Foot notes
+					//- +footnotes('footnotes-mod-3')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-3')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
