@@ -1,0 +1,70 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9521', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9523', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h1 5. Herramientas hacia la construcción de una ruta de relacionamiento
+									
+					p Un relacionamiento adecuado entre las partes (empresa-sociedad civil- Estado) debe estar soportado en relaciones de confianza y de legitimidad. En tal sentido, es necesario que desde la planificación se prevean estrategias que permitan la construcción y consolidación de esta relación. Las organizaciones a través de sus políticas de gestión social con sus partes interesadas y actores involucrados, además de definir estrategias que permitan posiciones favorables en torno al desarrollo de sus actividades en un territorio, deben consolidar prácticas de la responsabilidad social que conlleven al desarrollo sostenible y al aporte del bienestar social.
+
+					p En tal sentido, de acuerdo con las temáticas abordadas anteriormente se identifican aspectos que soportan la relación de confianza y que por medio de las estrategias que orienten las organizaciones pueden ser consideradas para la construcción de la ruta de relacionamiento:
+
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/009.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/009.jpg', 'Figura 1')
+						span Fuente. Elaboración propia, 2019, con base en IFC (2033); OCDE (2013)
+
+					
+
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

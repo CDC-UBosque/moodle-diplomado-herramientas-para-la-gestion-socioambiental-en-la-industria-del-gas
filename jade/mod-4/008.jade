@@ -1,0 +1,130 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9501', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9503', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Manejo de Residuos Sólidos
+					
+					p De acuerdo con la política de manejo integral de residuos sólidos el fundamento normativo está asociado a la constitución política, la Ley 99 del 93 y Ley 142 de 1994. En este sentido se pueden identificar dos componentes de acuerdo a los destinatarios de la política: 
+					
+					ul
+						li Saneamiento ambiental --> obligación a cargo del Estado
+						li Sector privado --> asociado a la generación de residuos, esto buscando la producción más limpia
+						
+					p Principios de la GIRS:
+					
+					ol
+						li Reducción en el origen: asociado a ser el más eficaz debido a que es la forma más rápida de disminuir la cantidad y toxicidad de los residuos sólidos.
+						li Aprovechamiento y valorización: contempla la recogida y separación de los materiales en el origen
+						li Tratamiento y transformación: involucra la alteración, física, química y biológica 
+						li Disposición ambiental controlada: aquella que queda después de la separación de residuos sólidos
+						
+					p A continuación, se relaciona un diagrama de la gestión diferencial de residuos sólidos y basuras.
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-4/003.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-4/003.jpg', 'Figura 1')
+						span Fuente: <a href="http://www.minambiente.gov.co/images/AsuntosambientalesySectorialyUrbana/pdf/Polit%C3%ACcas_de_la_Direcci%C3%B3n/Pol%C3%ADtica_para_la_gesti%C3%B3n_integral_de__1.pdf" target="_blank">http://www.minambiente.gov.co/images/AsuntosambientalesySectorialyUrbana/pdf/Polit%C3%ACcas_de_la_Direcci%C3%B3n/Pol%C3%ADtica_para_la_gesti%C3%B3n_integral_de__1.pdf</a>
+						
+						
+					p Dentro de las estrategias para lograr una GIRS se encuentra:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							li: a(href='#7' data-toggle='tab') 7
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Desarrollo de programa de minimización en el origen y PML.
+							div.tab-pane.fade#2
+								p Modificación de los patrones de consumo y producción insostenibles.
+							div.tab-pane.fade#3
+								p Nuevos canales de comercialización y promoción de los existentes.
+							div.tab-pane.fade#4
+								p Mejorar condiciones del trabajo del recuperador.
+							div.tab-pane.fade#5
+								p Formulación de programas para la disposición final controlada.
+							div.tab-pane.fade#6
+								p Realización de inventarios de generación y localización de residuos peligrosos.
+							div.tab-pane.fade#7
+								p Definir sistemas de gestión de los RESPEL por corredores industriales.
+							
+					
+					p Dentro de las estrategias detallaremos las relacionadas con los planes de gestión posconsumo, entendiéndose como aquella que busca promover la gestión ambientalmente adecuada de los residuos vinculándolos a sistemas de gestión diferencial y evitar que la disposición final se realice de manera conjunta con los residuos de origen doméstico se fundamenta en la implementación del concepto de responsabilidad extendida del productor, en el cual los fabricantes e importadores de productos son responsables de establecer canales de devolución de residuos posconsumo, a través de los cuales los consumidores puedan devolver dichos productos cuando estos se convierten en residuos<sup>18</sup>.
+
+					p Un sistema de recolección selectiva y gestión ambiental, planes de gestión de devolución de productos posconsumo y programa de uso racional son instrumentos de gestión y control ambiental, al que los importadores, fabricantes y comercializadores deben acogerse como parte del cumplimiento de su responsabilidad ambiental empresarial frente a los consumidores y ante la sociedad en general.
+
+					p Actualmente esto se implementa en residuos como bombillas, pilas, baterías, bolsas plásticas, medicamentos, llantas usadas, computadores y periféricos  
+
+					p En 2019 el Gobierno de Colombia lanzo la Estrategia Nacional de Economía Circular, la cual incentiva a productores, proveedores, consumidores y demás actores de los sistemas productivos y de consumo para que desarrollen e implementen nuevos modelos de negocio que incorporen la gestión de los residuos, el manejo eficiente de los materiales y el cambio en los estilos de vida de los ciudadanos. Dentro de las metas establecidas el componente de Posconsumo se encuentra fuertemente relacionado buscando incrementar las toneladas de residuos especiales sometidos a gestión posconsumo.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

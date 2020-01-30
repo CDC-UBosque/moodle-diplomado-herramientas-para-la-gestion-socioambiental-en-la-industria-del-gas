@@ -1,0 +1,227 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9520', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9522', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h1 4. Mecanismos de participación en el licenciamiento ambiental
+									
+					p Los mecanismos de participación se constituyen en los instrumentos jurídicos a través de los cuales el Estado Colombiano garantiza el derecho a la participación de la ciudadanía de intervenir en las decisiones que los afectan, en la vida económica, política, administrativa y cultural de la Nación, tal como lo establece la Constitución Política de Colombia en su Artículo 2. En relación con las decisiones en materia ambiental, la Constitución consagra el derecho al goce de un ambiente sano y ordena que la Ley debe garantizar la participación en las decisiones que puedan afectarlo (Art 79).
+
+					p Como señala el principio 10 de la Declaración de Río, la participación de los ciudadanos es el mejor modo de tratar las cuestiones ambientales. Esto supone el acceso oportuno a la información y a la participación en los procesos de adopción de las decisiones, por lo cual el Estado debe facilitar la participación. De acuerdo con Espinoza (2007), la decisión informada y con procesos participativos garantiza la sostenibilidad del proceso de desarrollo.
+
+					p En tal sentido, en relación con las decisiones administrativas del Licenciamiento Ambiental, la participación ciudadana se debe surtir con los mecanismos establecidos desde la Evaluación del Impacto ambiental, durante el proceso de elaboración de los estudios ambientales, según lo dispuesto en el Decreto 1076 de 2015, y través de los mecanismos de participación que sean activados por la ciudadanía dispuestos en la Ley, tales como los mecanismos administrativos de participación ambiental (ANLA, 2018b). 
+
+
+					h4 Participación ciudadana en la elaboración de estudios ambientales:
+					
+					p De conformidad con el Decreto 1076 de 2015 en el Artículo 2.2.2.3.3.3 Participación de las comunidades se establece que “Se deberá informar a las comunidades el alcance del proyecto, con énfasis en los impactos y las medidas de manejo propuestas y valorar e incorporar en el estudio de impacto ambiental, cuando se consideren pertinentes, los aportes recibidos durante este proceso”. 
+
+					p En cumplimiento de lo anterior, en los diferentes instrumentos que operativizan la Evaluación del Impacto Ambiental, adoptados por el MADS, se desarrollan los lineamientos de participación que los interesados en la solicitud de una Licencia de Ambiental de un proyecto, obra y actividad deben seguir para incluir los actores sociales identificados en el área de influencia<sup>2</sup> o área de estudio<sup>3</sup>, en lo relacionado con: el acceso oportuno a la información; y la participación efectiva para la caracterización, la identificación de impactos y medidas de manejo. En el desarrollo de este proceso se deben tener en cuenta los siguientes aspectos:
+					
+					ol
+						li Inclusión de los actores (sociales, económicos, institucionales) presentes en el área de es influencia que puedan verse afectados por la intervención del proyecto obra, o actividad. 
+						li Cumplimiento de los propósitos de la participación.
+						li Aspectos metodológicos del proceso participativo.
+						li Evidencias del proceso participativo.
+
+					h4 Mecanismos administrativos de participación ambiental
+					
+					p En materia ambiental, la Ley otorga a la ciudadanía diferentes mecanismos para participar en las decisiones administrativas que puedan afectar el derecho al goce de un ambiente sano, los cuales deben ser garantizados por la autoridad competente (legislativa, administrativa, judicial u organismo de control). En relación con la participación administrativa ambiental se encuentran los siguientes mecanismos:
+					
+					
+					//- ---------------- 
+					//- ---------------- Accordion
+					//- ---------------- 
+					+accordion('accordion1')
+						+accordion-item('#accordion1', '#box1', 'box1', 'Audiencia pública ambiental')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Es un mecanismo mediante el cual la comunidad en general, las organizaciones sociales, entidades públicas y privadas y demás interesados, pueden presentar los diferentes argumentos, opiniones e inquietudes de carácter ambiental, social, técnico y jurídico relacionados con los impactos y medidas de manejo de un proyecto, obra o actividad que requiera o cuente con licencia ambiental, plan de manejo ambiental o permisos ambientales para el uso y aprovechamiento de recursos naturales.
+										td Ley 99 de 1993, Decreto 1076 de 2015,  Decreto 330 del 8 de febrero de 2007.
+									tr
+										td(colspan="2").small Fuente: ANLA, 2018b
+
+						+accordion-item('#accordion1', '#box2', 'box2', 'Derecho a intervenir en las actuaciones administrativas ambientales')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Cualquier persona natural o jurídica tiene la posibilidad de intervenir en las actuaciones administrativas iniciadas para la expedición, modificación o cancelación de permisos o licencias de actividades que afecten o puedan afectar el medio ambiente o para la imposición o revocación de sanciones por el incumplimiento de las normas y regulaciones ambientales (Artículo 69, Ley 99 de 1993)
+										td Ley 99 de 1993, Decreto 1076 de 2015.
+									tr
+										td(colspan="2").small Fuente: ANLA, 2018b
+										
+						+accordion-item('#accordion1', '#box3', 'box3', 'Derecho de petición')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Toda persona natural o jurídica, tiene derecho a formular directamente petición de información en relación con los elementos susceptibles de producir contaminación y los peligros que el uso de dichos elementos pueda ocasionar a la salud humana de conformidad con el artículo 16 de la Ley 23 de 1973. Además, toda persona podrá invocar su derecho a ser informada sobre el monto y la utilización de los recursos financieros, que están destinados a la preservación del medio ambiente.
+										td Decreto 019 de 2012; Ley 1755 de 2015.
+									tr
+										td(colspan="2").small Fuente: ANLA, 2018b
+										
+										
+						+accordion-item('#accordion1', '#box4', 'box4', 'Consulta previa')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Es el derecho fundamental de estos pueblos a participar en las decisiones sobre los proyectos de desarrollo que pretendan realizarse en sus territorios, buscando de esta manera proteger su integridad cultural, social y económica.
+										td Decreto 1066 de 2015 Directiva Presidencial 010 de 2013.
+									tr
+										td(colspan="2").small Fuente: ANLA, 2018b
+
+
+
+
+					h4 Otros mecanismos
+					
+					p Junto con los mecanismos administrativos de participación ambiental, se encuentran otros mecanismos que pueden ser utilizadas por los ciudadanos para la defensa de los derechos colectivos y el control social, como son las acciones populares y las veedurías ciudadanas.
+
+
+
+					//- ---------------- 
+					//- ---------------- Accordion
+					//- ---------------- 
+					+accordion('accordion2')
+						+accordion-item('#accordion2', '#box5', 'box5', 'Acciones Populares y de Grupo')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Mecanismo por medio del cual toda persona puede acudir ante una autoridad judicial para proteger y defender los intereses colectivos, garantizando los derechos relacionados con el patrimonio público, el medio ambiente, el trabajo, entre otros, y así evitar el daño contingente, cesar el peligro, amenaza o vulneración, o de ser posible restituir las cosas a su estado anterior.
+										td Art. 88 de la Constitución Política de Colombia, reglamentado mediante la Ley 427 de 1998.
+									tr
+										td(colspan="2").small Fuente: MADS, 2014
+
+						+accordion-item('#accordion2', '#box6', 'box6', 'Acción de Nulidad ')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td La acción de nulidad procede contra los actos administrativos mediante los cuales se expide, modifica o cancela un permiso, autorización, concesión o Licencia Ambiental de una actividad que afecte o pueda afectar el medio ambiente.
+										td Ley 1437 de 2011, Ley 99 de 1993, Decreto 1076 de 2015.
+
+									tr
+										td(colspan="2").small Fuente: MADS, 2014
+										
+						+accordion-item('#accordion2', '#box7', 'box7', 'Acción de Cumplimiento')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Recurso popular mediante el cual una persona natural o jurídica puede acudir ante la autoridad competente (legislativa, administrativa, judicial u organismo de control) para hacer efectivo el cumplimiento de una ley o acto administrativo. 
+										td Art. 87 de la CPC, reglamentado mediante la Ley 393 de 1997) 
+
+									tr
+										td(colspan="2").small Fuente: MADS, 2014
+										
+										
+						+accordion-item('#accordion2', '#box8', 'box8', 'Acción de Tutela')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Toda persona tiene derecho a interponer una acción de tutela para reclamar ante los jueces en todo momento y lugar la protección inmediata de sus derechos constitucionales que resulten vulnerados o amenazados por la acción u omisión de cualquier autoridad pública o de particulares. 
+										td Art. 86 de la Constitución Política de Colombia - CPC. Decretos 2591 de 1991, 306 de 1992 y 1382 de 2000. 
+									tr
+										td(colspan="2").small Fuente: MADS, 2014
+										
+										
+						+accordion-item('#accordion2', '#box9', 'box9', 'Veedurías Ciudadanas')
+							//- ---------------- 
+							//- ---------------- Tables
+							//- ----------------
+							+tables-containers-nothead('')
+								+set('tr')
+									tr
+										td Mecanismo que permite a los ciudadanos de manera organizada, ejercer vigilancia sobre el proceso de la gestión pública, así como la convocatoria de una entidad encargada de la ejecución de un programa, proyecto, contrato o de la prestación de un servicio.
+										td a Ley 850 de 2003.
+									tr
+										td(colspan="2").small Fuente: MADS, 2014
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

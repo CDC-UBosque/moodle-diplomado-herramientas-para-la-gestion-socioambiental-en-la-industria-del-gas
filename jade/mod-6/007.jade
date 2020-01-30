@@ -1,0 +1,126 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9518', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9520', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h1 2.	Mapeo de actores sociales
+									
+					p Para la interpretación de la realidad social se encuentran disponibles diferentes técnicas que permiten el reconocimiento del entorno o del contexto en que se puede emplazar un proyecto. Una de estas herramientas es el mapeo de actores, la cual tiene como objetivo a través de categorías de análisis la identificación y medición de la influencia de los actores que pueden tener intereses o incidencia a favor o en contra en el desarrollo de un proyecto para la definir estrategias. En tal sentido, los actores deben ser identificados en función del tipo de proyecto y el contexto socioeconómico en que será emplazado. 
+
+					p Para llevar a cabo el mapeo de actores es necesario haber realizado la caracterización del medio socioeconómico del área de influencia del proyecto con el fin identificar las poblaciones que habitan el territorio y que puede ser afectadas, y las que además puedan tener alguna dependencia económica, cultural, y de aprovisionamiento de recursos naturales. Asimismo, se debe comprender el escenario sociopolítico del territorio, esto es la identificación de las estructuras y relaciones de poder, no solo desde el ámbito local, sino regional, nacional.
+
+					p Se encuentran diferentes modelos de análisis para el mapeo de actores que se diferencian en las categorías de análisis utilizadas, sin embargo, metodológicamente buscan a partir de un tema y alcance definido: 1) la identificación de los actores 2) la caracterización de los actores (quién, intereses, recursos y capacidad de influencia), y 3) la representación gráfica de las relaciones de los actores con el proyecto. En este caso se tomará como referencia la metodología propuesta en CFF (2017), quienes categorizan los actores en los siguientes tipos:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') Actores primarios
+							li: a(href='#2' data-toggle='tab') Actores secundarios
+							li: a(href='#3' data-toggle='tab') Actores clave
+							li: a(href='#4' data-toggle='tab') Jugadores de veto
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Pueden obtener o perder privilegios directamente por el proyecto. Incluye los afectados negativamente.
+							div.tab-pane.fade#2
+								p Participan de forma indirecta o temporal.
+							div.tab-pane.fade#3
+								p Son capaces de influir en el proyecto por habilidades de conocimiento o posición de poder.
+							div.tab-pane.fade#4
+								p Actores fuertes cuyo apoyo o participación es indispensable para lograr el proyecto, y tienen la capacidad de vetarlos (puede ser primarios, secundarios o claves)
+								
+								
+					h4 Para la elaboración de un mapa de actores se requiere (CCF, 2017):
+					
+					ol
+						li Definir el tema y el objetivo.
+						li Identificar  todos los actores relevantes según el tipo de actor (primario, secundario, clave, jugadores veto).
+						li Asignar los actores a los sectores a los que pertenecen según su naturaleza (sector público, sociedad civil, sector privado, entre otros). 
+						li Analizar los actores (quién; sector; posición frente al proyecto; capacidad de influencia, recursos, intensidad de la relación).
+						li Representar gráficamente la relación entre los actores con el uso de diagramas y símbolos que indiquen las categorías de análisis.
+						li Definición de estrategias  para mantener o cambiar el intéres a una posición favorable.
+						
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/004.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/004.jpg', 'Figura 1')
+						span Mapa de actores <br/> Figura 4. Herramientas para el análisis de actores. En GIZ Capacity Work, 2015 referenciado en CCF (2017)
+						
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/005.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/005.jpg', 'Figura 1')
+						span Representación de la relación entre actores <br/> Figura 4. Herramientas para el análisis de actores. En GIZ Capacity Work, 2015 referenciado en CCF (2017)
+						
+						
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/006.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/006.jpg', 'Figura 1')
+						span Símbolos de actores <br/> Figura 4. Herramientas para el análisis de actores. En GIZ Capacity Work, 2015 referenciado en CCF (2017)
+						
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/007.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/007.jpg', 'Figura 1')
+						span Símbolos para visualizar las relaciones entre actores <br/> Figura 4. Herramientas para el análisis de actores. En GIZ Capacity Work, 2015 referenciado en CCF (2017)
+
+
+
+
+						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

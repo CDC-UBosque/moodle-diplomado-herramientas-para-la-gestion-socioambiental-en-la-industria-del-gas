@@ -1,0 +1,140 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9495', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9497', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Prospección y exploración de aguas Subterráneas
+					
+					h4 ¿Quiénes están obligados?
+					
+					p Las personas naturales o jurídicas, públicas o privadas que necesite realizar la actividad de Prospección y Exploración, que incluye perforaciones de prueba en busca de agua subterránea con miras a su posterior aprovechamiento requieren de permiso
+
+					p Los permisos de exploración de aguas subterráneas no confieren concesión para el aprovechamiento de las aguas, pero darán prioridad al titular del permiso de exploración para el otorgamiento de la concesión.
+					
+					h4 ¿Cuáles son los requisitos?
+					
+					p De acuerdo con los Artículos 2.2.3.2.16.5. y 2.2.3.2.16.6. del DUR 1076 de 2015, los requisitos para una concesión son:
+					
+					ol(start="1")
+						li Diligenciar el Formato Único nacional el cual contiene:
+						
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							li: a(href='#7' data-toggle='tab') 7
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Ubicación y extensión del predio o predios a explorar indicando si son propios, ajenos o baldíos.
+							div.tab-pane.fade#2
+								p Nombre y número de inscripción de la empresa perforadora, y relación y especificaciones del equipo que va a usar en las perforaciones.
+							div.tab-pane.fade#3
+								p Sistema de perforación a emplear y plan de trabajo.
+							div.tab-pane.fade#4
+								p Características hidrogeológicas de la zona, si fueren conocidas.
+							div.tab-pane.fade#5
+								p Relación de los otros aprovechamientos de aguas subterráneas existente dentro del área que determine la Autoridad Ambiental competente.
+							div.tab-pane.fade#6
+								p Superficie para la cual se solicita el permiso y término del mismo.
+							div.tab-pane.fade#7
+								p Los demás datos que el peticionario o la autoridad ambiental competente consideren convenientes.
+								
+					ol(start="2")
+						li Anexar a la solicitud de permiso. 		
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#8' data-toggle='tab') a
+							li: a(href='#9' data-toggle='tab') b
+							li: a(href='#10' data-toggle='tab') c
+							
+						+set('content')
+							div.tab-pane.fade.active.in#8
+								p Certificado del Registrador de Instrumentos Públicos y Privados sobre el registro del inmueble o la prueba adecuada de la posesión o tenencia; (expedición no superior a 3 meses)
+							div.tab-pane.fade#9
+								p Los documentos que acrediten la personería o identificación del solicitante.
+							div.tab-pane.fade#10
+								p Autorización escrita con la firma autenticada del propietario o propietarios de los fundos donde se van a realizar las exploraciones, si se tratare de predios ajenos.
+					
+					
+					h4 ¿Cómo es el proceso? 
+					
+					p La norma establece de manera general el procedimiento para otorgar la prospección y exploración de aguas en los artículos 2.2.3.2.16.7.,   2.2.3.2.16.8., 2.2.3.2.16.9., 2.2.3.2.16.10. del del DUR 1076 de 2015, sin embargo y para tener mayor claridad de los pasos que deben surtirse se recomienda revisar el procedimiento puntal publicado por cada autoridad, en <a href="www.gov.co" target="_blank">www.gov.co</a>, o en su portal WEB.
+					
+					h4 ¿Qué debo tener en cuenta en la solicitud?
+					
+					p Es importante realizar la revisión de la información antes de ser presentada y tener en cuenta los lineamientos de la autoridad para establecer el área al que se refiere el literal e) Relación de los otros aprovechamientos de aguas subterráneas
+
+					p Cumplir con las obligaciones que se impongan, especialmente la presentación del informe, recuerde antes de solicitar el trámite revisar la información pública con la que cuenta el área donde desea hacer la exploración.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

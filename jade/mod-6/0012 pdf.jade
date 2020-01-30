@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('#', 'disabled', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+				
+					h1 Presentación PPT Módulo 6 Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos
+					
+					+video('https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-6/Presentacion-modulo-6.ppt')
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					//- +footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,115 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9515', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9517', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h3 1.3.	El medio socioeconómico y sus componentes
+									
+					p Con el propósito de identificar, evaluar y manejar los impactos ambientales que puedan ser causados por el desarrollo de proyectos desde el enfoque del Licenciamiento Ambiental en Colombia, los instrumentos de la EIA han establecido categorías de análisis para comprender el sistema ambiental y sus diferentes interrelaciones a partir de la diferenciación conceptual de los medios y componentes (Figura 1): 
+					
+					p 
+						b Medio:   
+						|  división general que se realiza del ambiente para un mejor análisis y entendimiento del mismo. En el contexto de los estudios ambientales corresponde al abiótico, biótico y socioeconómico. (ANLA, 2018a).
+
+					p 
+						b Componentes:   
+						|  aspectos ambientales que constituyen un medio (abiótico, biótico o socioeconómico) (ANLA, 2018a).
+						
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/001.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/001.jpg', 'Figura 1')
+						span Figura 1. Sistema ambiental (ANLA, 2018a)
+						
+					
+					p En relación con el medio socioeconómico, los instrumentos de la EIA establecen seis componentes del medio para la elaboración de la línea base socioeconómica (Figura 2), y con los cuales es posibles obtener una visión holística de las dinámicas sociales de las comunidades en el territorio a ser intervenido; esto es de las funciones sociales que ejercen las poblaciones humanas en los espacios geográficos que habitan y que han construido socialmente.
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/002.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/002.jpg', 'Figura 1')
+						span Figura 2. Componentes del medio socioeconómico (ANLA, 2018a)
+						
+
+					p En tal sentido, una caracterización adecuada de dichos componentes permitirá representar a partir de datos cualitativos y cuantitativos, y de fuentes de información primaria y secundaria, el contexto socioeconómico de las unidades territoriales donde se emplazará un proyecto, y facilitará la identificación y evaluación de los impactos a los sistemas de vida de las poblaciones por su intervención. (Echavarren, 2007; IFC, 2003), por lo cual se requiere indagar sobre: 
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p La estructura demográfica y dinámica de cada población (demografía).
+							div.tab-pane.fade#2
+								p Sus condiciones de vida (espacial).
+							div.tab-pane.fade#3
+								p Sus procesos productivos, actividades económicas, y estructura y tenencia de la propiedad (económico).
+							div.tab-pane.fade#4
+								p Las bases de su sistema sociocultural, patrimonio cultural, sitios de interés cultural, religioso, turístico, recreativo, entre otros; y su relación y dependencia al uso y aprovechamiento de los recursos naturales en los territorios donde se encuentran asentadas con sus sistemas de vida (cultural y arqueológico).
+							div.tab-pane.fade#5
+								p Las formas de organización social, administrativa y las estructuras de poder (político-administrativo)
+							div.tab-pane.fade#6
+								p La interacción de las actividades pasadas, presentes y futuras (tendencias de desarrollo del territorio)
+
+						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

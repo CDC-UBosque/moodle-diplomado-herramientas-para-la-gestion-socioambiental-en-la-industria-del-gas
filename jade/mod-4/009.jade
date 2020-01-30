@@ -1,0 +1,88 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9502', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9504', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Lineamientos para Planes de Contingencia
+					
+					p De acuerdo con el DUR 1076 de 2015 en su artículo 2.2.5.1.9.2. Los planes de contingencia por contaminación atmosférica, son un conjunto de estrategias, acciones y procedimientos preestablecidos para controlar y atender los episodios por emisiones atmosféricas que puedan eventualmente presentarse en el área de influencia de actividades generadoras de contaminación atmosférica, para cuyo diseño han sido considerados todos los sucesos y fuentes susceptibles de contribuir a la aparición de tales eventos contingentes. 
+
+					p Así mismo en su artículo 2.2.5.1.9.3. se establece sobre la obligación de planes de contingencia. Donde sin perjuicio de la facultad de la autoridad ambiental para establecer otros casos, quienes exploren, exploten, manufacturen, refinen, transformen, procesen, transporten, o almacenen hidrocarburos o sustancias tóxicas que puedan ser nocivas para la salud, los recursos naturales renovables o el ambiente, deberán estar provistos de un plan de contingencia que contemple todo el sistema de seguridad, prevención, organización de respuesta, equipos, personal capacitado y presupuesto para la prevención y control de emisiones contaminantes y reparación de daños, que deberá ser presentado a la Autoridad Ambiental Competente para su aprobación.
+
+					p Según la <b>METODOLOGÍA GENERAL PARA LA ELABORACIÓN Y PRESENTACIÓN DE ESTUDIOS AMBIENTALES</b> (2018). El plan de contingencia debe contemplar medidas de prevención, control y atención ante potenciales situaciones de emergencia derivadas de la materialización de riesgos previamente identificados
+					
+					
+					p El plan de contingencia debe incluir los siguientes planes:
+					ul
+						li Plan estratégico: Análisis del riesgo, tratamiento y niveles de respuesta
+						li Plan operativo: que define las respuestas, mecanismos de notificación, organización y funcionamiento para la eventual activación del plan de contingencia.
+						li Plan informático: contempla los protocolos relacionados con los sistemas de
+						li manejo de información y de logística.
+
+					p El Plan de contingencia debe, además según corresponda:
+					ul
+						li Designar las funciones.
+						li Determinar las prioridades de protección.
+						li Definir los sitios estratégicos para el control de contingencias, teniendo en cuenta las características de las áreas sensibles.
+
+					p Es pertinente aclarar que la autoridad ambiental realiza una verificación del cumplimiento del contenido del plan de contingencias conforme a la normativa, pero ello no implica una aprobación de este. 				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

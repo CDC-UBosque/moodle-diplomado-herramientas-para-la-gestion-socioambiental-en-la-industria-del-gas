@@ -1,0 +1,73 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9504', 'back', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Lecturas
+					
+					ol
+						li Ministerio de Ambiente y Desarrollo Sostenible. (2019). Uso y aprovechamiento del agua. Bogotá. Disponible en línea:  <a href="https://www.minambiente.gov.co/index.php/gestion-integral-del-recurso-hidrico/administracion-del-recurso-hidrico/demanda/uso-y-aprovechamiento-del-agua" target="_blank">https://www.minambiente.gov.co/index.php/gestion-integral-del-recurso-hidrico/administracion-del-recurso-hidrico/demanda/uso-y-aprovechamiento-del-agua</a>
+						li González, N. (2017). Desafíos de la gobernanza ambiental: una aproximación a las implicaciones de la Gestión Integrada del Recurso Hídrico en Colombia. Ciencia Política, 12(23), 205-229. MLA: González, N. “Desafíos de la gobernanza ambiental: una aproximación a las implicaciones. Disponible en línea:  <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=5907075" target="_blank">https://dialnet.unirioja.es/servlet/articulo?codigo=5907075</a>
+						li Organización de las Naciones Unidas para la Alimentación y la Agricultura & Ministerio de Ambientes y Desarrollo Sostenible. (2018). Guía DE BUENAS PRÁCTICAS PARA LA GESTIÓN Y USO SOSTENIBLE DE LOS SUELOS EN ÁREAS RURALES Construcción participativa del diagnóstico de suelos Diseño de planes de intervención Prácticas de manejo sostenible de los suelos. Disponible en línea: <a href="https://www.minambiente.gov.co/images/AsuntosambientalesySectorialyUrbana/pdf/suelo/Guia_de_buenas_practicas_para_la_gestion_y_uso_sostenible_de_los_suelos_en_areas_rurales.pdf" target="_blank">https://www.minambiente.gov.co/images/AsuntosambientalesySectorialyUrbana/pdf/suelo/Guia_de_buenas_practicas_para_la_gestion_y_uso_sostenible_de_los_suelos_en_areas_rurales.pdf</a>
+						li Decreto 1076 de 2015 Sector Ambiente y Desarrollo Sostenible <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=78153" target="_blank">https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=78153</a>
+						li Cotler, Helena, & Sotelo, Esthela, & Dominguez, Judith, & Zorrilla, María, & Cortina, Sofía, & Quiñones, Leticia (2007). La conservación de suelos: un asunto de interés público. Gaceta Ecológica, (83),5-71.[fecha de Consulta 15 de Diciembre de 2019]. ISSN: 1405-2849. Disponible en: <a href="https://www.redalyc.org/articulo.oa?id=539/53908302" target="_blank">https://www.redalyc.org/articulo.oa?id=539/53908302</a>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					// +footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

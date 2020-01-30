@@ -1,0 +1,159 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9500', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9502', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Permiso de emisiones atmosféricas de fuentes fijas
+					
+					h4 ¿Quiénes están obligados?
+					
+					p Personas naturales o jurídicas, pública o privada, que pretendan realizar las actividades, obras o servicios relacionados en el artículo 2.2.5.1.7.2. del Decreto 1076 de 2015 es decir que puedan realizar emisiones al aire, dentro de los límites permisibles establecidos en las normas ambientales. 
+
+					p Su modificación o suspensión, podrá ser ordenada por las Autoridades ambientales competentes cuando surjan circunstancias que alteren sustancialmente aquellas que fueron tenidas en cuenta para otorgarlo, o que ameriten la declaración de los niveles de prevención, alerta o emergencia.
+								
+								
+					
+
+
+
+
+
+					
+					h4 ¿Cuáles son los requisitos?
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							li: a(href='#7' data-toggle='tab') 7
+							li: a(href='#8' data-toggle='tab') 8
+							li: a(href='#9' data-toggle='tab') 9
+							li: a(href='#10' data-toggle='tab') 10
+							li: a(href='#11' data-toggle='tab') 11
+							li: a(href='#12' data-toggle='tab') 12
+							li: a(href='#13' data-toggle='tab') 13
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Formulario Único Nacional de Permiso de emisiones atmosféricas para fuentes fijas establecido por el Ministerio de Ambiente y Desarrollo Sostenible –MADS-, diligenciado y firmado por el solicitante.
+							div.tab-pane.fade#2
+								p Poder debidamente otorgado, cuando se actúe mediante apoderado.
+							div.tab-pane.fade#3
+								p Certificado de libertad y tradición expedido dentro del mes inmediatamente anterior a la presentación de la solicitud; o documento que acredite la posesión o tenencia del solicitante, v.gr., contrato de arrendamiento, comodato.
+							div.tab-pane.fade#4
+								p Autorización del propietario o poseedor cuando el solicitante sea mero tenedor.
+							div.tab-pane.fade#5
+								p Concepto sobre uso del suelo del establecimiento, obra o actividad, expedido por la autoridad municipal o distrital competente, o en su defecto, los documentos públicos u oficiales contentivos de normas y planos, o las publicaciones oficiales, que sustenten y prueben la compatibilidad entre la actividad u obra proyectada y el uso permitido del suelo.
+							div.tab-pane.fade#6
+								p Información meteorológica básica del área afectada por las emisiones.
+							div.tab-pane.fade#7
+								p Documento con la siguiente información para cada uno de los puntos objeto de la solicitud:
+								ol
+									li Localización de las instalaciones, del área o de la obra.
+									li Descripción de las obras, procesos y actividades de producción, mantenimiento, tratamiento, almacenamiento o disposición que generen las emisiones y planos que dichas descripciones requieran.
+									li Flujograma con indicación y caracterización de los puntos de emisión al aire, ubicación y cantidad de los puntos de descarga al aire.
+									li Descripción y planos de los ductos, chimeneas o fuentes dispersas, e indicación de sus materiales, medidas y características técnicas.
+									li Fecha proyectada de iniciación de actividades, o fechas proyectadas de iniciación y terminación de las obras, trabajos o actividades, si se trata de emisiones transitorias.
+									li Información técnica sobre producción prevista o actual, proyectos de expansión y proyecciones de producción a cinco (5) años.
+							div.tab-pane.fade#8
+								p Estudio técnico de evaluación de las emisiones de sus procesos de combustión o producción; se deberá anexar además información sobre consumo de materias primas combustibles u otros materiales utilizados. 
+							div.tab-pane.fade#9
+								p Diseño de los sistemas de control de emisiones atmosféricas existentes o proyectados, su ubicación e informe de ingeniería. 
+							div.tab-pane.fade#10
+								p Si utiliza controles al final del proceso para el control de emisiones atmosféricas, o tecnologías limpias, o ambos.
+							div.tab-pane.fade#11
+								p Estudio técnico de dispersión como información en proyectos para refinería de petróleos, fábricas de cementos, plantas química y petroquímicas, siderúrgicas, quemas abierta controladas en actividades agroindustriales y plantas termoeléctricas.
+							div.tab-pane.fade#12
+								p Entrega de Informe de Estado de Emisión IE-1 conforme al Artículo 2.2.5.1.10.2 Decreto 1076 del 2015, Resoluciones 1351 del 14 de noviembre de 1995 y 1619 del 21 de diciembre de 1995. Aplica para las cementeras, siderúrgicas, refinerías y termoeléctricas. Cada renovación de un permiso de emisión atmosférica, requerirá la presentación de un nuevo Informe de Estados de Emisión IE-1 que contenga la información que corresponda al tiempo de su presentación.
+							div.tab-pane.fade#13
+								p Constancia del pago de los derechos de trámite y otorgamiento del permiso, en los términos y condiciones establecidas en el presente Decreto.
+					
+					
+					
+					
+					
+					
+					h4 ¿Cómo es el proceso?
+					
+					p La norma establece de manera general el procedimiento para otorgar el permiso de emisiones atmosféricas en el artículo 2.2.5.1.7.5. Trámite del permiso de emisión atmosférica del DUR 1076 de 2015. Sin embargo y para tener mayor claridad de los pasos que deben surtirse se recomienda revisar el procedimiento puntal publicado por cada autoridad, en <a href="www.gov.co" target="_blank">www.gov.co</a>, o en su portal WEB
+					
+					
+
+
+					
+					h4 ¿Qué debo tener en cuenta en la solicitud?
+					
+					p Es importante realizar la revisión de la información antes de ser presentada y tener en cuenta los lineamientos de la autoridad, las sentencias de área fuente y la reglamentación del Ministerio respecto a este tema.
+
+					p Dentro del modelo, se deberá garantizar la selección de datos y criterios que permitan obtener un resultado del modelo acorde a lo esperado. La utilización de software libre o con licencia es permitido, pero debe siempre aclararse en el documento técnico de la solicitud las variables, herramientas y criterios utilizados para el diseño del modelo de dispersión.
+
+
+					p Ahora entraremos a revisar los aspectos asociados al manejo de residuos sólidos.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

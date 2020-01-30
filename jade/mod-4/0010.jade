@@ -1,0 +1,73 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9503', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9505', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Referencias – Documentos consultados
+					
+					ol
+						li RAE (2019) recuperado de https://dle.rae.es/?w=inalienable
+						li RAE (2019) recuperado de https://dle.rae.es/imprescriptible
+						li <a href="https://www.minambiente.gov.co/index.php/component/content/article/28-plantilla-asuntos-ambientales-y-sectorial-y-urbana" target="_blank">https://www.minambiente.gov.co/index.php/component/content/article/28-plantilla-asuntos-ambientales-y-sectorial-y-urbana</a>
+						li <a href="http://www.minambiente.gov.co/images/AsuntosambientalesySectorialyUrbana/pdf/Polit%C3%ACcas_de_la_Direcci%C3%B3n/Pol%C3%ADtica_para_la_gesti%C3%B3n_integral_de__1.pdf" target="_blank">http://www.minambiente.gov.co/images/AsuntosambientalesySectorialyUrbana/pdf/Polit%C3%ACcas_de_la_Direcci%C3%B3n/Pol%C3%ADtica_para_la_gesti%C3%B3n_integral_de__1.pdf</a>
+						li <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=78153" target="_blank">https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=78153</a>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					//- +footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

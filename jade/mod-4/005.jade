@@ -1,0 +1,161 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9498', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9500', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Permiso de Aprovechamiento forestal
+					
+					p De acuerdo con el DUR 1076 de 2015 específicamente el artículo 2.2.1.1.3.1. existen tres clases de aprovechamiento forestal, así: a. únicos, b. doméstico y c. persistentes; adicionalmente se estableció el aprovechamiento de arboles aislados en la sección 9 Titulo 2 Capitulo 1, del citado Decreto para temas específicos asociados a recurso flora.
+
+					p A continuación, nos enfocaremos en el permiso de aprovechamiento forestal único que corresponde a aquellos que se realizan por una sola vez, en áreas donde con base en estudios técnicos se demuestre mejor aptitud de uso del suelo diferente al forestal o cuando existan razones de utilidad pública e interés social.
+
+					p Esta clase de aprovechamiento forestal es el solicitado para la realización de los proyectos, obras o actividades sujetas de licencia ambiental, o que requieren intervenir el curso flora en el desarrollo del proyecto sino este sujeto a licencia ambiental.
+					
+					
+					
+					
+					
+					
+					
+					
+					h4 ¿Quiénes están obligados?
+					
+					p Aquellos que por ejecución de un proyecto, obra o actividad requieren realizar una intervención del recurso flora, que pueden ser personas naturales o jurídicas, públicas o privadas.
+
+					p Para esta clase de aprovechamientos se deberá obtener autorización o permiso, según la calidad del predio en donde se requiere realizar la intervención, como lo señala los artículos 2.2.1.1.5.3. y 2.2.1.1.5.6. del DUR 1076 de 2015, que indica que si es un predio público se obtiene un permiso y si es un predio de dominio privado se emitirá una autorización.
+					
+					h4 ¿Cuáles son los requisitos?
+					
+					p Para tramitar un permiso de aprovechamiento forestal único se debe dar cumplimiento a los requisitos establecidos en los artículos 2.2.1.1.5.1., 2.2.1.1.5.2. 2.2.1.1.5.5. del DUR 1076 de 2015, que señalan lo siguiente:
+
+					p Para tramitar aprovechamiento forestal único <u>de bosques naturales ubicados en terrenos de dominio público</u> se requiere:
+						
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') a
+							li: a(href='#2' data-toggle='tab') b
+							li: a(href='#3' data-toggle='tab') c
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Solicitud formal (presentación del Formato Único Nacional para aprovechamiento forestal único)
+							div.tab-pane.fade#2
+								p Estudio técnico que demuestre una mejor aptitud de uso del suelo diferente forestal.
+							div.tab-pane.fade#3
+								p Plan de aprovechamiento forestal, incluyendo la destinación de los productos y las medidas de compensación; conforme a los artículos 2.2.1.1.7.3. y 2.2.1.1.7.4. del citado decreto.
+								
+					p Para tramitar aprovechamientos forestales únicos <u>de bosques naturales ubicados en terrenos de propiedad privada</u> se requiere:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#4' data-toggle='tab') a
+							li: a(href='#5' data-toggle='tab') b
+							li: a(href='#6' data-toggle='tab') c
+							li: a(href='#7' data-toggle='tab') d
+							
+						+set('content')
+							div.tab-pane.fade.active.in#4
+								p Solicitud formal (presentación del Formato Único Nacional para aprovechamiento forestal único)
+							div.tab-pane.fade#5
+								p Estudio técnico que demuestre mejor aptitud de uso del suelo diferente al forestal.
+							div.tab-pane.fade#6
+								p Copia de la escritura pública y del certificado de libertad y tradición que no tenga más de dos meses de expedido que lo acredite como propietario.
+							div.tab-pane.fade#7
+								p Plan de aprovechamiento forestal conforme a los artículos 2.2.1.1.7.3. y 2.2.1.1.7.4. del citado decreto.
+								
+					p Dentro del Plan de aprovechamiento forestal se debe presentar un inventario estadístico con error de muestreo no superior al quince por ciento (15%) y una probabilidad del noventa y cinco por ciento (95%)<sup>15</sup>. Aquí es anotar que algunas autoridades ambientales solicitan un censo de los individuos a aprovechar; sin embargo, es importante señalar que el decreto es claro en las características del inventario que se requiere para aprobación.
+
+					p Sobre lo anterior, cabe resaltar que en el medio se tiene la creencia que los inventario foréstales para aprovechamiento forestal único deben ser censo de los individuos superiores a 10 cm de DAP, concepto erróneo y que ha generado un “paradigma” pues no es coherente con la clase de aprovechamiento forestal, vale aclarar que este requerimiento (censo de los individuos mayores a 10 cm DAP) aplica para los aprovechamientos forestal es persistentes, de acuerdo con el artículo  2.2.1.1.4.5.<sup>16</sup> del citado decreto.
+					
+					
+					
+					
+					
+					
+					h4 ¿Cómo es el proceso?
+					
+					p La norma establece de manera general el procedimiento para otorgar el permiso de aprovechamiento forestal en los artículos 2.2.1.1.5.4., 2.2.1.1. 7.1., 2.2.1.1.7.5., 2.2.1.1.7.6., y 2.2.1.1.7.8. del del DUR 1076 de 2015, que en términos generales corresponde a: El usuario radica la solicitud con el cumplimiento de los requisitos la autoridad competente evalúa la solicitud, si requiere información adicional se solicita al usuario de lo contrario se procede a la evaluación para el análisis, recibir la visita y toma de decisión de fondo. 
+
+					p Sin embargo y para tener mayor claridad de los pasos que deben surtirse se recomienda revisar el procedimiento puntal publicado por cada autoridad, en <a href="www.gov.co" target="_blank">www.gov.co</a>, o en su portal WEB.
+
+
+					
+					h4 ¿Qué debo tener en cuenta en la solicitud?
+					
+					p Es importante realizar la revisión de la información antes de ser presentada y tener en cuenta los lineamientos generados (Términos de referencia) o reglamentación especifica generada por la autoridad ambiental.
+
+					p Para el levantamiento del inventario forestal es importante contar con el permiso previo de recolecta para la elaboración de estudios ambientales, esto en los casos de realizar colecta de muestras de los individuos censados, para realizar la identificación a nivel de herbario.
+
+					p La mayoría de las autoridades exigen la identificación de los individuos a nivel de especie, es importante cumplir con esta exigencia para evitar reprocesos.
+
+					p Cumplir con las obligaciones que se impongan, especialmente la implementación de la medida de compensación.
+
+					p Finalmente es importante tener en cuenta los Decretos 1390 de 2018 y 1532 de 2019, que realizaron modificaciones al Decreto 1076 de 2015.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

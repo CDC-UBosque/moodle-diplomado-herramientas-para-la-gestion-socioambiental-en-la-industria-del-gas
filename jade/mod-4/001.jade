@@ -1,0 +1,186 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9496', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+					
+					p En el siguiente modulo se abordarán de manera integral la normativa, requisitos y alcance de la gestión de trámites que permiten el acceso a los recursos naturales. Se presentará un énfasis asociado a aquellos trámites que se relacionan con el recurso agua y suelo.
+				
+					h1 Concepto de agua y suelo a la luz de la norma colombiana:
+									
+					p El Decreto Ley 2811 de 1974, establece en el artículo 1, que el ambiente es un patrimonio común a su vez que los recursos naturales renovables son de utilidad pública e interés social, así mismo establece en el artículo 42, que los recursos naturales renovables pertenecen a la nación, en este sentido el artículo 51 del citado código señala que el derecho a usar los recursos naturales renovables puede ser adquiridos por:
+					
+					ul
+						li Ministerio de la ley
+						li Permiso
+						li Concesión
+						li Asociación
+						
+					p De acuerdo con el Decreto 1076 de 2015, que acogió el artículo 1 del Decreto 1541 de 1978, el agua es vista como un recurso en todos sus estados y comprende aspectos como: el dominio de las aguas, cauces y riberas, la reglamentación de las aguas, la ocupación de los cauces, la declaración de reservas de agotamiento, la restricciones y delimitaciones a su dominio, categorías especiales para su uso, las condiciones para la construcción de obras y las cargas pecuniarias por su uso. En este punto es importante recordar los artículos 80 y 82 del Decreto Ley 2811 de 1974, el cual fija dos categorías para el dominio de las aguas y sus cauces en el territorio colombiano, estas son aguas de dominio público y aguas de dominio privado. Las diferencias entre estas son claras las primeras son inalienables<sup>1</sup> e imprescriptibles<sup>2</sup>, y las segundas correspondieron a un reconocimiento del Estado a aquellos particulares que tienen propiedad sobre predios en donde las aguas brotan naturalmente y desaparecen dentro del misma propiedad. 
+					
+					h4 Nota: 
+					
+					p por ejemplo, si en un predio existe un afloramiento de aguas y este se infiltra o evapora dentro de los límites del mismo, se hace uso del recurso y no se deja de hacer uso por más de 3 años continuos el propietario puede declararlo como propio.
+					
+					p Por otra parte, si hablamos del suelo este se define a partir de su uso, como suelos agrícolas y no agrícolas en donde la norma aplica el principio de integridad física y capacidad productora, buscando su uso potencial según los factores físicos, ecológicos y socio económicos de la región (artículo 178,179 del Decreto Ley 2811 de 1974).
+
+					p A continuación, se presenta esquema de la base normativa de los trámites ambientales:
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-4/001.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-4/001.jpg', 'Figura 1')
+						span Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente Decreto Ley 2811 de 1974
+						
+						
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-4/002.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-4/002.jpg', 'Figura 1')
+						span Decreto Único Reglamentario del Sector Ambiente Nº 1076 de 2015 Libro 2 Régimen Reglamentario del Sector Ambiente Parte 2 Reglamentaciones
+						
+					p Ya hemos abordado la normativa sobre los recursos naturales, que son la base para la prestación de algunos de los servicios ecosistémicos, a continuación, procederemos a conocer los diferentes requisitos, pasos y aspectos a tener en cuenta al momento de realizar un trámite ambiental.
+					
+					p Para su abordaje responderemos las principales preguntas a las que nos enfrentamos al iniciar un trámite ambiental como, por ejemplo: ¿Por qué debo hacerlo?, ¿Quiénes están obligados? ¿Ante quien presentó la solicitud? ¿Cuáles son los requisitos? ¿Como es el proceso? ¿Cuánto me puede costar? ¿Qué debo tener en cuenta para tener éxito en la solicitud?
+					
+					p Para resolver estas preguntas iniciaremos respondiendo las preguntas generales y posteriormente resolveremos las preguntas para cada trámite.
+					
+					h4 ¿Por qué debo hacerlo?
+					
+					p De acuerdo con la normativa ambiental Colombia, específicamente el artículo 51 del Decreto Ley 2811 de 1974, hay cuatro formas de acceder al uso o aprovechamiento de los recursos naturales, estos son: Ministerio de Ley<sup>3</sup>, permiso, concesión o asociación.
+					
+					h4 ¿Ante quién presentó la solicitud?
+					
+					p Dentro del Sistema Nacional Ambiental – SINA (Ley 99 de 1993), existe una estructura con las diferentes entidades que ejercen la labor de “Autoridad Ambiental<sup>4</sup>” así: 3 de carácter nacional que corresponden al Ministerio de Ambiente y Desarrollo Sostenible, la Autoridad Nacional de Licencias Ambientales – ANLA- y Parques Nacionales Naturales de Colombia, 34 autoridades de carácter regional (ver Anexo 1) y 6 autoridades urbanas (ver anexo 2).
+
+					p Para saber quién es la entidad competente para otorgar el permiso se debe tener en cuenta: 
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') a
+							li: a(href='#2' data-toggle='tab') b
+							li: a(href='#3' data-toggle='tab') c
+							li: a(href='#4' data-toggle='tab') d
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Si esta actividad se encuentra listada dentro de los artículos 2.2.2.3.2.2 y 2.2.2.3.2.3 del DUR 1076 de 2015 que requiere la obtención de licencia ambiental. 
+							div.tab-pane.fade#2
+								p La localización del proyecto, obra o actividad que requiere el uso o aprovechamiento de recursos.
+							div.tab-pane.fade#3
+								p El marco reglamentario del trámite ambiental que requiero solicitar.
+							div.tab-pane.fade#4
+								p La competencia de cada autoridad ambiental.
+								
+								
+								
+					h4 ¿Cuánto me puede costar?
+					
+					p Las autoridades ambientales en Colombia tienen permitido el cobro por los servicios de evaluación y seguimiento de la licencia ambiental, permisos, concesiones, autorizaciones y demás instrumentos de control y manejo ambiental establecidos en la ley y los reglamentos, conforme al artículo 28 de la Ley 344 de 1996, modificado por el artículo 96 de la Ley 633 de 2000.
+					
+					p Estos cobros corresponden a los siguientes ítems:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#5' data-toggle='tab') a
+							li: a(href='#6' data-toggle='tab') b
+							li: a(href='#7' data-toggle='tab') c
+							
+						+set('content')
+							div.tab-pane.fade.active.in#5
+								p El valor total de los honorarios de los profesionales requeridos para la realización de la tarea propuesta; correspondiente al estimativo del número de profesionales/mes o contratistas/mes y se aplicarán las categorías y tarifas de sueldos de contratos del Ministerio del Transporte y para el caso de contratistas Internacionales, las escalas tarifarias para contratos de consultoría del Banco Mundial o del PNUD.
+							div.tab-pane.fade#6
+								p El valor total de los viáticos y gastos de viaje de los profesionales que se ocasionen para el estudio, la expedición, el seguimiento y/o el monitoreo.
+							div.tab-pane.fade#7
+								p El valor total de los análisis de laboratorio u otros estudios y diseños técnicos que sean requeridos tanto para la evaluación como para el seguimiento.
+								
+					p A la sumatoria de estos tres costos a), b), y c) se le aplicará un porcentaje que anualmente fijará el Ministerio del Medio Ambiente por gastos de administración. Que actualmente corresponde al 25% conforme a la Resolución 2613 de 2009<sup>5</sup> expedida por el citado Ministerio.
+					
+					p Adicionalmente, la Ley fijo topes para el cobro de estas tarifas así:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#8' data-toggle='tab') 1
+							li: a(href='#9' data-toggle='tab') 2
+							li: a(href='#10' data-toggle='tab') 3
+							
+						+set('content')
+							div.tab-pane.fade.active.in#8
+								p Aquellos que tengan un valor de dos mil ciento quince (2.115) salarios mínimos mensuales vigentes tendrán una tarifa máxima del cero punto seis por ciento (0.6%).
+							div.tab-pane.fade#9
+								p Aquellos que tengan un valor superior a los dos mil ciento quince (2.115) salarios mínimos mensuales vigentes e inferior a los ocho mil cuatrocientos cincuenta y ocho (8.458) salarios mínimos mensuales vigentes tendrán una tarifa máxima del cero punto cinco por ciento (0.5%).
+							div.tab-pane.fade#10
+								p Aquellos que tengan un valor superior a los ocho mil cuatrocientos cincuenta y ocho (8.458) salarios mínimos mensuales vigentes, tendrán una tarifa máxima del cero punto cuatro por ciento (0.4%).
+								
+					p Sin embargo, es importante señalar que las Autoridades ambientales de carácter regional, bajo el principio de “autonomía” han fijado sus propias tarifas desconociendo la Resolución 1280 de 2000<sup>6</sup> expedida por el Ministerio de Ambiente y Desarrollo Sostenible.
+					
+					p Ahora iniciaremos conociendo los trámites asociados al recurso agua, continuaremos con los trámites asociados a los recursos de flora y fauna y finalmente abordaremos el trámite asociado al recurso aire.
+					
+					h4 Los Trámites que conoceremos asociados al recurso agua son:
+					
+					ul
+						li Prospección y exploración de aguas subterráneas
+						li Concesión de Aguas subterráneas o Superficiales
+						li Permiso de Vertimientos
+						
+					p Adicionalmente, revisaremos los principales aspectos de la “Reinyección”, y del Plan de gestión del riesgo para el vertimiento.
+					
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

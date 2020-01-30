@@ -1,0 +1,98 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9522', 'back', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h1 6. Bibliografía
+									
+					ol
+						li Andia, T., & González, J. M. (2012). La arquitectura institucional del sistema de salud colombiano: una mirada a la ley 100 y normas posteriores. In O. Bernal & G. Catalina (Eds.), La salud en Colombia Logros, Retos y Comunicaciones (pp. 209–257). Bogotá: Universidad de los Andes, Escuela de Alto Gobierno, Ediciones Uniandes.
+						li Asociación Internacional de Evaluación del Impacto [IAIA]. (2004). Principios internacionales de la evaluación del impacto social. (Carrera, Susana, Trans.). Recuperado de <a href="http://preval.org/files/00426.pdf" target="_blank"> http://preval.org/files/00426.pdf</a>
+						li Autoridad Nacional de Licencias Ambientales (2018a). Guía para la definición, identificación y delimitación del área de influencia. Recuperado de <a href="http://portal.anla.gov.co/sites/default/files/biblioteca_web_anla_pdf/portada.pdf" target="_blank"> http://portal.anla.gov.co/sites/default/files/biblioteca_web_anla_pdf/portada.pdf</a>
+						li Autoridad Nacional de Licencias Ambientales (2018b). Guía de participación ciudadana para el Licenciamiento Ambiental. Recuperado de <a href="http://portal.anla.gov.co/sites/default/files/biblioteca_web_anla_pdf/guia_participacion_ciudadana.pdf" target="_blank"> http://portal.anla.gov.co/sites/default/files/biblioteca_web_anla_pdf/guia_participacion_ciudadana.pdf </a>
+						li Burdge, R., & Vanclay, F. (1996). Social Impact Assessment: a contribution to the state of the art series. Impact Assessment, 14, 59–86.
+						li C40 Cities Financie Facility [CCF](2017). Taller de mapa de actores. Mexico. Recuperado de  <a href="https://cff-prod.s3.amazonaws.com/storage/files/BxuvhXdjwvzfBG0QDnQH9jUF5b91QtfnA863WwPb.pdf" target="_blank"> https://cff-prod.s3.amazonaws.com/storage/files/BxuvhXdjwvzfBG0QDnQH9jUF5b91QtfnA863WwPb.pdf</a>
+						li Constitución  Política de Colombia de 1991 (1991).
+						li Corte Constitucional (septiembre 2 de 2019). Corte Constitucional convoca a diálogo sobre avances, retos y desafíos del goce efectivo del derecho a la consulta previa...  Recuperado de <a href="http://www.corteconstitucional.gov.co/noticia.php?Corte-Constitucional-convoca-a-dialogo-sobre-avances,-retos-y-desafios-del-goce-efectivo-del-derecho-a-la-consulta-previa.-8760" target="_blank"> http://www.corteconstitucional.gov.co/noticia.php?Corte-Constitucional-convoca-a-dialogo-sobre-avances,-retos-y-desafios-del-goce-efectivo-del-derecho-a-la-consulta-previa.-8760</a>
+						li Corte Constitucional (2018). SU-123 /2018. Recuperado de <a href="https://www.corteconstitucional.gov.co/relatoria/2018/SU123-18.htm" target="_blank">https://www.corteconstitucional.gov.co/relatoria/2018/SU123-18.htm</a>
+						li CORTOLIMA (s.f) zonificación ambiental y económica (ZAE) como apoyo para el ordenamiento de la cuenca mayor del río Lagunilla, 291-335. Recuperado de <a href="https://www.cortolima.gov.co/sites/default/files/images/stories/centro_documentos/pom_lagunilla/35_zonificacion_ambiental_economica.pdf" target="_blank"> https://www.cortolima.gov.co/sites/default/files/images/stories/centro_documentos/pom_lagunilla/35_zonificacion_ambiental_economica.pdf</a>
+						li C40 Cities Financie Facility [CCF](2017). Taller de mapa de actores. Mexico. Recuperado de  <a href="https://cff-prod.s3.amazonaws.com/storage/files/BxuvhXdjwvzfBG0QDnQH9jUF5b91QtfnA863WwPb.pdf" target="_blank"> https://cff-prod.s3.amazonaws.com/storage/files/BxuvhXdjwvzfBG0QDnQH9jUF5b91QtfnA863WwPb.pdf</a>
+						li Decreto 1076 de 2015 (mayo 26), por medio del cual se Por medio del cual se expide el Decreto Único Sector Ambiente y Desarrollo Sostenible. Recuperado de <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=78153 " target="_blank"> https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=78153 </a>
+
+						li Directiva Presidencial N°10 de 2013 (Noviembre 07). Guía para la realización de Consulta Previa con comunidades étnicas. Recuperado de <a href="https://www.mininterior.gov.co/sites/default/files/12_directiva_presidencial_ndeg_10_del_07_de_noviembre_2013_4.pdf" target="_blank"> https://www.mininterior.gov.co/sites/default/files/12_directiva_presidencial_ndeg_10_del_07_de_noviembre_2013_4.pdf</a>
+						li Echavarren, J. M. (2007). ASPECTOS SOCIOECONÓMICOS DE LA EVALUACIÓN DE IMPACTO AMBIENTAL. Revista Internacional de Sociología (RIS), LXV(47), 99–116.
+						li Espinoza, G. (2007). Gestión y Fundamentos de Evaluación de Impacto Ambiental. Santiago de Chile: Banco Interamericano de Desarrollo (BID) y Centro de Estudios para el Desarrollo (CED). Recuperado de <a href="https://www.google.com.co/#q=gestion+y+fundamentos+de+evaluacion+de+impacto+ambiental+guillermo+espinoza+2007" target="_blank"> https://www.google.com.co/#q=gestion+y+fundamentos+de+evaluacion+de+impacto+ambiental+guillermo+espinoza+2007</a>
+						li Espinoza, G. (2008, March). Análisis de la EIA y de la EAE. Corporación Andina de Fomento - CAF. Recuperado de <a href="http://www.iirsa.org/admin_iirsa_web/Uploads/Documents/ease_taller08_m3_pauta.pdf" target="_blank"> http://www.iirsa.org/admin_iirsa_web/Uploads/Documents/ease_taller08_m3_pauta.pdf</a>
+						li Garcia (2017). Mapa de sensibilidad socio ambienta para hidrocarburos. En XIX Conferencia Colombiana de Usuarios ESRI 2017. Agencia Nacional de Hidrocarburos
+						li International Association for Impact Assessment [IAIA]. (2009). ¿Qué es la evaluación de impactos? IAIA. Recuperado de <a href="http://www.iaia.org/pdf/special-publications/What%20is%20IA_spa.pdf" target="_blank"> http://www.iaia.org/pdf/special-publications/What%20is%20IA_spa.pdf</a>
+						li International Finance Corporation [IFC]. (2003, December). Addressing the Social Dimensions of Private Sector Projects. Good Practice Note, 3, 1–28.
+						li Ley 99 de 1993 (diciembre 22), por la cual se crea el Ministerio del Medio Ambiente, se reordena el Sector Público encargado de la gestión y conservación del medio ambiente y los recursos naturales renovables, se organiza el Sistema Nacional Ambiental, SINA, y se dictan otras disposiciones. Diario Oficial N°41146. Recuperado de <a href="http://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=297" target="_blank"> http://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=297</a>
+						li Ley 21 de 1991 (Marzo 04), por medio de la cual se aprueba el Convenio número 169 sobre pueblos indígenas y tribales en países independientes, adoptado por la 76a. reunión de la Conferencia General de la O.I.T., Ginebra 1989. Recuperado de <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=37032" target="_blank"> https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=37032</a>
+						li Ministerio de Ambiente, Vivienda y Desarrollo Territorial. (2018). Metodología general para la elaboración y presentación de estudios ambientales. Bogotá: Ministerio de Ambiente, Vivienda y Desarrollo Territorial. Recuperado de <a href="http://www.andi.com.co/Uploads/Metodolog%C3%ADa%20Estudios%20Ambientales%202018.pdf" target="_blank"> http://www.andi.com.co/Uploads/Metodolog%C3%ADa%20Estudios%20Ambientales%202018.pdf</a>
+						li Ministerio de Ambiente, Vivienda y Desarrollo Territorial. (2014). Plan de Participación Ciudadana. Bogotá: Ministerio de Ambiente, Vivienda y Desarrollo Territorial. Recuperado de <a href="http://www.minambiente.gov.co/images/Atencion_y_particpacion_al_ciudadano/Plan_de_Participaci%C3%B3n_Ciudadana_MADS.pdf" target="_blank"> http://www.minambiente.gov.co/images/Atencion_y_particpacion_al_ciudadano/Plan_de_Participaci%C3%B3n_Ciudadana_MADS.pdf</a>
+						li Ministerio del Interior (2018). ABC de la consulta previa Guía para el desarrollo del procesos de consulta previa. Dirección de Consulta Previa. Recuperado de <a href="https://consultaprevia.mininterior.gov.co/prensa/publicaciones/abc-de-la-consulta-previa" target="_blank"> https://consultaprevia.mininterior.gov.co/prensa/publicaciones/abc-de-la-consulta-previa</a>
+
+						li Naciones Unidas [UN]. (n.d.). Asamblea General de las Naciones Unidas [Institucional]. Recuperado Octubre 20, 2014, de <a href="http://www.un.org/es/ga/president/65/issues/sustdev.shtml" target="_blank"> http://www.un.org/es/ga/president/65/issues/sustdev.shtml</a>
+						li OCDE (2013) Líneas Directrices de la OCDE para Empresas Multinacionales, OECD Publishing. Recuperado de <a href="http://www.mincit.gov.co/mincomercioexterior/temas-de-interes/punto-nacional-de-contacto-pnc-de-las-directrices/que-son-las-lineas-directrices/directrices.aspx" target="_blank"> http://www.mincit.gov.co/mincomercioexterior/temas-de-interes/punto-nacional-de-contacto-pnc-de-las-directrices/que-son-las-lineas-directrices/directrices.aspx</a>
+
+						li Pardo, M. (1994). El impacto social en las evaluaciones de impacto ambiental: su conceptualización y práctica. Revista Española de Investigaciones Sociológicas, 66, 141–167.
+						li Scott-Brown, M. (n.d.). DE LA EIA A LA EAE Y DE VUELTA: REVISANDO LA TIRANÍA DE DECISIONES PEQUEÑAS. Recuperado Octubre 20, 2014, de <a href="http://www.ced.cl/ced/wp-content/uploads/2012/02/desde-el-eia-al-eae-y-de-vuelta.pdf" target="_blank"> http://www.ced.cl/ced/wp-content/uploads/2012/02/desde-el-eia-al-eae-y-de-vuelta.pdf</a>
+						li Rodriguez, G (2008). La consulta previa, un derecho fundamental de los pueblos indígenas y grupos étnicos de Colombia. Revista Semillas. Recuperado de <a href="http://www.semillas.org.co/es/la-consulta-previa-un-derecho-fundamental-de-los-pueblos-indgenas-y-grupos-tnicos-de-colombia" target="_blank"> http://www.semillas.org.co/es/la-consulta-previa-un-derecho-fundamental-de-los-pueblos-indgenas-y-grupos-tnicos-de-colombia</a>
+						li Sepúlveda, C. (2000). Lecciones del caso Celulosa Valdivia: evaluación de impactos sociales, participación ciudadana y prevención de conflictos ambientales. En  Participación ciudadana para enfrentar conflictos ambientales - Desafíos para el Sistema de Evaluación de Impacto Ambiental (pp. 93–115). Chile: LOM Ediciones.
+						li Toro, J., Martínez, R., & Arrieta, G. (2013, July). Métodos de Evaluación de Impacto Ambiental en Colombia. Revista de Investigación Agraria Y Ambiental - Universidad Nacional Abierta Y a Distancia, 4(2). Recuperado de <a href="http://artemisa.unicauca.edu.co/~gerardorengifo/Documentos/CN&AMB/Primer%20-%20Letura%20Taller.pdf" target="_blank"> http://artemisa.unicauca.edu.co/~gerardorengifo/Documentos/CN&AMB/Primer%20-%20Letura%20Taller.pdf</a>
+						li Villalba (2016). Análisis institucional de la Evaluación del Impacto Social en el Licenciamiento Ambiental del sector de hidrocarburos e identificación de los cambios graduales. Trabajo de Grado, Universidad de Los Andes, Centro Interdisciplinario de Estudios sobre Desarrollo. Maestría en Estudios Interdisciplinarios sobre Desarrollo
+
+
+					
+
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -208,6 +208,23 @@ mixin tables-containers(caption)
 				- blocks.thead()
 			tbody
 				- blocks.tr()
+				
+				
+//- ---------------------------- Tables 2 ------------------------------- //
+
+// initialization
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+// mixin definition
+mixin tables-containers-nothead(caption)
+	table.table.table-striped
+		caption= caption
+			block
+			tbody
+				- blocks.tr()
 
 //- ---------------------------- footnotes ------------------------------- //
 mixin footnotes(footnotemodule)

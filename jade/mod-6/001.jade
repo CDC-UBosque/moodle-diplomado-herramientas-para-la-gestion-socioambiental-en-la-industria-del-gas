@@ -1,0 +1,76 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9514', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+				
+					h1 Objetivo
+									
+					p Con el desarrollo del presente módulo se espera que los participantes identifiquen los principales aspectos que componen el medio socioeconómico de la evaluación del impacto ambiental, con los cuales puedan abordar la sensibilidad del entorno de los proyectos y diseñar herramientas para la interrelación con las comunidades.
+					
+					ol
+						li El Medio socioeconómico en la Evaluación del Impacto Ambiental
+						ol
+							li El sistema técnico-administrativo de la EIA	
+							li La Evaluación del Impacto Social	
+							li El medio socioeconómico y sus componentes
+							li Definición del área de influencia para el medio socioeconómico
+							li Definición de la sensibilidad socioeconómica
+						li Mapeo de actores sociales
+						li Consulta Previa	
+						li Mecanismos de participación en el licenciamiento ambiental	
+						li Herramientas hacia la construcción de una ruta de relacionamiento
+						li Bibliografía
+
+
+						
+					
+										
+					//- Foot notes
+					//- +footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

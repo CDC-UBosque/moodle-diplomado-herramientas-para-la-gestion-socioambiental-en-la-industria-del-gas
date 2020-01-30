@@ -1,0 +1,201 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9497', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9499', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Permiso de Vertimientos
+					
+					p Conforme al artículo 2.2.3.2.20.1. del DUR 1073 de 2015, las aguas para vertimientos están clasificadas en Clase l. Cuerpos de agua que no admiten vertimientos, Clase II. Cuerpos de aguas que admiten vertimientos con algún tratamiento. 
+  
+					p Pertenece a la Clase I: 1. Las cabeceras de las fuentes de agua; 2. Las aguas subterráneas; 3. Los cuerpos de agua o zonas costeras, utilizadas actualmente para recreación; 4. Un sector aguas arriba de las bocatomas para agua potable (según criterios de la AA); 5. Los declarados por la AA con fundamento en los artículos 70 y 137 del Decreto - Ley 2811 de 1974.
+					p Por tan los cuerpos que corresponden a la Clase II (los demás cuerpos de agua no incluidos en Clase l), son aquellos sobre los cuales se otorgan permisos de vertimientos.
+					
+					
+					
+					
+					
+					
+					
+					
+					h4 ¿Quiénes están obligados?
+					
+					p Las personas naturales o jurídica, públicas o privadas que como consecuencia del aprovechamiento de las aguas en cualquiera de los usos previstos para el otorgamiento de la concesión de aguas<sup>8</sup>, incorporen a estas sustancias o desechos requieren obtener permisos para verter a las aguas superficiales, marinas o al suelo asociado a un acuífero, previo tratamiento.
+					
+					h4 ¿Cuáles son los requisitos?
+					
+					p De acuerdo con los Artículos 2.2.3.3.5.2., 2.2.3.3.5.3. y 2.2.3.3.5.4. del DUR 1076 de 2015, los requisitos<sup>9</sup> para el permiso de vertimientos son:
+					
+					ol(start="1")
+						li Diligenciar el Formato Único Nacional el cual contiene:
+						
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') a
+							li: a(href='#2' data-toggle='tab') b
+							li: a(href='#3' data-toggle='tab') c
+							li: a(href='#4' data-toggle='tab') d
+							li: a(href='#5' data-toggle='tab') e
+							li: a(href='#6' data-toggle='tab') f
+							li: a(href='#7' data-toggle='tab') g
+							li: a(href='#8' data-toggle='tab') h
+							li: a(href='#9' data-toggle='tab') i
+							li: a(href='#10' data-toggle='tab') j
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Nombre, dirección e identificación del solicitante y razón social si se trata de una persona jurídica.
+							div.tab-pane.fade#2
+								p Nombre y localización del predio, proyecto, obra o actividad.
+							div.tab-pane.fade#3
+								p Costo del proyecto, obra o actividad.
+							div.tab-pane.fade#4
+								p Fuente de abastecimiento indicando la cuenca hidrográfica o unidad ambiental costera u oceánica a la cual pertenece.
+							div.tab-pane.fade#5
+								p Nombre de la fuente receptora del vertimiento indicando la cuenca hidrográfica o unidad ambiental costera u oceánica a la cual pertenece.
+							div.tab-pane.fade#6
+								p Caudal de la descarga expresada en litros por segundo.
+							div.tab-pane.fade#7
+								p Frecuencia de la descarga expresada en días por mes.
+							div.tab-pane.fade#8
+								p Tiempo de la descarga expresada en horas por día.
+							div.tab-pane.fade#9
+								p Tipo de flujo de la descarga indicando si es continuo o intermitente.
+							div.tab-pane.fade#10
+								p Caracterización actual del vertimiento existente o estado final previsto para el vertimiento proyectado de conformidad con la norma de vertimientos vigente<sup>10</sup>.
+								
+					ol(start="2")
+						li Poder debidamente otorgado, cuando se actúe mediante apoderado.
+						li Autorización del propietario o poseedor cuando el solicitante sea mero tenedor.
+						li Certificado actualizado del Registrador de Instrumentos Públicos y Privados sobre la propiedad del inmueble, o la prueba idónea de la posesión o tenencia.
+						li Características de las actividades que generan el vertimiento.
+						li Plano<sup>11</sup> donde se identifique origen, cantidad y localización georreferenciada de las descargas al cuerpo de agua o al suelo<sup>12</sup>.
+						li Ubicación, descripción de la operación del sistema, memorias técnicas y diseños de ingeniería conceptual y básica, planos de detalle del sistema de tratamiento y condiciones de eficiencia del sistema de tratamiento que se adoptará<sup>13</sup>.
+						li Concepto sobre el uso del suelo expedido por la autoridad municipal competente.
+						li Evaluación ambiental del vertimiento, salvo para los vertimientos generados a los sistemas de alcantarillado público.
+						li Plan de gestión del riesgo para el manejo del vertimiento<sup>14</sup>.
+						li Constancia de pago para la prestación del servicio de evaluación del permiso de vertimiento.
+						li Los demás aspectos que la autoridad ambiental competente consideré necesarios para el otorgamiento del permiso.
+						
+						
+					h3 Como se indicó al inició vamos a profundizar en los temas de Reinyección, y Plan de gestión del riesgo para el vertimiento 
+					
+					h4 Reinyección
+					
+					
+					p Conforme al Artículo 2.2.3.3.4.6. del DUR de 1076 de 2015 la norma contempla la “reinyección de residuos líquidos”. El cual señala que es permitida siempre y cuando las aguas provenientes de la exploración y explotación petrolífera, de gas natural y recursos geotérmicos, no impida el uso actual o potencial de las aguas subterráneas contenidas en el acuífero.
+
+					p Para esto dentro del Estudio de Impacto Ambiental requerido para este tipo de proyectos se debe presentar para evaluación la reinyección de las aguas provenientes de estas actividades, previendo la posible afectación al uso actual y potencial de las aguas subterráneas contenidas en el acuífero.
+
+					p Que implica un análisis, la valoración de los posibles impactos asociados al tema y la generación de fichas de manejo para los impactos identificados. Información que es evaluada dentro del proceso de otorgamiento de la licencia ambiental y caso de no haberse solicitado al momento de la solicitud inicial requiere de la modificación del instrumento de manejo y control para su incorporación como una actividad permitida dentro del proyecto.
+
+					p Lo anterior, en concordancia con el artículo 2.2.3.2.10.16. del DUR 1076 de 2015 Inyecciones para recuperación secundaria de petróleo o gas natural, que señala que el empleo de agua en reinyecciones para recuperación secundaria de petróleo o gas natural requiere concesión especial de la Autoridad Ambiental competente, diferente a la exigida para la exploración y explotación de petróleo o gas natural.
+
+					p En donde se indica que el concesionario está obligado a prevenir la contaminación de las napas de agua subterránea que atraviesa.
+					
+					h4 Plan de gestión del riesgo para el vertimiento.
+					
+					p De acuerdo con el DUR en el artículo 2.2.3.3.5.4. Las personas naturales o jurídicas de derecho público o privado que desarrollen actividades industriales, comerciales y de servicios que generen vertimientos a un cuerpo de agua o al suelo deberán elaborar un Plan de Gestión del Riesgo para el Manejo de Vertimientos en situaciones que limiten o impidan el tratamiento del vertimiento. Dicho plan debe incluir el análisis del riesgo, medidas de prevención y mitigación, protocolos de emergencia y contingencia y programa de rehabilitación y recuperación.
+
+					p Los términos de referencia son los establecidos por la Resolución 1514 de 2012, en este sentido el plan debe contemplar ítems como antecedentes, alcance, metodología, descripción de actividades y procesos asociados al sistema de gestión del vertimiento, caracterización del área de influencia , Proceso de conocimiento del riesgo donde no solo identifica los riesgos, también detalla amenazas, análisis de vulnerabilidad, escenarios de riesgos, proceso de reducción del riesgo, seguimiento y evaluación, divulgación entre otros.
+
+					p Este plan debe ajustarse a la realidad de las condiciones del vertimiento, ya que lo que busca es identificar los posibles escenarios de riesgos, a fin de prevenir impactos por situaciones externas e internas; proyectando las medidas a tomar en caso de materializarse los riesgos identificados.
+					
+					
+					
+					
+					
+					
+					h4 ¿Cómo es el proceso?
+					
+					p La norma establece de manera general el procedimiento para otorgar el permiso de vertimientos en los artículos 2.2.3.3.5.5., 2.2.3.3.5.6., 2.2.3.3.5.7. y 2.2.3.3.5.8. del del DUR 1076 de 2015, que en términos generales corresponde a: El usuario radica la solicitud con el cumplimiento de los requisitos la autoridad competente evalúa la solicitud, si requiere información adicional se solicita al usuario de lo contrario se procede a la evaluación para el análisis, recibir la visita y toma de decisión de fondo. 
+
+					p Sin embargo y para tener mayor claridad de los pasos que deben surtirse se recomienda revisar el procedimiento puntal publicado por cada autoridad, en <a href="www.gov.co" target="_blank">www.gov.co</a>, o en su portal WEB.
+
+					p Para la modificación del permiso debe atender lo señalado en el artículo 2.2.3.3.5.9. y para renovación el artículo 2.2.3.3.5.10. del DUR 1076 de 2015.
+
+
+					
+					h4 ¿Qué debo tener en cuenta en la solicitud?
+					
+					p Se debe tener en cuenta lo señalado en el Artículo 2.2.3.2.23.4. del DUR 1076 de 2015 de tasas ambientales. 
+
+					p Por otra parte, para la presentación de la solicitud es importante que se revisen los conceptos y definiciones señaladas en los artículos 2.2.3.3.1.1 al 2.2.3.3.1.8. del DUR 1076 de 2019, la resolución reglamentaria 0631 de 2015 expedida por el Ministerio de Ambiente y Desarrollo Sostenible.
+
+
+					p Es importante realizar la revisión de la información antes de ser presentada y tener en cuenta los lineamientos de la autoridad.
+					
+					h3 Ahora entraremos en los trámites que conoceremos asociados al recurso flora y fauna, los cuales son:
+					
+					ul
+						li Permiso de Aprovechamiento forestal
+						li Permisos de Recolección de Especímenes de especies silvestres (permisos de recolecta)
+						
+					h3 Trámites que conoceremos asociados al recurso flora y fauna son:
+					
+					ul
+						li Permiso de Aprovechamiento forestal
+						li Permisos de Recolección de Especímenes de especies silvestres (permisos de recolecta)
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

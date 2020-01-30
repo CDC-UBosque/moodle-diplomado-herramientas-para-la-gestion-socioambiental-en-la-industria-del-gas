@@ -1,0 +1,206 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 4', 'Uso y aprovechamiento de servicios ecosistémicos', 'test-mod-4')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9496', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332159&chapterid=9498', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-4')
+				
+					h1 Concesión de Aguas Superficiales o Subterráneas
+					
+					h4 ¿Quiénes están obligados?
+					
+					p La persona natural o jurídica, pública o privada, que requiera obtener el derecho al aprovechamiento de las aguas para fines de (artículo 2.2.3.2.7.1. del DUR 1076 de 2015):
+					
+					ul
+						li Abastecimiento en los casos que requiera derivación.
+						li Riego y silvicultura.
+						li Abastecimiento de abrevaderos cuando se requiera de derivación.
+						li Uso industrial.
+						li Generación térmica o nuclear de electricidad.
+						li Explotación minera y tratamiento de minerales.
+						li Explotación petrolera.
+						li Inyección para generación geotérmica.
+						li Generación hidroeléctrica.
+						li Generación cinética directa.
+						li Flotación de madera.
+						li Transporte de minerales y sustancias tóxicas.
+						li Agricultura y pesca.
+						li Recreación y deportes.
+						li Usos medicinales.
+						li Otros usos similares.
+					
+					p Esta concesión tendrá un término según la naturaleza y duración de la actividad, para cuyo uso se otorga, de tal forma que resulte económicamente rentable y socialmente benéfica (artículo    2.2.3.2.7.3. del DUR 1076 de 2015), sin superar el tiempo establecido en el artículo 55 del Decreto –Ley 2811 de 1974 si se encuentra fuera de una licencia ambiental, pues en dicho caso se regirá por el tiempo que se establezca en el citado instrumento de manejo y control ambiental. Con excepción de las destinadas a la prestación de servicios públicos o a la construcción de obras de interés público o social, las cuales pueden ser otorgadas por períodos hasta de cincuenta (50) años.
+					
+					p Las concesiones pueden ser prorrogadas según el artículo 2.2.3.2.7.5. y las condiciones fijadas en el artículo 2.2.3.2.8.4. del DUR 1076 de 2015.
+					
+					h4 ¿Cuáles son los requisitos?
+					
+					p De acuerdo con los Artículos 2.2.3.2.9.1. y 2.2.3.2.9.2. del DUR 1076 de 2015, los requisitos para una concesión son:
+					
+					ol(start="1")
+						li Diligenciar el Formato Único nacional<sup>7</sup> el cual contiene:
+						
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') a
+							li: a(href='#2' data-toggle='tab') b
+							li: a(href='#3' data-toggle='tab') c
+							li: a(href='#4' data-toggle='tab') d
+							li: a(href='#5' data-toggle='tab') e
+							li: a(href='#6' data-toggle='tab') f
+							li: a(href='#7' data-toggle='tab') g
+							li: a(href='#8' data-toggle='tab') h
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Nombre y apellidos del solicitante, documentos de identidad, domicilio y nacionalidad. Si se trata de una persona jurídica, pública o privada, se indicará su razón social, domicilio, los documentos relativos a su constitución, nombre y dirección de su representante legal.
+							div.tab-pane.fade#2
+								p Nombre de la fuente de donde se pretende hacer la derivación, o donde se desea usar el agua.
+							div.tab-pane.fade#3
+								p Nombre del predio o predios, municipios o comunidades que se van a beneficiar, y su jurisdicción.
+							div.tab-pane.fade#4
+								p Información sobre la destinación que se le dará al agua.
+							div.tab-pane.fade#5
+								p Cantidad de agua que se desea utilizar en litros por segundo.
+							div.tab-pane.fade#6
+								p Información sobre los sistemas que se adoptarán para la captación, derivación, conducción, restitución de sobrantes, distribución y drenaje, y sobre las inversiones, cuantía de las mismas y término en el cual se van a realizar.
+							div.tab-pane.fade#7
+								p Informar si se requiere establecimiento de servidumbre para el aprovechamiento del agua o para la construcción de las obras proyectadas.
+							div.tab-pane.fade#8
+								p Término por el cual se solicita la concesión.
+								
+					ol(start="2")
+						li Anexar a la solicitud.		
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#9' data-toggle='tab') a
+							li: a(href='#10' data-toggle='tab') b
+							li: a(href='#11' data-toggle='tab') c
+							li: a(href='#12' data-toggle='tab') d
+							li: a(href='#13' data-toggle='tab') e
+							li: a(href='#14' data-toggle='tab') f
+							li: a(href='#15' data-toggle='tab') g
+							li: a(href='#16' data-toggle='tab') h
+							li: a(href='#17' data-toggle='tab') i
+							li: a(href='#18' data-toggle='tab') j
+							li: a(href='#19' data-toggle='tab') k
+							li: a(href='#20' data-toggle='tab') l
+							
+						+set('content')
+							div.tab-pane.fade.active.in#9
+								p Los documentos que acrediten la personería del solicitante. (expedición no superior a 3 meses)
+							div.tab-pane.fade#10
+								p Autorización del propietario o poseedor cuando el solicitante sea mero tenedor.
+							div.tab-pane.fade#11
+								p Certificado actualizado expedido por la Oficina de Registro de Instrumentos Públicos y Privados sobre la propiedad del inmueble, o la prueba adecuada de la posesión o tenencia. (expedición no superior a 3 meses)
+							div.tab-pane.fade#12
+								p Poder debidamente otorgado cuando se actúe por medio de apoderado.
+							div.tab-pane.fade#13
+								p Certificación de la autoridad ambiental sobre la presentación del informe previsto en el artículo 152 del Decreto 1541 de 1978.
+							div.tab-pane.fade#14
+								p Censo de usuarios para acueductos veredales y municipales. 
+							div.tab-pane.fade#15
+								p Diseño definitivo del pozo.
+							div.tab-pane.fade#16
+								p Información sobre los sistemas para la captación, derivación, conducción, restitución de sobrantes, distribución y drenaje, y sobre las inversiones, cuantía de las mismas y término en el cual se van a realizar.
+							div.tab-pane.fade#17
+								p Extensión y clase de cultivos que se van a regar (si aplica)
+							div.tab-pane.fade#18
+								p En caso de requerirse los datos previstos en la sección 10 (artículos 2.2.3.2.10.1. al 2.2.3.2.10.20. del DUR 1076 de 2015) para concesiones con características especiales.
+							div.tab-pane.fade#19
+								p Programa para el uso eficiente y ahorro del agua (PUEAA) (a partir de 2018)
+							div.tab-pane.fade#20
+								p Los demás datos que la Autoridad Ambiental competente y el peticionario consideren necesarios.
+					
+					
+					
+					p Sobre este último punto es importante tener en cuenta la reglamentación expedida como la Ley 373 de 1997: “Por la cual se establece el programa para el uso eficiente y ahorro del agua”, la Resolución 176 de 2003 “Por el cual se derogan las resoluciones 59 de 2000 y 79 de 2002; y se establece el nuevo procedimiento de acreditación de laboratorios Ambientales en Colombia”, Decreto único reglamentario 1976 de 2015. Artículos: 2.2.3.2.7.6, así como las disposiciones establecidas en las resoluciones de carácter regional.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					h4 ¿Cómo es el proceso?
+					
+					p La norma establece de manera general el procedimiento para otorgar las concesiones de aguas en los artículos 2.2.3.2.9.6, 2.2.3.2.9.7.  2.2.3.2.9.8. 2.2.3.2.9.9. del del DUR 1076 de 2015, sin embargo y para tener mayor claridad de los pasos que deben surtirse se recomienda revisar el procedimiento puntal publicado por cada autoridad, en <a href="www.gov.co" target="_blank">www.gov.co</a>, o en su portal WEB. 
+					
+					h4 ¿Qué debo tener en cuenta en la solicitud?
+					
+					p Las principales causales de devolución de las solicitudes están asociadas al cumplimiento parciales de los requisitos, como documentación incompleta, estudios con errores de coherencia, presentación y poco detalle de la información que se presenta.
+
+					p Dentro de las principales recomendaciones es leer la información que hace parte de la solicitud antes de radicarla, garantizar que los anexos o información complementaria este adecuadamente guarda y puede ser leída.
+
+					p En el caso de las concesiones de aguas es importante garantizar que el Censo de usuarios esta lo más actualizado posible y los datos de la concesión son los correctos.
+
+					p Se debe revisar si no es necesaria la solicitud del permiso de ocupación de cauce, y debido a que en la mayoría de jurisdicciones se solicita el trámite conjunto de la concesión de aguas y el permiso de vertimientos, es importante revisar que la información entre ambos documentos es concordante.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-4')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-4')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

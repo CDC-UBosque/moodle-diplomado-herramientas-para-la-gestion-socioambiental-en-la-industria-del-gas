@@ -1,0 +1,76 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9513', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9515', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+				
+					h1 1. El Medio socioeconómico en la Evaluación del Impacto Ambiental 
+					
+					h3 1.1.	El sistema técnico-administrativo de la EIA 
+									
+					p La Evaluación del Impacto Ambiental (EIA) ha sido adoptada por los países como la herramienta técnico-administrativa para la gestión anticipada de los impactos ambientales derivados del desarrollo de proyectos de inversión, entre los que se encuentran los asociados a la extracción de recursos naturales, sobre el medio abiótico, biótico y socioeconómico (Scott-Brown, 2006). 
+
+					p Con esta herramienta se integra un enfoque de la dimensión ambiental que 1) incorpora el sistema natural y transformado en que se desarrollan las actividades humanas, e incluye los aspectos biofísicos, sociales y sus relaciones; 2) contribuye a la comprensión y evaluación anticipada de las consecuencias ambientales de la implementación a nivel de proyecto y 3) se basa en procedimientos de decisión informados y participativos que garantizan la sostenibilidad del proceso de desarrollo (Espinoza, 2007; Espinoza, 2008).
+					
+					.resaltado-txt
+						p De acuerdo con la International Association for Impact Assessment [IAIA], la EIA se constituye en “el proceso de identificar, predecir, evaluar y mitigar los efectos biofísicos, sociales y otros de relevancia causados por el desarrollo de proyectos, antes de que se tomen las decisiones más importantes y se establezcan compromisos” (2009, p.1). (Subrayado fuera del texto).
+						
+						
+					p El antecedente de la Declaración de Río sobre el Medio Ambiente y el Desarrollo con la proclamación del principio 17, en el cual indicó que “Deberá emprenderse una evaluación de impacto ambiental, en calidad de instrumento nacional, respecto de cualquier actividad propuesta que probablemente haya de producir un impacto negativo considerable en el medio ambiente y que esté sujeta a la decisión de una autoridad nacional competente” (Naciones Unidas, 1992, p.2), tuvo un impacto en la política pública ambiental, al incorporar la EIA como un sistema de la estructura administrativa de los Estados (Espinoza, 2008).
+
+					p Al respecto en Colombia, la Ley 99 de 1993 incorporó el enfoque de la EIA a través de un conjunto de mecanismos formales que obligan a los proyectos sujetos a Licencia Ambiental a realizar el proceso de la evaluación ambiental exante (Decreto 1076 de 2015). A su vez, integró la Evaluación del Impacto Social (EIS) como una parte constitutiva de la EIA, con el abordaje de la dimensión del medio socioeconómico. 
+
+					p Este sistema técnico-administrativo se conoce en Colombia como el Licenciamiento Ambiental (LA) y es el principal instrumento ambiental de evaluación y seguimiento para decidir sobre la viabilidad de proyectos, obras y actividades con potencial de generar impactos ambientales (Toro, Martínez, y Arrieta, 2013); se ha operacionalizado a través de una arquitectura institucional que se puede explicar por sus normas, organizaciones, instrumentos y los procedimientos que la soportan (Andia y González, 2012; Villalba, 2015).
+
+					p De acuerdo con el Decreto 1076 de 2015, un impacto ambiental se define como “cualquier alteración en el medio ambiental biótico, abiótico y socioeconómico, que sea adverso o beneficioso, total o parcial, que pueda ser atribuido al desarrollo de un proyecto, obra o actividad” (Subrayado fuera del texto). De igual manera, este Decreto compilatorio establece en su capítulo 3, lo relacionado con el Licenciamiento Ambiental de proyectos, en cuanto a: la lista taxativa de proyectos sujetos a Licencia Ambiental; el Diagnóstico Ambiental de Alternativas, los Estudios de Impacto Ambiental, el proceso de evaluación y, seguimiento y control ambiental, junto con los instrumentos que los soportan; en los cuales se encuentra inmerso el análisis de los elementos que conforman el medio socioeconómico. 
+						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

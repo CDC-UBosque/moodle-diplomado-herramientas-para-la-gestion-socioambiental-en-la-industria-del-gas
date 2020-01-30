@@ -1,0 +1,116 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9519', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9521', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h1 3. Consulta Previa
+									
+					p La consulta previa es el derecho fundamental de participación que tienen las comunidades étnicas (indígenas, negras, afrocolombianas, raizales, palenqueras, y Rom) para la protección de su integridad cultural, social y económica cuando se pretendan tomar decisiones que puedan afectarlos (Ministerio del Interior, 2018; Rodriguez, 2008), tales como a) medidas administrativas como el otorgamiento de una Licencia Ambiental y b) medidas legislativas como la expedición de normas que los involucren o afecten (Corte Constitucional, Sentencia T-382 de 2006) (Rodriguez, 2008).
+
+					p La consulta previa se encuentra fundamentada en Convenio 169 de la Organización Internacional del Trabajo (OIT), el cual fue ratificado por Colombia a través de la Ley 21 de 1991, y bajo la que el Estado colombiano asumió la responsabilidad de realizar acciones coordinadas con las comunidades étnicas para la protección de sus derechos y el respeto a su integridad, entre estas la de “consultar a los pueblos interesados, mediante procedimientos apropiados y en particular a través de sus instituciones representativas, cada vez que se prevean medidas legislativas o administrativas susceptibles de afectarles directamente” (Ley 21 de 1991, Art 6).
+
+					p De conformidad con esta misma Ley, las consultas deben realizarse bajo el principio de la buena fe y de manera apropiada a las circunstancias (Art.6); asimismo deben producirse bajo un diálogo intercultural entre las partes: gobierno, comunidades étnicas y ejecutores del proyectos, obras o actividades según sea el caso, con el objetivo de llegar a acuerdos o lograr el consentimiento sobre las medidas propuestas (Mininterior, 2018). Asimismo, la Constitución Política de Colombia (1991) otorgó garantías constitucionales con sus artículos 1, 2, 7, 8, 10, 63, 40-2, 70, 95, y 330. 
+
+					p Al respecto, la consulta previa debe cumplir tres condiciones, debe ser: 
+					
+					ol
+						li libre, es decir sin interferencias o presiones;
+						li previa, esto es anterior a la adopación de la medida administrativa o lesgislativa; 
+						li informada, se debe conocer el objeto del proyecto, obra o actividad o de la Ley o Decreto.
+
+					
+					p En Colombia se han establecido normas, procedimientos y herramientas por medio del cual se garantiza a las comunidades étnicas el derecho fundamental a la participación y acceso a la información cuando la medida administrativa o legislativa sea susceptible de afectarlos de manera directa. Para esto, la Dirección de Consulta Previa del Ministerio del Interior es la encargada de coordinar, planear, ejecutar y hacer el seguimiento de los distintos procesos de consulta con las comunidades étnicas.
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') Normas
+							li: a(href='#2' data-toggle='tab') Procedimientos / herramientas
+							li: a(href='#3' data-toggle='tab') Entidad encargada
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								ul
+									li Decreto 1066 de 26 de mayo 2015, Único Reglamentario del Sector Administrativo del Interior (Decreto 1320 de 1998 y Decreto 2613 de 2013).
+									li Ley 70 de 1993.
+							div.tab-pane.fade#2
+								ul
+									li Directiva 10 de 2013 (coordinación interinstitucional).
+							div.tab-pane.fade#3
+								ul
+									li Dirección de Consulta Previa (Mininterior).
+
+
+
+					h4 Directiva Presidencial 10 de 2013
+					
+					p Esta directiva se concibe como una herramienta para la coordinación institucional y se desarrolla a través de cinco etapas:
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/008.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/008.jpg', 'Figura 1')
+						span Figura 5. Etapas del proceso de consulta previa. <br/> Fuente. Adaptado de Mininterior, 2018
+
+						
+					h4 La Consulta previa y la Corte Constitucional 
+					
+					p La garantía de la consulta previa como derecho fundamental, objeto de permanentes reclamaciones por parte de las comunidades étnicas, y pronunciamientos de la Corte Constitucional, ha desarrollado una jurisprudencia constitucional que es fuente formal y material de derecho con fuerza vinculante en las decisiones de las medidas administrativas y judiciales. De acuerdo con la Corte (2019)<sup>1</sup>, en 2018 se radicaron 171 tutelas que invocaron este derecho; las cuales además solicitaron el amparo de otros derechos como el debido proceso, derecho de petición, igualdad, identidad cultura y ambiente sano. Estas tuvieron lugar principalmente en La Guajira (25), Antioquia (21), Bogotá (20) y Bolívar (13).
+					
+					p La Corte Constitucional a través de sus sentencias ha abordado el concepto de afectación directa a las comunidades étnicas, y para el caso particular de los proyectos de exploración y explotación de recursos no renovables, “ha entendido que la afectación directa incluye, el impacto en (i) el territorio de la comunidad tradicional; o (ii) en el ambiente, la salud o la estructura social, económica, así como cultural del grupo” (SU123-18, p.p 2) y lo aborda de manera diferenciada del concepto de área de influencia 
+
+					p Asimismo, ha desarrollado los principios que rigen la consulta, entre estos: el objetivo de la consulta previa; el principio de buena fe; la participación efectiva; el proceso de diálogo cultural entre iguales, la flexibilidad y acceso a la información. De igual manera, la Corte se ha pronunciado sobre los problemas prácticos de los certificados expedidos por el Ministerio del Interior de presencia de las comunidades étnicas; la debida diligencia de los particulares. Sobre los particulares ha generado una unificación de las reglas aplicables en materia de consulta previa y soluciones judiciales en torno a las misma (SU123-18).
+
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

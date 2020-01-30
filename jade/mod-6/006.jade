@@ -1,0 +1,77 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9517', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9519', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h3 1.5.	Definición de la sensibilidad socioeconómica
+									
+					p La sensibilidad ambiental se debe entender como la: “potencial de afectación (transformación o cambio) que pueden sufrir los componentes ambientales como resultado de la alteración de los procesos físicos, bióticos y socioeconómicos que resultan de las actividades antrópicas o de los procesos de desestabilización natural que experimenta el ambiente” (MADS, 2018); así mismo, su identificación y análisis “proporciona información sobre la capacidad y fragilidad del territorio y sus recursos naturales en forma sistematizada y localizada geográficamente” (CORTOLIMA, sf, p291). En términos de los socioeconómico, para operacionalizar dicha definición se deben tener en cuenta los atributos de los componentes del medio socioeconómico que determinan lo intrínseco de las unidades territoriales objeto de análisis, con base en la caracterización ambiental del territorio donde se emplazará el proyecto. A continuación, se señalan algunos aspectos para el abordaje de la sensibilidad:
+
+					ul
+						li las características intrínsecas de una población: indicadores sociales (pobreza, desigualdad y exclusión social) y condiciones de vulnerabilidad; idiosincrasia, y las bases de su sistema cultural.
+						li El espacio geográfico en que se localiza la población y los atributos de sensibilidad que le otorga esa ubicación.
+						li El nivel de dependencia del sistema sociocultural y económico al entorno ambiental.
+						li Estructura y tenencia de la propiedad.
+						li La existencia de áreas con reglamentación especial (áreas protegida, distritos de manejo, etc).
+						li Presencia de infraestructura social y áreas de importancia cultural y turística.
+						li Las formas de organización social y político-administrativa.
+						li Presencia de conflictos socioambientales.
+
+
+					p La identificación y medición de estos atributos, debe partir de un enfoque espacial y temporal; es decir debe reconocerse la sensibilidad específica que otorga la localización y los procesos históricos de conformación del territorio. Por lo cual, cada caso debe abordarse de forma particular. Esta sensibilidad se debe medir en una “escala de valoración que indica cambios de la susceptibilidad del medio socioambiental en relación con un agente generador de perturbaciones” (Garcia, 2017); que puede ser natural o antrópico.
+
+					p Finalmente, la sensibilidad socioeconómica se puede expresar, a partir de las condiciones intrínsecas identificadas para cada una de las unidades territoriales por medio de la escala de valoración establecida, y puede ser espacializada geográficamente con base en métodos que permitan superponer la susceptibilidad de los atributos considerados. Posteriormente, esta sensibilidad socioeconómica será parte del insumo, junto con los análisis de sensibilidad que se realicen para los atributos biofísicos, para la definición de la sensibilidad socioambiental de un territorio.
+
+
+						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

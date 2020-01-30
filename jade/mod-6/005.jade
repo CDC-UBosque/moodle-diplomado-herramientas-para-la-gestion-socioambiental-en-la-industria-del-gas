@@ -1,0 +1,133 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 6', 'Comunidad: Servicios ambientales-interrelaciones comunidad y ambiente, consulta previa y análisis de entornos', 'test-mod-6')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9516', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=332160&chapterid=9518', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-6')
+					
+					h3 1.4.	Definición del área de influencia para el medio socioeconómico
+									
+					p De acuerdo con el Decreto 1076 de 2015, el área de influencia se define como el
+					
+					.resaltado-txt
+						p “Área en la cual se manifiestan de manera objetiva y en lo posible cuantificable, los impactos ambientales significativos ocasionados por la ejecución de un proyecto, obra o actividad, sobre los medios abiótico, biótico y socioeconómico, en cada uno de los componentes de dichos medios. Debido a que las áreas de los impactos pueden variar dependiendo del componente que se analice, el área de influencia podrá corresponder a varios polígonos distintos que se entrecrucen entre sí.” (Artículo 2.2.2.3.1.1.). 
+						
+						
+					p Así las cosas, la definición, identificación y delimitación del área de influencia para el medio socioeconómico debe considerar los impactos al medio y sus componentes (demográfico, espacial, económico, cultural y político-administrativo), junto con los impactos a los medios abióticos y bióticos, por los efectos del desarrollo de un proyecto. 
+
+					p Para la delimitación del área de influencia es necesario realizar un proceso iterativo que analice en doble dirección los siguientes aspectos: 
+
+					ul
+						li El proyecto, obra o actividad, sus actividades asociadas, y su temporalidad
+						li La localización del proyecto y de las actividades asociadas;
+						li Los impactos previstos desde el proyecto, obra o actividad
+						li El uso y aprovechamiento de recursos naturales a ser requeridos por el proyecto, y el que realicen las comunidades asentadas.
+						li Las unidades territoriales administrativas y socialmente reconocidas (corregimientos, veredas, sectores de vereda, barrios, inspecciones de policía), que serán las unidades mínimas de análisis.
+						li Las características de los componentes del medio socioeconómico de las unidades territoriales que pueden ser intervenidas por el proyecto
+						li Los tipos de actores sociales
+						li Presencia o no de comunidades étnicas 
+						li Los aportes de las comunidades y autoridades obtenidos a través de los diferentes espacios y momentos de la participación.
+
+
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('Tabla 1 Aspectos Metodológicos Generales para la definición del área de influencia')
+						+set('thead')
+							tr
+								th ETAPA PRE-CAMPO
+								th ETAPA DE CAMPO
+								th ETAPA POS-CAMPO
+						+set('tr')
+							tr
+								td Trazado preliminar del área de influencia con base en información secundaria y del diseño del proyecto sus actividades asociadas
+								td Reconocimiento del área; levantamiento de información primaria sobre los componentes del medio socioeconómico para robustecer la caracterización; y talleres de identificación de impactos con las comunidades y autoridades 
+								td Proceso iterativo para ajustar el área de influencia con los resultados de la etapa de campo y la evaluación de los impactos
+							tr
+								td(colspan="3").small Fuente. Tomado de Guía para la definición, identificación y delimitación del área de influencia (ANLA, 2018a)
+
+
+
+
+
+
+
+
+					
+					
+					
+					
+					p Con la base en la línea base socioeconómica elaborada a partir de la información primaria y secundaria, y la identificación de los impactos a los componentes del medio socioeconómico en el escenario con proyecto, junto con la información aportada por las comunidades y autoridades locales se realiza la evaluación y análisis de los impactos, lo que aportará los elementos para delimitar el área de influencia definitiva para el medio socioeconómico y cada uno de sus componentes
+					
+					
+					
+						
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/003.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-6/003.jpg', 'Figura 1')
+						span Figura 3. Definición del área de influencia del medio socioeconómico.
+						
+					
+					ul
+						li Proyecto, sus actividades y su temporalidad.
+						li Localización del proyecto y de las actividades asociadas.
+						li Las unidades territoriales administrativas y socialmente reconocidas (corregimientos, veredas, sectores de vereda, barrios, inspecciones de policía).
+						li El uso y aprovechamiento de recursos naturales del proyecto, y el que realizan las comunidades asentadas (servicios ecosistémicos de provisión y culturales).
+						li Características del medio socioeconómico, biótico y abiótico (sensibilidad).
+						li Los actores sociales.
+						li Presencia o no de comunidades étnicas.
+						li Aportes de las comunidades y autoridades en los espacios de participación en la elaboración de la EIA.
+						li Impactos previstos del proyecto.
+
+						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-6')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-6')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
