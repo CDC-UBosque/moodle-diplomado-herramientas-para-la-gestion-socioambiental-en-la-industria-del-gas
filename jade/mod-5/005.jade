@@ -1,0 +1,111 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9652', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9654', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					h1 Medidas de manejo para especies en veda
+					
+					p Las medidas de manejo para especies en veda, se clasifican en medidas de manejo in-situ y ex-situ. Las primeras corresponden a la ejecución de actividades como:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Recuperación, rehabilitación o restauración ecológica para generar el hábitat de la especie en veda
+							div.tab-pane.fade#2
+								p Rescate, traslado y reubicación de especies de flora en veda.
+							div.tab-pane.fade#3
+								p Reposición de individuos arbóreos y helechos arborescentes en veda.
+							div.tab-pane.fade#4
+								p Traslado y reubicación de brinzales y latizales
+							div.tab-pane.fade#5
+								p Compra de predios para la restauración, rehabilitación o recuperación asistida.
+					
+					
+					
+					p En el caso de las medidas ex-situ se encuentran:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#6' data-toggle='tab') 1
+							li: a(href='#7' data-toggle='tab') 2
+							li: a(href='#8' data-toggle='tab') 3
+							li: a(href='#9' data-toggle='tab') 4
+							
+						+set('content')
+							div.tab-pane.fade.active.in#6
+								p Protocolos de manejo, conservación y pretratamiento de semillas.
+							div.tab-pane.fade#7
+								p Protocolos para el rescate de semillas y propágulos.
+							div.tab-pane.fade#8
+								p Protocolos de propagación y manejo en campo.
+							div.tab-pane.fade#9
+								p Estudios de reproducción por diferentes medios y tecnologías como, por ejemplo: in vitro, esquejes, estacas, entre otras.
+								
+
+					p Dentro de las principales medidas que adoptaban las autoridades ambientales para el manejo de las especies vedas en las Resoluciones No 801 de 1977, 0316 de 1974 y su modificación la No 096 de 2006, están las medidas in-situ de los literales c. y d. y ex-situ literal c.; Para el caso de los grupos taxonómicos de bromelias, orquídeas, musgos, hepáticas, líquenes y anthoceros, señalados en la Resolución No 213 de 1977, se encuentran las medidas in-situ de los literales a. y b. y ex-situ literal c.
+
+					p Es importante señalar que la mayoría de estas medidas vienen acompañadas de estrategias de sensibilización y educación ambiental, con el objetivo de contribuir a la conservación y cuidado de las especies con veda.					
+					
+										
+					//- Foot notes
+					// +footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,73 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9649', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9651', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+				
+					h1 Normativa y conceptos
+					
+					h3 Concepto de veda de especies de flora silvestre
+					
+					p De acuerdo con Minambiente<sup>1</sup> <i>la veda es una restricción y regulación del uso o aprovechamiento de determinadas especies, grupos taxonómicos o productos de la flora en el territorio a nivel regional o nacional, por un tiempo parcial o temporal.</i>
+
+					p Razón por la cual “la Veda” se considera como el instrumento de restricción y regulación, cuando existen evidencias o indicios de que las especies de flora silvestre, forestales maderables y no maderables, algunos grupos taxonómicos o productos, están siendo amenazadas por diferentes procesos de degradación ambiental, a través del tiempo y en un determinado lugar.
+
+
+					p Este instrumento se establece a nivel nacional o regional, por la autoridad ambiental competente, restringiendo las labores que impliquen la afectación de estas especies durante el desarrollo de proyectos, obras o actividades.
+
+					p Las vedas pueden ser de dos tipos: <b>Temporales</b>, es decir la autoridad restringe el acceso al recurso en una franja de tiempo o periodo del año, buscando proteger el recurso acorde con la dinámica del mismo; o la veda <b>Definitiva</b>, que corresponde a la prohibición de usar el recurso de manera permanente basado en estudios que de muestran la criticidad de la especie y su vulnerabilidad en el territorio.
+
+					p Adicionalmente, las vedas pueden establecer con restricciones geográficas, es decir ser un instrumento que limita el uso a nivel nacional, territorial, o local.
+
+					p En el caso de Colombia, el alcance del instrumento a nivel espacial, esta relacionado directamente con las facultades de cada autoridad, es decir, una Autoridad Ambiental Regional, limitara el uso de la especie, familia o grupo biológico, máximo a nivel de su jurisdicción, mientras el Ministerio de Ambiente y Desarrollo Sostenible, es el único con facultad para restringir el uso a nivel nacional.
+						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,202 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9650', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9652', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					h1 Normatividad de veda Nacional – Regional
+					
+					p A continuación, se listan los actos administrativos expedidos a la fecha, a nivel nacional y regional, que establecen vedas a las especies de flora. 
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('NIVEL NACIONAL')
+						+set('thead')
+							tr
+								th NORMA
+								th ESPECIES
+						+set('tr')
+							tr
+								td Resolución 0316 de 1974 (INDERENA)
+								td Pino Colombiano (Podocarpus rospigliossi, Podocarpus montanus y Podocarpus oleifolius), Nogal (Juglans spp.), Hojarasco (Talauma caricifragans), Molinillo (Talauma hernandezi), Caparrapí (Ocotea caparrapi), Comino de la Macarena (Erithroxylon sp. [sic.]) y Roble (Quercus humboldtii).
+							tr
+								td Resolución 1408 de 1975 (INDERENA)
+								td Roble (Quercus humboldtii).
+							tr
+								td Resolución 1132 de 1975 (INDERENA)
+								td Pino Colombiano (Podocarpus rospigliosii, Podocarpus montanus y Podocarpus oleifolius)
+							tr
+								td Resolución 0213 de 1977 (INDERENA)
+								td Musgos, líquenes, lamas, parásitas, quiches y orquídeas, así como lama, capote y broza y demás especies y productos herbáceos o leñosos como arbolitos, cortezas y ramajes que constituyen parte de los hábitats de tales especies.
+							tr
+								td Resolución 0801 de 1977 (INDERENA)
+								td Helecho macho, Palma boba o Palma de helecho (Familias: Cyatheaceae y Dicksoniaceae; géneros Dicksonia, Cnemidaria, Cyatheaceae, Nephelea, Sphaeropteris y Trichipteris).
+							tr
+								td Resolución 0463 de 1982 (INDERENA)
+								td Todas las especies forestales.
+							tr
+								td Ley 61 de 1985
+								td Palma de Cera (Ceroxilon quindiuense)
+							tr
+								td Resoluciones 1602 de 1995 y 020 de 1996
+								td Mangle (Rhizophora harrisonii, Laguncularia racemosa, Conocarpus erectus, Avicennia germinans, Avicennia tonduzii, Pelliciera rhizophorae, Mora megistosperma, Mora oleifera)
+							tr
+								td Resolución 096 del 20 de enero de 2006 
+								td Por la cual se modifican las resoluciones 316 de 1974 y 1408 de 1975, proferidas por el INDERENA, en relación con la veda sobre la especie Roble (Quercus humboldtii).
+								
+								
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('NIVEL REGIONAL')
+						+set('thead')
+							tr
+								th ENTIDAD
+								th NORMA
+								th ESPECIES
+						+set('tr')
+							tr
+								td(rowspan='2') Corporación para el Desarrollo Sostenible del Urabá – CORPOURABA
+								td Resolución 07639 de agosto 4 de 1995
+								td Roble de tierra fría (Quercus humboldtii), Comino crespo (Aniba perutilis), Abarco (Cariniana pyriformis), Choibá (Dipterix panamensis), Ebano (Caesalpinia ebano), Puy (Tabebuia serratifolia), Mangle (Rizophora spp), Coco cristal (Lecythis spp), Caoba (Swietenia macrophylla), Guayacán hobo (Centrolobium paraense), Chaquiro o Pino colombiano (Podocarpus rospigliossi) Güino (Carapa guianensis) y Nogal o Cedro negro (Juglans neotropica)
+							tr
+								td Resolución 126198 de septiembre 10 de 1998
+								td Cativo (Prioria copaifera).
+							tr
+								td Corporación Autónoma Regional del Cauca – CRC
+								td Acuerdo 17 de 1973
+								td Saman (Albizia saman), Caracolí (Anacardium excelsum), Ceiba (Ceiba pentandra), Palma de Cuezco (Scheelea butyraceae).
+							tr
+								td Corporación Autónoma Regional de Caldas – CORPOCALDAS
+								td Resolución 810 de 1996
+								td Pino colombiano (Podocarpus rospigliosii, P. montanus, P. oleifolius), Nogal o Cedro negro (Juglans spp), Hojarasco (Talauma caracifragans), Molinillo (Talauma hernandezi), Aceite de caparrapi (Ocotea caparrapi), Roble (Quercus humboldtii). <br/>Musgos, líquenes, quiches y parásitas diferentes a las orquídeas y productos vegetales conocidos como lama, capote y broza.<br/>Palma Boba, Helecho macho o Palma de helecho (familias Cyatheaceae y Dicksoniaceae, géneros Dicksonia, Alsophylla, Cyathea, Nephelea, Sphaeropteris y Trichipteris).
+							tr
+								td(rowspan='2') Corporación Autónoma Regional de Risaralda – CARDER
+								td Acuerdo 022 de 1993
+								td Bryophytas
+							tr
+								td Resolución 177 de 1997
+								td Pino colombiano (Decussocarpus rospigliossi. D. montanus y D. oleifolius), Cedro negro (Juglans neotropica), Hojarasco (Talauma caracifragans), Molinillo (Talauma hernandezi), Caparrapi (Ocotea caparrapi), Comino (Aniba perutilis), Roble (Quercus humboldtii), Chanul (Humiriastrum procerum), Dinde (Chlorophora tinctoria), Palma boba o Helecho macho (Trichipteris frigida), Peinemono (Apeiba  aspera), Palma de cera (Ceroxilon quindiuense), Piedro (Licania sp), Caimo (Pouteria sp.), Algarrobo (Hymenaea courbaril), Mediacaro (Pouteria lucuma), Cerezo  (Prunus serotina), Pino romerón (Podocarpus oleifolius), Caoba (Swietenia macrophylla), y Palma de cera (Ceroxilon quindiuense).
+							tr
+								td(rowspan='2') Corporación Autónoma Regional de Cundinamarca – CAR
+								td Acuerdo 022 de octubre 22 de 1993
+								td Productos de la flora silvestre conocidos como musgos, líquenes, lama, parásitas, broza, pajas y demás productos herbáceos o leñosos como arbolitos, cortezas y ramas utilizadas con fines ornamentales en adornos navideños y otras ritualidades.
+							tr
+								td Acuerdo 053 de noviembre 10 1981
+								td Especímenes, individuos o productos de la flora silvestre, de los bosques naturales o de plantaciones.
+							tr
+								td Corporación Autónoma Regional del Atlántico – CRA
+								td Resolución 0025 de 1996
+								td Mangle Amarillo (Languncularia racemosa), Colorado (Rhizophora mangle), y Salado (Avicennia nitida)
+							tr
+								td(rowspan='2') Corporación Autónoma Regional de la Frontera Nororiental – CORPONOR
+								td Resolución 0565 de septiembre 1 de 1997
+								td Todas las especies susceptibles de aprovechamiento forestal
+							tr
+								td Resolución 0208 de abril 21 de 1999
+								td Todas las especies susceptibles de aprovechamiento forestal
+							tr
+								td Corporación Autónoma Regional del Quindío – CRQ
+								td Acuerdo 06 del 12 de febrero de 1986
+								td Guadua (Guadua angustifolia)
+							tr
+								td(rowspan='2') Corporación Autónoma Regional del Tolima – CORTOLIMA
+								td Acuerdo 10 de marzo 11 de 1983.
+								td Cedro negro (Cedrela sp), Pino romerón, Pino hayuelo (Podocarpus rospigliosiii), Pino chaquiro (Podocarpus sp), Roble (Quercus humboldtii) y Comino (Erithroxylon sp [sic.])
+							tr
+								td Acuerdo 003 de enero 25 de 1994
+								td Todas las especias susceptibles de aprovechamiento forestal
+							tr
+								td Corporación para el Desarrollo Sostenible del Sur de la Amazonia – CORPOAMAZONIA
+								td Resolución 1057 de diciembre 13 de 1999
+								td Sangregao (Croton lechleri Mull. Arg.)
+							tr
+								td Corporación Autónoma Regional para la Defensa de la Meseta de Bucaramanga – CDMB
+								td Resolución 1986 de diciembre 1 de 1984 (en revisión)
+								td Epífitas: Balazo o esqueleto (Monstera spp), Melena o barba (Philanopsia usneoides), Filodendron (Philodendron spp), Bromelia o Quiche (Bromeliaceae spp), Ñame (Dioscoraceae spp), Orquídeas (Orchidaceae), Jengibre (Zingiberaceae spp), Bijao (Marantaceae spp), Zarzaparrilla (Umilax spp), Quino (Cinchona spp), Ipecacuana (Cephaelipecacuana), Totumo (Crescentia spp), Bálsamo de Tolú (Myroxilon balsamum) y Cactos (Cactaceae spp).
+							tr
+								td(rowspan='2') Corporación Autónoma Regional del Valle del Cauca – CVC
+								td Acuerdo 17 de junio 11 de 1973
+								td Caracolí (Anacardium sp.), Ceiba (Ceiba sp.), Palma Corozo o Palma de Puerco (Schealea butyracea) y Samán (Samanea saman)
+							tr
+								td Acuerdo 24 de julio 18 de 1997
+								td Especies del ecosistema manglar: Rhizophora mangle, Avicennia germinans, Laguncularia racemosa, Pelliciera rhizophoeae, Conocarpus erecta y Mora megistosperma.
+							tr
+								td Corporación Autónoma Regional del Centro de Antioquia – CORANTIOQUIA
+								td Resolución 3183 de enero 26 de 2000
+								td Almanegra o Magnolio de monte (Talauma espinalii), Comino o Comino crespo (Aniba perutilis), Piedro o laurel piedro (Nectandra sp), Canelo (Aniba sp), Caunce (Godoya antioquensis), Cedro negro (Juglans neotropica), Cedro de altura (Cedrela montana). <br/>Palma de Cera, Palma de ramo o Palma real (Ceroxilon quindiuense, C. alpinum, C. vogelianum, C.parvifrons). Palma Táparo (Attalea amygdalyna). <br/>Musgos, líquenes, bromelias, sarros, orquídeas y heliconias silvestres.
+							tr
+								td Corporación Autónoma Regional para el Desarrollo Sostenible del Chocó – CODECHOCÓ
+								td Resolución 2535 de septiembre 1 de 1987
+								td Guayaquil (Centrolobium paraense) y Pino Amarillo (Podocarpus sp.)
+							tr
+								td Corporación Autónoma Regional del Magdalena – CORPAMAG
+								td Resolución 000463 de marzo 22 de 1994
+								td Especies forestales y demás especies de la flora
+							tr
+								td Corporación Autónoma Regional de las Cuencas de los Ríos Negro y Nare – CORNARE
+								td Acuerdo 262 del 22 de noviembre del 2011
+								td Caunce (Godoya antioquensis) Yumbé (Caryodaphnopsis cogolloi) Alma negra (Talauma espinalii) Balsamo (Myroxylon balsamum) Nazareno (Peltogyne paniculata subsp pubescens), Marfil (Vantanea magadalenensis), Cabuyo (Eschweilera antioquensis), Carreta (Aspidosperma sp. Alfaroa colombiana, Aniba  sp., Dussia sp., Gaiadendron punctatum)Chiriguaco (Ilex caliana).
+							tr
+								td Corporación Autónoma Regional de Chivor – CORPOCHIVOR
+								td Resolución No. 495 del 02 de septiembre de 2015
+								td Lista de varias especies en diferentes niveles de amenaza
+							tr
+								td(rowspan='2') Departamento Técnico Administrativo del Medio Ambiente - DAMA
+								td Resolución 1333 de diciembre 1 de 1997
+								td Musgos, líquenes, lamas, quiches, chites, parásitas, orquídeas, capote, broza, y demás productos herbáceos o leñosos como arbustos, cortezas y ramajes que conforman parte de los hábitats de tales especies.
+							tr
+								td Decreto 984 de noviembre 26 de 1998 
+								td Géneros Pinus, Cupressus, Eucalyptus, Fraxinus, Acacia, Casuarina, Ulex.
+						
+					
+										
+					//- Foot notes
+					// +footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,57 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('#', 'disabled', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content 
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+				
+					h1 Metodología de la caracterización de especies de flora en veda
+					
+					+video('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-5/Metodologia-veda.pdf')
+					
+					
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

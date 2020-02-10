@@ -1,0 +1,94 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9655', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9657', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					h1 Profundización información técnica concesiones de aguas
+					
+					h3 Información Básica de Hidrología
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-5/001.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/mod-5/001.jpg', 'alt image')
+						span  Fuente: definicion.mx/ciclo-agua/
+					
+					p Basado en el concepto de Hidrología, se puede decir que cualquier necesidad de uso del recurso hídrico debe estar basado en su principio fundamental, el ciclo hidrológico. Por tanto, la información mínima que se debe garantizar es una pequeña descripción de la cuenca como unidad hidrográfica, la cual se va a afectar, en esta se debe describir los periodos de lluvia o de sequía y especialmente hacer un balance hídrico que permita verificar los periodos en los cuales se presenten excesos o aquellos en los que se presenten déficits significativos.
+					p Para tal fin, es necesario recurrir a información de las estaciones climatológicas presentes en la cuenca, disponer de información básica que permita realizar un balance hídrico, por ejemplo: según el método propuesto por (Claro, 2006),<sup>4</sup> para determinar el índice de disponibilidad hídrica, es necesario solicitar la información de estaciones cercanas a la captación y que permitan realizar los cálculos necesarios para el balance hídrico.
+					p Además de la información climática, se deben presentar las zonas de recarga y descarga de la cuenca, para determinar las áreas de protección de la cuenca.
+					p Presentar las coberturas del suelo o sus usos y hacer el análisis de conflictos frente a la vocación de uso de los suelos basados en la información IGAC.<sup>5</sup>
+					
+					
+					h3 Importancia del cálculo de caudales e hidráulicos
+
+					p Los cálculos de caudales máximos se realizan con el fin de proporcionar parámetros de diseño y prevención a la hora de realizar construcciones dentro de la cuenca, y a su vez, utilizarse como criterio hidrológico para estimar caudales en aquellos sitios donde no se posea información de los mismos.
+					p Existen varios métodos para la determinación de los caudales máximos de la cuenca, que dependen de la disponibilidad de información que se pueda obtener a partir de parámetros climáticos disponibles (consultar métodos: http://www.fao.org/3/T0848S/t0848s06.htm).
+					p A partir de la determinación del caudal requerido para la actividad para la cual se solicita la concesión de agua, se debe realizar los cálculos ingenieriles de la obra de captación y las obras asociadas como son: canal de aducción, desarenadores, tanques de captación, canales de retorno y demás obras complementarias, con el fin de determinar que el recurso va a ser utilizado en la actividad reportada y en la cantidad propuesta en la solicitud.<sup>6</sup>
+					p Estas obras deberán reportar memorias de cálculo hidráulico y estructural que permita garantizar la duración para el periodo de diseño propuesto y además permita la mínima afectación al curso de donde se va a hacer uso del recurso y su estabilidad.<sup>7</sup>
+
+
+
+
+					
+					
+					h3 Importancia de aforos en diferentes épocas del año
+					
+					p Realizar aforos en varios puntos y en diferentes épocas del año, permite determinar la disponibilidad de recurso y de esta manera tomar decisiones a la hora de entregar concesiones, además de las lecturas de caudal en diferentes épocas del año y en varios puntos del cauce, se debe realizar un inventario de usuarios del agua y la determinación de los caudales requeridos por cada uno de estos, con el fin de verificar que la oferta del recurso no sobre pase la demanda y en épocas de sequía se pueda garantizar los caudales ecológicos de la  fuente hídrica, sin que se vaya a afectar el ecosistema asociado a la cuenca.<sup>8</sup>
+					p Como recomendación para la ampliación sobre el tema de aforos les recomiendo el libro “Fundamentos de Hidrología de Superficie”<sup>9</sup> de Francisco Javier Aparicio, que cuenta con una explicación sencilla de los principales elementos a tener en cuenta.
+					
+					
+					
+					
+					
+					
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

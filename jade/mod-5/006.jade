@@ -1,0 +1,104 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9653', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9655', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					h1 Categorías de amenaza -Res. 1912 de 2017
+					
+					p La resolución 1912 de 2017, establece el listado de especies silvestres amenazadas de la diversidad biológica colombiana continental y marino costera, esta normativa se fundamenta en los artículos 8,79 y 80 y de la Constitución Política de Colombia, en el Decreto Ley 2811 de 1974 en el artículo 198 y 258 del citado código, la Ley 99 de 1993 la cual establece los principios generales ambientales, específicamente sobre la biodiversidad indica que es un patrimonio nacional y de interés  de la humanidad debe ser protegida y aprovechada en forma sostenible.
+
+					p De otro lado en la citada ley se dispone que el MADS debe no solo adoptar las medidas necesarias para asegurar la protección de las especies de fauna y flora silvestres, tomar previsiones del caso para defender especies en extinción o en peligro de serlo y expedir los certificados a que se refiere la Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres.
+
+					p En ámbito internacional la Unión Internacional para la Conservación de la Naturaleza (UICN), ha adelantado la categorización de especies amenazadas para lograr un inventario mundial, que funcione como alerta y permita considerar las medidas necesarias para conservar las especies.  
+
+					p Sobre la Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres CITES- se aprobó en Colombia a través de la Ley 17 del 22 de enero de 1981. Tiene como objetivo asegurar que la fauna y la flora sometidas a comercio internacional no se exploten de manera insostenible, es decir que su comercio no sea perjudicial para la supervivencia 
+
+					p Mediante la regulación en términos de la exportación, reexportación e importación de animales y plantas vivos o muertos y sus partes y derivados de acuerdo con su estado de amenaza (Apéndices de la CITES). La regulación se basa en un sistema de permisos y certificados que sólo se pueden emitir si se reúnen ciertas condiciones; permisos que deben presentarse al salir o entrar en un país (MADS, 2020).
+
+					p En la Resolución 1912 de 2017 se establece el listado oficial de especies amenazadas en el anexo I,
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Categoría de especie amenazada
+								th Descripción
+						+set('tr')
+							tr
+								td Peligro crítico (CR)
+								td Aquellas que están enfrentando un riesgo de extinción extremadamente alto en estado de vida silvestre
+							tr
+								td En peligro (EN)
+								td Aquellas que están enfrentando un riesgo de extinción muy alto en estado de vida silvestre
+							tr
+								td Vulnerable (VU)
+								td Aquellas que están enfrentando un riesgo de extinción alto en estado de vida silvestre					
+					
+					
+					
+								
+
+					p Los criterios para categorizar se establecen en el artículo 3 de la resolución 1912 de 2017, donde se tienen en cuenta lo establecido por la Unión Internacional para la Conservación de la Naturaleza (UICN) así:
+
+					p Una especie está amenazada cuando sus poblaciones naturales se encuentran en riesgo de desaparecer por cumplir alguno de los siguientes criterios:
+					
+					ul
+						li Rápida reducción en tamaño poblacional
+						li Área pequeña fragmentado, en disminución o fluctuante 
+						li Población pequeña y en disminución
+						li Población o área muy pequeña 
+						li Análisis de viabilidad poblacional	
+					
+										
+					//- Foot notes
+					// +footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

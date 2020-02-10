@@ -1,0 +1,119 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9654', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9656', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					h1 Valoración económica
+					
+					h3 Análisis económico de los impactos en el marco del Licenciamiento Ambiental
+					
+					p La Constitución Política de Colombia de 1991, en su artículo 80 establece que: “El Estado planificará el manejo y aprovechamiento de los recursos naturales, para garantizar su desarrollo sostenible, su conservación, restauración o sustitución. Además, deberá prevenir y controlar los factores de deterioro ambiental, imponer las sanciones legales y exigir la reparación de los daños causados”; para dar cumplimiento a lo señalado en el marco del Licenciamiento ambiental, se hace necesario integrar un análisis económico al proceso. 
+
+					p Por su parte, para dar cumplimiento al numeral 7 del artículo 1 y al numeral 8 del artículo 5 de la Ley 99 de 1993 y lo establecido en el numeral 6 del artículo 2.2.2.3.5.1. del Decreto Único Reglamentario – DUR 1076 de 2015, se debe incorporar la Evaluación Económica Ambiental – EEA dentro del proceso de evaluación de Estudios de Impacto Ambiental.
+
+					p Por tanto, en el marco del licenciamiento ambiental colombiano, la valoración económica ambiental es una herramienta útil como insumo para el análisis, en el caso de las autoridades ambientales les permite tener una idea del valor total de la externalidad y orienta la determinación de los objetivos y montos finales de la compensación socioeconómica al realizar una aproximación de la estimación de los daños causados por el proyecto.
+					
+					
+					h3 Metodologías
+					
+					p El Ministerio de Ambiente y Desarrollo Sostenible emitió la Resolución 1669 del 15 de agosto de 2017, mediante la cual adoptó los criterios técnicos para el uso de herramientas económicas en los proyectos, obras o actividades objeto de Licencia ambiental o instrumento equivalente, el cual adopta un documento técnico que incorpora las diferentes metodologías que pueden ser usadas según el tipo de estudio que se desea realizar (DAA,EIA) criterios para desarrollar el componente de valoración económica través de instructivos.
+
+					p Dentro de las metodologías mas utilizadas para la presentación de este análisis se encuentra el  “Análisis costo beneficio” definida por el MADS<sup>3</sup> como una metodología de estimación del balance entre beneficios y costos económicos de un proyecto, obra o actividad. Este análisis permite realizar la evaluación del proyecto y establecer de esta forma, su viabilidad desde el punto de vista ambiental y social.
+
+					p Los criterios y pasos a realizar en la aplicación de la metodología conforme al documento expedido por el MADS, dependerán del tipo de estudio que se este realizando, ya sea una DAA o un EIA así:
+					
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th(rowspan='2') Proceso de análisis
+								th(colspan='2') Tipo de estudio
+						+set('tr')
+							tr
+								td DAA
+								td EIA
+							tr
+								td Paso 1
+								td Caracterización de alternativas para el DAA
+								td Identificación de impactos <b>relevantes	</b>	
+							tr
+								td Paso 2
+								td Identificación de impactos residuales <b>potenciales significativos</b>
+								td Cuantificación del cambio en los servicios ecosistémicos		
+							tr
+								td Paso 3
+								td Cuantificación de los cambios en los servicios ecosistémicos
+								td Valoración económica de los cambios en los servicios ecosistémicos
+							tr
+								td Paso 4
+								td Valoración económica de los cambios en los servicios ecosistémicos
+								td Valor Presente Neto de los costos y beneficios		
+							tr
+								td Paso 5
+								td Cálculo y comparación de la Relación Beneficio Costo
+								td Obtención de los principales criterios de decisión	
+							tr
+								td Paso 6
+								td Análisis de sensibilidad e incertidumbres
+								td Análisis de sensibilidad e incertidumbres
+							tr
+								td Paso 7
+								td Integración de resultados a la selección de alternativas
+								td Integración de resultados
+					
+					
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

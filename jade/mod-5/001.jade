@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9650', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					p En el siguiente modulo se abordarán las temáticas asociadas a vedas y compensación, valoración económica y finalizaremos con información técnica asociada a concesiones de aguas superficiales, con el objetivo de ampliar los conocimientos sobre los requisitos para la obtención de este tipo de trámites.
+					
+					
+					h1 Vedas y compensación por pérdida de Biodiversidad
+					
+					p El recurso flora poseen la característica de la renovabilidad, es decir, la disponibilidad de este puede aumentar según las condiciones y características del medio en el cual se desarrolló; bajo este principio la legislación Colombia, estableció como función de las autoridades ambientales en el artículo 196 del Decreto-Ley 2811 de 1974, la facultad de tomar las medidas para conservar o evitar la desaparición de especies o individuos de la flora que por razones de orden biológico, genético, estético, socioeconómico o cultural deben perdurar.
+
+					p Bajo esta premisa se desarrolla el concepto de veda y los procedimientos implementados por las autoridades amparadas en el citado artículo.
+
+
+						
+					
+										
+					//- Foot notes
+					//- +footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

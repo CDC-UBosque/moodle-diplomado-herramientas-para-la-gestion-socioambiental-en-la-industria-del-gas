@@ -1,0 +1,96 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 5', 'Vedas y compensación por pérdida de Biodiversidad, valoración económica', 'test-mod-5')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9651', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=339319&chapterid=9653', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-5')
+					
+					h1 Trámite levantamiento de veda
+					
+					p Con la expedición del Decreto-Ley 2106 el 22 de noviembre de 2019, las condiciones administrativas para realizar el uso de las especies vedadas en el marco de un proyecto, obra o actividad, cambiaron ya que, el gobierno nacional en el parágrafo 2 del artículo 125, elimino la figura del trámite particular del levantamiento de veda, y lo incorporó dentro del paquete de medidas de manejo a establecer en el marco de instrumento de manejo y control del proyecto, obra o actividad, pues señala:
+					
+					.resaltado-txt
+						p PARÁGRAFO 2o. Para el desarrollo o ejecución de proyectos, obras o actividades que requieran licencia, permiso, concesión o autorización ambiental y demás instrumentos de manejo y control ambiental que impliquen intervención de especies de la flora silvestre con veda nacional o regional, la autoridad ambiental competente, impondrá dentro del trámite de la licencia, permiso, concesión o autorización ambiental y demás instrumentos de manejo y control ambiental, las medidas a que haya lugar para garantizar la conservación de las especies vedadas, por lo anterior, no se requerirá adelantar el trámite de levantamiento parcial de veda que actualmente es solicitado. (negrita fuera de texto)
+						
+					
+					p Así las cosas, la presentación de una solicitud formal ante Minambiente o las Autoridades ambientales, que cuenta con actos administrativos en donde fijan la veda de ciertas especies, grupos o familias, ya no es necesaria; sin embargo la información asociada a la presencia de estas especies en el área de intervención de la obra, proyecto o actividad deberá ser incluida dentro de la solicitud del permisos, licencia, concesión, autorización o demás instrumentos de manejo y control; igualmente se deberá formular las medidas de manejo conforme a la jerarquía de la mitigación<sup>2</sup> y los lineamientos que para tal fin fije el Ministerio de Ambiente y las Autoridades Ambientales. 
+
+					p Con la incorporación de este cambio en el procedimiento administrativo, surgen varios interrogantes, algunos de ellos intentaron ser resueltos con la expedición de un parágrafo transitorio en el citado Decreto-Ley, el cual establece respuestas a algunos escenarios así:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Se expedirán formatos únicos nacionales para garantizar la conservación de las especies, sin embargo, mientras son expedidos las autoridades ambientales pueden fijar las medidas a que haya lugar para cumplir el objetivo propuesto con los formatos.
+							div.tab-pane.fade#2
+								p Con relación a las solicitudes de levantamiento temporal de veda, que estaban en proceso de evaluación, es decir se habían radicado por parte de los usuarios, pero no habían sido resultas de fondo. Estas serán archivadas y los solicitantes deberán pedir a la autoridad ambiental competente la imposición de las medidas a que haya lugar, dentro del trámite de la licencia, permiso, concesión o autorización ambiental y demás instrumentos de manejo y control ambiental, que requieran para el desarrollo del proyecto.
+							div.tab-pane.fade#3
+								p Por su parte, las solicitudes ya resueltas de levantamiento temporal de veda, que contaban con decisión favorable y que aún no se había declarado el cumplimiento de las obligaciones impuestas, es decir el archivo del expediente; pasara a las autoridades ambientales el citado expediente, para la verificación vía proceso de seguimiento del cumplimiento de dichas obligaciones.
+							div.tab-pane.fade#4
+								p Finalmente, en el caso de procesos sancionatorios activos, estos deberán continuar en la entidad que emitió el acto administrativo que levanta temporalmente la veda.
+					
+					
+					
+					p Adicionalmente el Ministerio de Ambiente y Desarrollo Sostenible, emitió la Circular No 8201 2 2378 del 02 de diciembre de 2019, con lineamientos asociados a la aplicación de los parágrafos 2 y transitorio del artículo 125 del Decreto-Ley 2106 de 2019.
+
+					p En conclusión, el gobierno nacional eliminó el trámite previo a la solicitud del permiso, autorización, concesión, licencia o aprobación de los demás instrumentos de manejo y control; simplificando el proceso, sin desmerito de lo sustancial que correspondía al establecimiento de medidas que contribuyan a la conservación de las especies o individuos de la flora que por razones de orden biológico, genético, estético, socioeconómico o cultural deben perdurar, pues estas se incorporan a las medidas de manejo para el ejecución del proyecto, obra o actividad.
+
+					p Dentro de las ventajas de este ajuste, que vale la pena resaltar, es el avance en la unificación de medidas de manejo en un solo instrumento, que facilita la articulación entre estas, reporte y análisis de las mismas.						
+					
+										
+					//- Foot notes
+					+footnotes('footnotes-mod-5')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-5')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
